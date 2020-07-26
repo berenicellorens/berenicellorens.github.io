@@ -2,9 +2,9 @@ body {
 	font-family:helvetica-light;
   text-align: center;
   background-image:url("../img/logo.jpg");
-  background-size:40%;
+  background-size:300px;
   background-repeat:no-repeat;
-  background-position:right top;
+  background-position:center top;
 }
 header {
   display:block;
@@ -52,7 +52,7 @@ section {
 
 h1 {
     margin: 0;
-    background: yellow;
+    background: #f4fe92;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -72,15 +72,9 @@ h2 {
 h3 {
   background:pink;
 }
-/*footer p {
-  padding:10px;
-  margin: 20px 0;
-  border-radius:2em;
-  background:lightblue;
-  display:inline;
-}*/
+
 .colored {
-	background:orange;
+	background:#f2c4d5;
 	font-style:italic;
 	display:block;
 }
