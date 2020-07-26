@@ -1,0 +1,92 @@
+body {
+	font-family:helvetica-light;
+  text-align: center;
+  background-image:url("../img/logo.jpg");
+  background-size:40%;
+  background-repeat:no-repeat;
+  background-position:right top;
+}
+header {
+  display:block;
+  position:relative;
+}
+main {
+  display:block;
+  position:relative;
+  height:50%;
+  overflow:scroll;
+  float:none;
+}
+footer {
+  margin:50px 0;
+  position:relative;
+  float:none;
+  display:block;
+  font-size: small;
+}
+
+ul, li, span, a{
+	list-style:none;
+	margin:none;
+	padding:none;
+	text-decoration:none;
+}
+
+ul {
+	padding-inline-start: 0px;
+}
+
+nav {
+  display: block;
+  text-align:center;
+  margin:none;
+  padding:none;
+}
+
+section {
+	float:left;
+  padding-left:10px;
+  text-align:left;
+  text-indent:10px;
+}
+
+h1 {
+    margin: 0;
+    background: yellow;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%) 
+}
+h2 {
+    margin: 0;
+    font-size:1em;
+    /*background: yellow;*/
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%) 
+}
+h3 {
+  background:pink;
+}
+/*footer p {
+  padding:10px;
+  margin: 20px 0;
+  border-radius:2em;
+  background:lightblue;
+  display:inline;
+}*/
+.colored {
+	background:orange;
+	font-style:italic;
+	display:block;
+}
+
+.title {
+    height: 10em;
+    position: relative;
+}
+
