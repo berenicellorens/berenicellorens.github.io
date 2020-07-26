@@ -66,6 +66,7 @@ article iframe {
 
 h1 {
     margin: 0;
+    font-size:1.5em;
     background-color:rgba(244, 254, 146, 0.5);
     position: absolute;
     top: 50%;
