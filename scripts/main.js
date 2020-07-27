@@ -1,98 +1,473 @@
-var sepchar="&nbsp;&middot;&nbsp;"
+///////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////
 
-var hashtags=[
-{
-	"title":"#blabladuriasdeberenice",
-	"url"  :"https://www.instagram.com/explore/tags/blabladuriasdeberenice" },
-{
-	"title":"#rayaduras_berenice",
-	"url"  :"https://www.instagram.com/explore/tags/rayaduras_berenice"},
-{
-	"title":"#berydual",
-	"url"  :"https://www.instagram.com/explore/tags/berydual"},
-{
-	"title":"#berenicemusic",
-	"url"  :"https://www.instagram.com/explore/tags/berenicemusic"}]
+
+var beretags=[
+	"berenicemusic",
+	"blabladuriasdeberenice",
+	"rayaduras_berenice",
+	"berydual",
+];
+
+var keywords=[
+	"berenicellorens",
+	"dj",
+	"composer",
+	"artist",
+	"electronics",
+	"live-video",
+	"instrumental",
+];
+
+var bio="Berenice Llorens, artista cordobesa que busca expandir los límites del género, tanto en música como en poesía, con palabras, improvisaciones, imágenes, sonidos y ritmos que invitan a una escucha híbrida entre el cuerpo y el movimiento. Su trabajo está disponible en: "+url_root;
+
+
+var fullname="Berenice Llorens";
+var idioma="es-AR"
+
+
+
+///////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////
+
+
+var bere="berenicellorens";
+var url_insta="https://www.instagram.com";
+var url_face="https://www.facebook.com";
+var url_twit="https://www.twitter.com";
+var url_root="https://"+bere+".github.io";
+var sepchar="&nbsp;&middot;&nbsp;";
+var raw="https://raw.githubusercontent.com";
+var url_ico=raw+"/"+bere+"/"+url_root+"/master/img/logo.ico";
+var url_jpg=raw+"/"+bere+"/"+url_root+"/master/img/logo.jpg";
+
+var viewport_settings=[
+	"width=device-width",
+	"minimum-scale=1.0",
+	"maximum-scale=1.0",
+	"user-scalable=no",
+];
+
+let h,hashtags=[];
+
+for (h in beretags) {
+	hashtags.push({
+		"title":"#"+beretags[h],
+		"url":url_insta+"/explore/tags/"+beretags[h]
+	});
+};
+
+function add_key(object, key, value) {
+	let obj=object;
+	obj[key]=value;
+	return obj;
+};
+
 var links=[
 {	
-	"title":"@berenicellorens",
-	"url"  :"https://www.instagram.com/berenicellorens"},
+	"title":"@"+bere,
+	"url"  :url_insta+"/"+bere
+},
 {
 	"title":"facebook",
-	"url"  :"https://www.facebook.com/berenicellorens" },
+	"url"  :url_face+"/"+bere 
+},
 {
 	"title":"twitter",
-	"url"  :"https://twitter.com/berenicellorens" }]
-var email={
-	"title": "berenicellorens@gmail.com",
-	"url"  : "mailto:berenicellorens@gmail.com" 
+	"url"  :url_twit+"/"+bere 
 }
+];
+
+var emails= [
+{
+	"title": bere+"@gmail.com",
+	"url"  : "mailto:"+bere+"@gmail.com" 
+}
+];
+
 var home=[
-{"url":"https://berenicellorens.github.io/index.html","title":"Home"},
-{"url":"https://berenicellorens.github.io/solo/albums.html","title":"Discografía"},
-{"url":"https://berenicellorens.github.io/solo/dj.html","title":"DJ Sets"},
-{"url":"https://berenicellorens.github.io/duo/marmotas.html","title":"Marmotas Dreams"},
-{"url":"https://berenicellorens.github.io/duo/sobery.html","title":"SoBeryNice"},
-{"url":"https://berenicellorens.github.io/arte/video.html","title":"Videoarte"},
-{"url":"https://www.instagram.com/rayaduras","title":"Rayaduras"},
-{"url":"https://berenicellorens.blogspot.com","title":"La Cursividad"},
-{"url":"https://berenicellorens.github.io/bio/index.html","title":"Sobre mí"}, 
-{"url":"https://berenicellorens.github.io/cv","title":"Cv"} 
-]
+{
+	"title":"Home",
+	"url":url_root+"/index.html",
+},
+{
+	"type":"solo",
+	"title":"Discografía",
+	"url":url_root+"/solo/albums.html",
+},
+{
+	"type":"solo",
+	"title":"Electrónica",
+	"url":url_root+"/solo/dj.html",
+},
+	add_key(hashtags[0],"type","solo"),
+{
+	"type":"duo",
+	"title":"Marmotas Dreams",
+	"url":url_root+"/duo/marmotas.html",
+},
+{
+	"type":"duo",
+	"title":"SoBeryNice",
+	"url":url_root+"/duo/sobery.html",
+},
+{
+	"type":"arte",
+	"title":"Videoarte",
+	"url":url_root+"/arte/video.html",
+},
+{
+	"type":"arte",
+	"title":"Rayaduras",
+	"url":url_insta+"/rayaduras",
+},
+{
+	"type":"arte",
+	"title":"La Cursividad",
+	"url":"https://"+bere+".blogspot.com",
+},
+{
+	"type":"bio",
+	"title":"Sobre mí",
+	"url":url_root+"/bio/index.html",
+},
+{
+	"type":"bio",
+	"title":"Cv",
+	"url":url_root+"/cv",
+}
+];
 
 function anchor(link,text,target)
 {
   let tag = document.createElement('a');
 
   tag.setAttribute('href',link);
-  tag.setAttribute('alt' ,link.length>44?link.slice(0, 44)+ " ...":link);
   tag.setAttribute('rel', 'nofollow');
   tag.setAttribute('target', target?target:"_top");
-
   tag.appendChild(document.createTextNode(text?text:''));
 
   return tag;
-}
+};
+
+function append_to_div(array) {
+	let target = document.createElement('div');
+	for (i=0; i<array.length; i++) {
+		let separator = document.createElement('span');
+		separator.innerHTML = sepchar;
+		let a = anchor(array[i]['url'],array[i]['title'],"_blank");
+		target.appendChild(a);
+		if (i<array.length-1)
+			target.appendChild(separator);
+	}
+	return target;
+};
 
 function footer(nav) {
 	let footer   = document.querySelector('footer');
-	let hashtdiv = document.createElement('div');
-	let emaildiv = document.createElement('div');
-	let linksdiv = document.createElement('div');
-	let navdiv   = document.createElement('div');
-	let i;
-	// links
-	for (i=0; i<links.length; i++) {
-		let separator = document.createElement('span');
-		separator.innerHTML=sepchar;
-		let a=anchor(links[i]['url'],links[i]['title'],"_blank");
-		linksdiv.appendChild(a);
-		if (i<links.length-1) linksdiv.appendChild(separator);
-	}
-	// hashtags
-	for (i=0; i<hashtags.length; i++) {
-		let separator = document.createElement('span');
-		separator.innerHTML=sepchar;
-		let a=anchor(hashtags[i]['url'],hashtags[i]['title'],"_blank");
-		hashtdiv.appendChild(a);
-		if (i<hashtags.length-1) hashtdiv.appendChild(separator);
-	}
-	// email
-	emaildiv.appendChild(anchor(email['url'],email['title']));
-	
-	if (!nav) {
-		// home
-		for (i=0; i<home.length; i++) {
-			let separator = document.createElement('span');
-			separator.innerHTML=sepchar;
-			let a=anchor(home[i]['url'],home[i]['title'],"");
-			navdiv.appendChild(a);
-			if (i<home.length-1) navdiv.appendChild(separator);
+	footer.appendChild(append_to_div(hashtags));
+	footer.appendChild(append_to_div(links));
+	footer.appendChild(append_to_div(emails));
+	if (!nav) footer.appendChild(append_to_div(home));
+};
+
+function nav() {
+	let header   = document.querySelector('header');
+	let nav = document.createElement('nav');
+	let menu = document.createElement('ul');
+	let i,type="none",menuitem,menutitle,submenu;
+
+	for (i=1; i<home.length; i++) {
+		let ntype=home[i]['type'];
+		if (type.localeCompare(ntype)) {
+			//is new menuitem
+			menuitem = document.createElement('li');
+			menutitle=document.createElement('span');
+			menutitle.setAttribute('class','colored');
+			menutitle.innerHTML=ntype;
+			menuitem.appendChild(menutitle);
+			menu.appendChild(menuitem);
+			submenu = document.createElement('ul');
 		}
+		submenuitem = document.createElement('li');
+		submenuitem.appendChild(anchor(home[i]['url'],home[i]['title']));
+		submenu.appendChild(submenuitem);
+		menuitem.appendChild(submenu);
+		type=ntype;
 	}
-	footer.appendChild(hashtdiv);
-	footer.appendChild(linksdiv);
-	footer.appendChild(emaildiv);
-	if (!nav) footer.appendChild(navdiv);
+	// console.log(menu);
+	nav.appendChild(menu);
+	header.appendChild(nav);
+};
+
+let head =  document.getElementsByTagName('head')[0];
+
+global_tags=[
+{
+ 	"tag":"meta",
+ 	"attributes": [
+ 		{
+ 			"key":"name",
+ 			"value":"headline",
+ 		},
+ 		{
+ 			"key":"content",
+ 			"value":fullname
+ 		}]
+},
+{
+ 	"tag":"meta",
+ 	"attributes": [
+ 		{
+ 			"key":"name",
+ 			"value":"url"
+ 		},
+ 		{
+ 			"key":"content",
+ 			"value":url_root
+ 		}]
+},
+{
+ 	"tag":"meta",
+ 	"attributes": [
+ 		{
+ 			"key":"name",
+ 			"value":"@type",
+ 		},
+ 		{
+ 			"key":"content",
+ 			"value":"WebSite"
+ 		}]
+},
+{
+ 	"tag":"meta",
+ 	"attributes": [
+ 		{
+ 			"key":"property",
+ 			"value":"og:locale",
+ 		},
+ 		{
+ 			"key":"content",
+ 			"value":idioma
+ 		}]
+},
+{
+ 	"tag":"meta",
+ 	"attributes": [
+ 		{
+ 			"key":"name",
+ 			"value":"viewport",
+ 		},
+ 		{
+ 			"key":"content",
+ 			"value":viewport_settings.join(",")
+ 		}]
+},
+{
+ 	"tag":"meta",
+ 	"attributes": [
+ 		{
+ 			"key":"http-equiv",
+ 			"value":"X-UA-Compatible",
+ 		},
+ 		{
+ 			"key":"content",
+ 			"value":"IE=edge"
+ 		}]
+},
+{
+	"tag":"meta",
+	"attributes": [
+ 		{
+ 			"key":"property",
+			"value":"content",
+		},
+		{
+			"key":"og:image",
+			"value":url_jpg
+		}]
+},
+{ 
+	"tag":"meta",
+	"attributes": [
+ 		{
+			"key":"property",
+ 			"value":"og:image:type",
+		},
+		{
+			"key":"content",
+			"value":"image/jpg"
+		}]
+},
+{ 
+	"tag":"meta",
+	"attributes": [
+ 		{
+ 			"key":"content",
+			"value":"500"
+		},
+		{
+			"key":"property",
+			"value":"image:width",
+		}]
+},
+{ 
+	"tag":"meta",
+	"attributes": [
+ 		{
+			"key":"property",
+			"value":"image:height",
+		},
+		{
+			"key":"content",
+			"value":"500"
+		}]
+},
+{ 
+	"tag":"meta",
+	"attributes": [
+ 		{
+			"key":"name",
+			"value":"robots",
+		},
+		{
+			"key":"content",
+			"value":"index,follow"
+		}]
+},
+{ 
+	"tag":"meta",
+	"attributes": [
+ 		{
+			"key":"name",
+			"value":"keywords",
+		},
+		{
+			"key":"content",
+			"value":keywords.join(',')+beretags.join(',')
+		}]
+},
+{ 
+	"tag":"meta",
+	"attributes": [
+ 		{
+			"key":"property",
+			"value":"og:site_name",
+		},
+		{
+			"key":"content",
+			"value":bere
+		}]
+},
+{ 
+	"tag":"meta",
+	"attributes": [
+ 		{
+			"key":"property",
+			"value":"og:url",
+		},
+		{
+			"key":"content",
+			"value":url_root
+		}]
+},
+{ 
+	"tag":"link",
+	"attributes": [
+ 		{
+			"type":"rel",
+ 			"name":"icon",
+		},
+		{
+			"key":"href",
+			"value":url_ico,
+		},
+		{
+			"key":"type",
+			"value":"image/ico"
+		},
+		{
+			"key":"title",
+			"value":bere
+		}]
+},
+{ 
+	"tag":"link",
+	"attributes": [
+ 		{
+			"key":"rel",
+ 			"value":"fluid-icon",
+		},
+		{
+			"key":"href",
+			"value":url_jpg,
+		},
+		{
+			"key":"type",
+			"value":"image/jpg"
+		},
+		{
+			"key":"title",
+			"value":bere
+		}]
+},
+{ 
+	"tag":"link",
+	"attributes": [
+ 		{
+			"key":"rel",
+			"value":"canonical",
+		},
+		{
+			"key":"href",
+			"value":url_root
+		}]
+},
+{
+	"tag":"meta",
+	"attributes": [
+ 		{
+			"key":"property",
+			"value":"twitter:description",
+		},
+		{
+			"key":"content",
+			"value":bio
+		}]
+},
+{
+	"tag":"meta",
+	"attributes": [
+ 		{
+			"key":"property",
+			"value":"og:description",
+		},
+		{
+			"key":"content",
+			"value":bio
+		}]
+},
+{
+	"tag":"meta",
+	"attributes": [
+ 		{
+			"key":"property",
+			"value":"description",
+		},
+		{
+			"key":"content",
+			"value":bio
+		}]
+}];
+
+let i;
+for (i=0;i<global_tags.length;i++) {
+	let e=global_tags[i];
+	console.log(e);
+	let j=0, t=document.createElement(e['tag']), att=e['attributes'];
+	for(j in att) t.setAttribute(att[j]['key'],att[j]['value']);
+	head.appendChild(t)
 }
 
