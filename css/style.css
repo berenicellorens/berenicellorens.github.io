@@ -137,3 +137,6 @@ h4 {
 footer div {
   margin:5px 0;
 }
+#foot div {
+  overflow:scroll;
+}

@@ -157,7 +157,7 @@ function append_to_div(array) {
 	for (i=0; i<array.length; i++) {
 		let separator = document.createElement('span');
 		separator.innerHTML = sepchar;
-		let a = anchor(array[i]['url'],array[i]['title'],"_blank");
+		let a = anchor(array[i]['url'],array[i]['title']);
 		target.appendChild(a);
 		if (i<array.length-1)
 			target.appendChild(separator);
@@ -167,10 +167,14 @@ function append_to_div(array) {
 
 function footer(nav) {
 	let footer   = document.querySelector('footer');
-	footer.appendChild(append_to_div(hashtags));
-	footer.appendChild(append_to_div(links));
-	footer.appendChild(append_to_div(emails));
-	if (!nav) footer.appendChild(append_to_div(home));
+	let foot  = document.createElement('div');
+	foot.setAttribute('id','foot');
+	foot.appendChild(append_to_div(hashtags));
+	foot.appendChild(append_to_div(links));
+	foot.appendChild(append_to_div(emails));
+	if (!nav) foot.appendChild(append_to_div(home));
+	footer.appendChild(foot);
+
 };
 
 function nav() {
