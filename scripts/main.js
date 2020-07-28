@@ -94,7 +94,7 @@ var home=[
 },
 {
 	"type":"solo",
-	"title":"Discografía",
+	"title":"Discos",
 	"url":url_root+"/solo/albums.html",
 },
 {
@@ -206,271 +206,272 @@ function nav() {
 	header.appendChild(nav);
 };
 
-let head =  document.getElementsByTagName('head')[0];
 
-global_tags=[
-{
- 	"tag":"meta",
- 	"attributes": [
- 		{
- 			"key":"name",
- 			"value":"headline",
- 		},
- 		{
- 			"key":"content",
- 			"value":fullname
- 		}]
-},
-{
- 	"tag":"meta",
- 	"attributes": [
- 		{
- 			"key":"name",
- 			"value":"url"
- 		},
- 		{
- 			"key":"content",
- 			"value":url_root
- 		}]
-},
-{
- 	"tag":"meta",
- 	"attributes": [
- 		{
- 			"key":"name",
- 			"value":"@type",
- 		},
- 		{
- 			"key":"content",
- 			"value":"WebSite"
- 		}]
-},
-{
- 	"tag":"meta",
- 	"attributes": [
- 		{
- 			"key":"property",
- 			"value":"og:locale",
- 		},
- 		{
- 			"key":"content",
- 			"value":idioma
- 		}]
-},
-{
- 	"tag":"meta",
- 	"attributes": [
- 		{
- 			"key":"name",
- 			"value":"viewport",
- 		},
- 		{
- 			"key":"content",
- 			"value":viewport_settings.join(",")
- 		}]
-},
-{
- 	"tag":"meta",
- 	"attributes": [
- 		{
- 			"key":"http-equiv",
- 			"value":"X-UA-Compatible",
- 		},
- 		{
- 			"key":"content",
- 			"value":"IE=edge"
- 		}]
-},
-{
-	"tag":"meta",
-	"attributes": [
- 		{
- 			"key":"property",
-			"value":"content",
-		},
-		{
-			"key":"og:image",
-			"value":url_jpg
-		}]
-},
-{ 
-	"tag":"meta",
-	"attributes": [
- 		{
-			"key":"property",
- 			"value":"og:image:type",
-		},
-		{
-			"key":"content",
-			"value":"image/jpg"
-		}]
-},
-{ 
-	"tag":"meta",
-	"attributes": [
- 		{
- 			"key":"content",
-			"value":"500"
-		},
-		{
-			"key":"property",
-			"value":"image:width",
-		}]
-},
-{ 
-	"tag":"meta",
-	"attributes": [
- 		{
-			"key":"property",
-			"value":"image:height",
-		},
-		{
-			"key":"content",
-			"value":"500"
-		}]
-},
-{ 
-	"tag":"meta",
-	"attributes": [
- 		{
-			"key":"name",
-			"value":"robots",
-		},
-		{
-			"key":"content",
-			"value":"index,follow"
-		}]
-},
-{ 
-	"tag":"meta",
-	"attributes": [
- 		{
-			"key":"name",
-			"value":"keywords",
-		},
-		{
-			"key":"content",
-			"value":keywords.join(',')+beretags.join(',')
-		}]
-},
-{ 
-	"tag":"meta",
-	"attributes": [
- 		{
-			"key":"property",
-			"value":"og:site_name",
-		},
-		{
-			"key":"content",
-			"value":bere
-		}]
-},
-{ 
-	"tag":"meta",
-	"attributes": [
- 		{
-			"key":"property",
-			"value":"og:url",
-		},
-		{
-			"key":"content",
-			"value":url_root
-		}]
-},
-{ 
-	"tag":"link",
-	"attributes": [
- 		{
-			"type":"rel",
- 			"name":"icon",
-		},
-		{
-			"key":"href",
-			"value":url_ico,
-		},
-		{
-			"key":"type",
-			"value":"image/ico"
-		},
-		{
-			"key":"title",
-			"value":bere
-		}]
-},
-{ 
-	"tag":"link",
-	"attributes": [
- 		{
-			"key":"rel",
- 			"value":"fluid-icon",
-		},
-		{
-			"key":"href",
-			"value":url_jpg,
-		},
-		{
-			"key":"type",
-			"value":"image/jpg"
-		},
-		{
-			"key":"title",
-			"value":bere
-		}]
-},
-{ 
-	"tag":"link",
-	"attributes": [
- 		{
-			"key":"rel",
-			"value":"canonical",
-		},
-		{
-			"key":"href",
-			"value":url_root
-		}]
-},
-{
-	"tag":"meta",
-	"attributes": [
- 		{
-			"key":"property",
-			"value":"twitter:description",
-		},
-		{
-			"key":"content",
-			"value":bio
-		}]
-},
-{
-	"tag":"meta",
-	"attributes": [
- 		{
-			"key":"property",
-			"value":"og:description",
-		},
-		{
-			"key":"content",
-			"value":bio
-		}]
-},
-{
-	"tag":"meta",
-	"attributes": [
- 		{
-			"key":"property",
-			"value":"description",
-		},
-		{
-			"key":"content",
-			"value":bio
-		}]
-}];
+// global_tags=[
+// {
+//  	"tag":"meta",
+//  	"attributes": [
+//  		{
+//  			"key":"name",
+//  			"value":"headline",
+//  		},
+//  		{
+//  			"key":"content",
+//  			"value":fullname
+//  		}]
+// },
+// {
+//  	"tag":"meta",
+//  	"attributes": [
+//  		{
+//  			"key":"name",
+//  			"value":"url"
+//  		},
+//  		{
+//  			"key":"content",
+//  			"value":url_root
+//  		}]
+// },
+// {
+//  	"tag":"meta",
+//  	"attributes": [
+//  		{
+//  			"key":"name",
+//  			"value":"@type",
+//  		},
+//  		{
+//  			"key":"content",
+//  			"value":"WebSite"
+//  		}]
+// },
+// {
+//  	"tag":"meta",
+//  	"attributes": [
+//  		{
+//  			"key":"property",
+//  			"value":"og:locale",
+//  		},
+//  		{
+//  			"key":"content",
+//  			"value":idioma
+//  		}]
+// },
+// {
+//  	"tag":"meta",
+//  	"attributes": [
+//  		{
+//  			"key":"name",
+//  			"value":"viewport",
+//  		},
+//  		{
+//  			"key":"content",
+//  			"value":viewport_settings.join(",")
+//  		}]
+// },
+// {
+//  	"tag":"meta",
+//  	"attributes": [
+//  		{
+//  			"key":"http-equiv",
+//  			"value":"X-UA-Compatible",
+//  		},
+//  		{
+//  			"key":"content",
+//  			"value":"IE=edge"
+//  		}]
+// },
+// {
+// 	"tag":"meta",
+// 	"attributes": [
+//  		{
+//  			"key":"property",
+// 			"value":"content",
+// 		},
+// 		{
+// 			"key":"og:image",
+// 			"value":url_jpg
+// 		}]
+// },
+// { 
+// 	"tag":"meta",
+// 	"attributes": [
+//  		{
+// 			"key":"property",
+//  			"value":"og:image:type",
+// 		},
+// 		{
+// 			"key":"content",
+// 			"value":"image/jpg"
+// 		}]
+// },
+// { 
+// 	"tag":"meta",
+// 	"attributes": [
+//  		{
+//  			"key":"content",
+// 			"value":"500"
+// 		},
+// 		{
+// 			"key":"property",
+// 			"value":"image:width",
+// 		}]
+// },
+// { 
+// 	"tag":"meta",
+// 	"attributes": [
+//  		{
+// 			"key":"property",
+// 			"value":"image:height",
+// 		},
+// 		{
+// 			"key":"content",
+// 			"value":"500"
+// 		}]
+// },
+// { 
+// 	"tag":"meta",
+// 	"attributes": [
+//  		{
+// 			"key":"name",
+// 			"value":"robots",
+// 		},
+// 		{
+// 			"key":"content",
+// 			"value":"index,follow"
+// 		}]
+// },
+// { 
+// 	"tag":"meta",
+// 	"attributes": [
+//  		{
+// 			"key":"name",
+// 			"value":"keywords",
+// 		},
+// 		{
+// 			"key":"content",
+// 			"value":keywords.join(',')+beretags.join(',')
+// 		}]
+// },
+// { 
+// 	"tag":"meta",
+// 	"attributes": [
+//  		{
+// 			"key":"property",
+// 			"value":"og:site_name",
+// 		},
+// 		{
+// 			"key":"content",
+// 			"value":bere
+// 		}]
+// },
+// { 
+// 	"tag":"meta",
+// 	"attributes": [
+//  		{
+// 			"key":"property",
+// 			"value":"og:url",
+// 		},
+// 		{
+// 			"key":"content",
+// 			"value":url_root
+// 		}]
+// },
+// { 
+// 	"tag":"link",
+// 	"attributes": [
+//  		{
+// 			"type":"rel",
+//  			"name":"icon",
+// 		},
+// 		{
+// 			"key":"href",
+// 			"value":url_ico,
+// 		},
+// 		{
+// 			"key":"type",
+// 			"value":"image/ico"
+// 		},
+// 		{
+// 			"key":"title",
+// 			"value":bere
+// 		}]
+// },
+// { 
+// 	"tag":"link",
+// 	"attributes": [
+//  		{
+// 			"key":"rel",
+//  			"value":"fluid-icon",
+// 		},
+// 		{
+// 			"key":"href",
+// 			"value":url_jpg,
+// 		},
+// 		{
+// 			"key":"type",
+// 			"value":"image/jpg"
+// 		},
+// 		{
+// 			"key":"title",
+// 			"value":bere
+// 		}]
+// },
+// { 
+// 	"tag":"link",
+// 	"attributes": [
+//  		{
+// 			"key":"rel",
+// 			"value":"canonical",
+// 		},
+// 		{
+// 			"key":"href",
+// 			"value":url_root
+// 		}]
+// },
+// {
+// 	"tag":"meta",
+// 	"attributes": [
+//  		{
+// 			"key":"property",
+// 			"value":"twitter:description",
+// 		},
+// 		{
+// 			"key":"content",
+// 			"value":bio
+// 		}]
+// },
+// {
+// 	"tag":"meta",
+// 	"attributes": [
+//  		{
+// 			"key":"property",
+// 			"value":"og:description",
+// 		},
+// 		{
+// 			"key":"content",
+// 			"value":bio
+// 		}]
+// },
+// {
+// 	"tag":"meta",
+// 	"attributes": [
+//  		{
+// 			"key":"property",
+// 			"value":"description",
+// 		},
+// 		{
+// 			"key":"content",
+// 			"value":bio
+// 		}]
+// }];
 
-let i;
-for (i=0;i<global_tags.length;i++) {
-	let e=global_tags[i];
-	let j=0, t=document.createElement(e['tag']), att=e['attributes'];
-	for(j in att) t.setAttribute(att[j]['key'],att[j]['value']);
-	head.appendChild(t)
-}
-
+// function meta() {
+// 	let i, head=document.head;
+// 	for (i=0;i<global_tags.length;i++) {
+// 		let e=global_tags[i];
+// 		let j=0, t=document.createElement(e['tag']), att=e['attributes'];
+// 		for(j in att) t.setAttribute(att[j]['key'],att[j]['value']);
+// 		head.appendChild(t)
+// 	}
+// 	console.log(head);
+// }
