@@ -469,7 +469,6 @@ global_tags=[
 let i;
 for (i=0;i<global_tags.length;i++) {
 	let e=global_tags[i];
-	console.log(e);
 	let j=0, t=document.createElement(e['tag']), att=e['attributes'];
 	for(j in att) t.setAttribute(att[j]['key'],att[j]['value']);
 	head.appendChild(t)
