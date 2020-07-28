@@ -1,0 +1,17 @@
+body {
+	background-image:url('../img/el_pelo_verde.jpg');
+	background-color:black;
+	background-size:500px;
+}
+
+h1 {
+	background-color:rgba(244, 254, 146,1);
+}
+
+a {
+	color:#8BC34A;
+}
+
+h3 {
+    background: #aa2788;
+}

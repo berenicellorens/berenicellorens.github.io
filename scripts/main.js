@@ -146,7 +146,7 @@ function anchor(link,text,target)
 
   tag.setAttribute('href',link);
   tag.setAttribute('rel', 'nofollow');
-  tag.setAttribute('target', target?target:"_top");
+  tag.setAttribute('target', target?target:"_blank");
   tag.appendChild(document.createTextNode(text?text:''));
 
   return tag;
