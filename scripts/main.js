@@ -8,6 +8,7 @@ var beretags=[
 	"blabladuriasdeberenice",
 	"rayaduras_berenice",
 	"berydual",
+	"movienice",
 ];
 
 var keywords=[
@@ -23,6 +24,24 @@ var keywords=[
 var bio="Berenice Llorens, artista cordobesa que busca expandir los límites del género, tanto en música como en poesía, con palabras, improvisaciones, imágenes, sonidos y ritmos que invitan a una escucha híbrida entre el cuerpo y el movimiento. Su trabajo está disponible en: "+url_root;
 
 
+beremarquee = [
+"berenicemusic",
+"blabladuriasdeb",
+"berenicellorens",
+"berenicellorens",
+"blablablablabla",
+"rayadurasdeberenice",
+"movienice",
+"erenicellorens",
+"renicellorens",
+"berenice",
+"nicellorens",
+"icellorens",
+"llorens",
+"e n",
+"i c e",
+"b e r",
+]
 var fullname="Berenice Llorens";
 var idioma="es-AR"
 
@@ -90,7 +109,7 @@ var emails= [
 var home=[
 {
 	"title":"Home",
-	"url":url_root+"/index.html",
+	"url":url_root+"/home/index.html",
 },
 {
 	"type":"solo",
@@ -205,6 +224,36 @@ function nav() {
 	nav.appendChild(menu);
 	header.appendChild(nav);
 };
+
+
+function ber() {
+	let body = document.querySelector('body');
+	let i;
+	for (i=0; i<17; i++) {
+		let bermarquee = document.createElement('marquee');
+		bermarquee.setAttribute('scrolldelay',i*3);
+		bermarquee.setAttribute('style','width:'+Math.floor(Math.random()*300+100)+"px")
+		bermarquee.innerHTML = beremarquee[i%beremarquee.length];
+		let h1=document.createElement('h1');
+		h1.appendChild(bermarquee);
+		
+		(function(i) {
+        setTimeout(function () {
+            // console.log(i);
+			body.appendChild(h1);
+        }, Math.floor(Math.random() * 1000));
+    	})(i);
+	}
+	setTimeout(function() {
+		let div=document.createElement('div');
+		div.setAttribute('onclick',"window.open(\'"+url_root+"\','_top')");
+		let span=document.createElement('span');
+		span.innerHTML = "BER";
+		div.appendChild(span);
+		body.appendChild(div);
+	}, 5000);
+}
+
 
 
 // global_tags=[
