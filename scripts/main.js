@@ -30,17 +30,17 @@ beremarquee = [
 "berenicellorens",
 "berenicellorens",
 "blablablablabla",
-"rayadurasdeberenice",
-"movienice",
-"erenicellorens",
-"renicellorens",
-"berenice",
-"nicellorens",
-"icellorens",
-"llorens",
-"e n",
-"i c e",
-"b e r",
+"rayadurasdeber",
+"movieniceberenice",
+"erenicellorensber",
+"renicellorensber",
+"bereniceberenice",
+"nicellorensnicebe",
+"icellorensicellor",
+"llorensllorenslor",
+"e n e n e n e n e",
+"i c e i c e i c e",
+"b e r b e r b e r",
 ]
 var fullname="Berenice Llorens";
 var idioma="es-AR"
@@ -225,6 +225,10 @@ function nav() {
 	header.appendChild(nav);
 };
 
+butenice=[
+"BER",
+"EN",
+"ICE"];
 
 function ber() {
 	let body = document.querySelector('body');
@@ -245,13 +249,22 @@ function ber() {
     	})(i);
 	}
 	setTimeout(function() {
-		let div=document.createElement('div');
-		div.setAttribute('onclick',"window.open(\'"+home[0]['url']+"\','_top')");
-		let span=document.createElement('span');
-		span.innerHTML = "BER";
-		div.appendChild(span);
-		body.appendChild(div);
-	}, 5000);
+		let but = document.createElement('div');
+		but.setAttribute('id','but');
+		for (x in butenice) {
+			(function(x) {
+			setTimeout(function() {
+				let div=document.createElement('div');
+				div.setAttribute('onclick',"window.open(\'"+home[0]['url']+"\','_top')");
+				let span=document.createElement('span');
+				span.innerHTML = butenice[x];
+				div.appendChild(span);
+				but.appendChild(div);
+				body.appendChild(but);
+			}, 450);
+			})(x);
+		}
+	}, 4500);
 }
 
 

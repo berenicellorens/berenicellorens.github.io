@@ -1,9 +1,9 @@
 body {
 	padding:30px;
 	font-family:helvetica-light;
+	text-align:center; 
 }
 h1 {
-	text-align:center; 
 	font-size:7em;
 	margin:0px;
 	padding:0px;
@@ -11,7 +11,7 @@ h1 {
 	float:left;
 	font-weight:normal;
 }
-div {
+#but {
 	position:fixed;
 	top:25%;
 	left:25%;
@@ -26,8 +26,14 @@ span {
 	margin:auto;
 	font-weight:bold;
 }
-div:hover {
+#but div:hover {
 	cursor:pointer;
 	background:yellow;
 	color:black;
+}
+#but div {
+	margin:20px;
+}
+#but:hover {
+	background:white;
 }
