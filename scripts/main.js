@@ -246,7 +246,7 @@ function ber() {
 	}
 	setTimeout(function() {
 		let div=document.createElement('div');
-		div.setAttribute('onclick',"window.open(\'"+home[o]['url']+"\','_top')");
+		div.setAttribute('onclick',"window.open(\'"+home[0]['url']+"\','_top')");
 		let span=document.createElement('span');
 		span.innerHTML = "BER";
 		div.appendChild(span);
