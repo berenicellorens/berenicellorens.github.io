@@ -8,7 +8,7 @@ var beretags=[
 	"blabladuriasdeberenice",
 	"rayaduras_berenice",
 	"berydual",
-	"movienice",
+	"movienicemusic",
 ];
 
 var keywords=[
@@ -129,7 +129,7 @@ var home=[
 	"title":"Electrónica",
 	"url":url_root+"/solo/dj.html",
 },
-	add_key(hashtags[0],"type","solo"),
+	// add_key(hashtags[0],"type","solo"),
 {
 	"type":"duo",
 	"title":"Marmotas Dreams",
@@ -167,24 +167,24 @@ var home=[
 }
 ];
 
-function anchor(link,text,target)
+function anchor(link,text='',target="_top")
 {
   let tag = document.createElement('a');
 
   tag.setAttribute('href',link);
   tag.setAttribute('rel', 'nofollow');
-  tag.setAttribute('target', target?target:"_top");
-  tag.appendChild(document.createTextNode(text?text:''));
+  tag.setAttribute('target', target);
+  tag.appendChild(document.createTextNode(text));
 
   return tag;
 };
 
-function append_to_div(array) {
+function append_to_div(array,target="_top") {
 	let target = document.createElement('div');
 	for (i=0; i<array.length; i++) {
 		let separator = document.createElement('span');
 		separator.innerHTML = sepchar;
-		let a = anchor(array[i]['url'],array[i]['title']);
+		let a = anchor(array[i]['url'],array[i]['title'],target);
 		target.appendChild(a);
 		if (i<array.length-1)
 			target.appendChild(separator);
@@ -196,9 +196,9 @@ function footer(nav) {
 	let footer   = document.querySelector('footer');
 	let foot  = document.createElement('div');
 	foot.setAttribute('id','foot');
-	foot.appendChild(append_to_div(hashtags));
-	foot.appendChild(append_to_div(links));
-	foot.appendChild(append_to_div(emails));
+	foot.appendChild(append_to_div(hashtags,"_blank"));
+	foot.appendChild(append_to_div(links,"_blank"));
+	foot.appendChild(append_to_div(emails,"_blank"));
 	if (!nav) foot.appendChild(append_to_div(home));
 	footer.appendChild(foot);
 
