@@ -117,7 +117,7 @@ var emails= [
 var home=[
 {
 	"title":"Home",
-	"url":url_root+"/home/index.html",
+	"url":url_root+"/home",
 },
 {
 	"type":"solo",
@@ -158,7 +158,7 @@ var home=[
 {
 	"type":"bio",
 	"title":"Sobre mí",
-	"url":url_root+"/bio/index.html",
+	"url":url_root+"/bio",
 },
 {
 	"type":"bio",
