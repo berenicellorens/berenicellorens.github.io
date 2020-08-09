@@ -179,12 +179,12 @@ function anchor(link,text='',target="_top")
   return tag;
 };
 
-function append_to_div(array,target="_top") {
+function append_to_div(array,tgt="_top") {
 	let target = document.createElement('div');
 	for (i=0; i<array.length; i++) {
 		let separator = document.createElement('span');
 		separator.innerHTML = sepchar;
-		let a = anchor(array[i]['url'],array[i]['title'],target);
+		let a = anchor(array[i]['url'],array[i]['title'],tgt);
 		target.appendChild(a);
 		if (i<array.length-1)
 			target.appendChild(separator);
