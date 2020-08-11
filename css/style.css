@@ -138,12 +138,12 @@ footer div {
 #foot div {
   overflow-x:auto;
 }
-footer div div {
-  display:inline;
-}
 #hasthags, #links, #emails{
   display:block;
   float:none;
+}
+#links div {
+  display:inline;
 }
 #links img {
   opacity:0.8;
