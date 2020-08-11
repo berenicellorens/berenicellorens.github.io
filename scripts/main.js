@@ -52,23 +52,19 @@ var butenice=[
 
 var fullname="Berenice Llorens";
 var idioma="es-AR"
-
-
-
-///////////////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////
-
-
 var bere="berenicellorens";
 var url_insta="https://www.instagram.com";
 var url_face="https://www.facebook.com";
 var url_twit="https://www.twitter.com";
-var url_root="https://"+bere+".github.io";
+var root=bere+".github.io";
+var url_root="https://"+root;
 var sepchar="&nbsp;&middot;&nbsp;";
 var raw="https://raw.githubusercontent.com";
-var url_ico=raw+"/"+bere+"/"+url_root+"/master/img/logo.ico";
-var url_jpg=raw+"/"+bere+"/"+url_root+"/master/img/logo.jpg";
+var url_ico=raw+"/"+bere+"/"+root+"/master/img/logo.ico";
+var url_jpg=raw+"/"+bere+"/"+root+"/master/img/logo.jpg";
+var insta_png=raw+"/"+bere+"/"+root+"/master/img/instagram.png";
+var faceb_png=raw+"/"+bere+"/"+root+"/master/img/facebook.png";
+var twitt_png=raw+"/"+bere+"/"+root+"/master/img/twitter.png";
 
 var viewport_settings=[
 	"width=device-width",
@@ -77,33 +73,26 @@ var viewport_settings=[
 	"user-scalable=no",
 ];
 
-let h,hashtags=[];
+var iconsize = 35;
+var bRad = 0;
 
-for (h in beretags) {
-	hashtags.push({
-		"title":"#"+beretags[h],
-		"url":url_insta+"/explore/tags/"+beretags[h]
-	});
-};
-
-function add_key(object, key, value) {
-	let obj=object;
-	obj[key]=value;
-	return obj;
-};
+var h, hashtags=[];
 
 var links=[
 {	
 	"title":"@"+bere,
-	"url"  :url_insta+"/"+bere
+	"url"  :url_insta+"/"+bere,
+	"img"  :insta_png
 },
 {
-	"title":"facebook",
-	"url"  :url_face+"/"+bere 
+	"title":"facebook/berenicellorens",
+	"url"  :url_face+"/"+bere,
+	"img"  :faceb_png
 },
 {
-	"title":"twitter",
-	"url"  :url_twit+"/"+bere 
+	"title":"@berenicellorens",
+	"url"  :url_twit+"/"+bere,
+	"img"  :twitt_png
 }
 ];
 
@@ -167,6 +156,51 @@ var home=[
 }
 ];
 
+var mobile = mobileCheck();
+
+///////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////
+
+
+for (h in beretags) {
+	hashtags.push({
+		"title":"#"+beretags[h],
+		"url":url_insta+"/explore/tags/"+beretags[h]
+	});
+};
+
+
+function add_key(object, key, value) {
+	let obj=object;
+	obj[key]=value;
+	return obj;
+};
+
+function img(src,width,titl,id,tURL)
+{
+  let tag = document.createElement('img');
+  let div = document.createElement('div');
+  tag.setAttribute('src', src);
+  let anc = anchor(src);
+  if (width)
+  { 
+    tag.setAttribute('width', width+bRad);
+    div.style.width = width+"px";
+  }
+  if (titl)  {
+  	tag.setAttribute('title', titl);
+  	tag.setAttribute('alt', titl);
+  }
+  if (id)    tag.setAttribute('id',id);
+  if (tURL)  anc = anchor(tURL,'',"_blank");
+  div.style.overflow = "hidden";
+  div.style.borderRadius = bRad+"px";
+  anc.appendChild(tag);
+  div.appendChild(anc);
+  return div;      
+}
+
 function anchor(link,text='',target="_top")
 {
   let tag = document.createElement('a');
@@ -179,27 +213,50 @@ function anchor(link,text='',target="_top")
   return tag;
 };
 
-function append_to_div(array,tgt="_top") {
-	let target = document.createElement('div');
+function append_to_div(array,tgt="_top",icon=0) {
+	let a,sep,target = document.createElement('div');
 	for (i=0; i<array.length; i++) {
-		let separator = document.createElement('span');
-		separator.innerHTML = sepchar;
-		let a = anchor(array[i]['url'],array[i]['title'],tgt);
+		if (!icon) {
+			sep = document.createElement('span');
+			sep.innerHTML = sepchar;
+			a = anchor(array[i]['url'],array[i]['title'],tgt);
+		} else {
+			a = img(array[i]['img'],
+					icon,
+					array[i]['title'],
+					array[i]['title'],
+					array[i]['url'])
+		}
 		target.appendChild(a);
-		if (i<array.length-1)
-			target.appendChild(separator);
+		if (i<array.length-1 && !icon)
+			target.appendChild(sep);
 	}
 	return target;
 };
 
 function footer(nav) {
-	let footer   = document.querySelector('footer');
-	let foot  = document.createElement('div');
+	let footer = document.querySelector('footer');
+	let foot   = document.createElement('div');
 	foot.setAttribute('id','foot');
-	foot.appendChild(append_to_div(hashtags,"_blank"));
-	foot.appendChild(append_to_div(links,"_blank"));
-	foot.appendChild(append_to_div(emails,"_blank"));
-	if (!nav) foot.appendChild(append_to_div(home));
+
+	let ht=append_to_div(hashtags,"_blank");
+	ht.setAttribute('id',"hashtags");
+	
+	let ln=append_to_div(links,"_blank",iconsize);
+	ln.setAttribute('id',"links");
+	let em=append_to_div(emails,"_blank");
+	em.setAttribute('id',"emails");
+	
+	foot.appendChild(ht);
+	foot.appendChild(em);
+	foot.appendChild(ln);
+	
+	if (!nav)  {
+		let hm=append_to_div(home);
+		hm.setAttribute('id',"home");
+		foot.appendChild(hm);
+	}
+	
 	footer.appendChild(foot);
 
 };
@@ -232,8 +289,6 @@ function nav() {
 	nav.appendChild(menu);
 	header.appendChild(nav);
 };
-
-var mobile = mobileCheck();
 
 function ber() {
 	let body = document.querySelector('body');
@@ -276,277 +331,6 @@ function ber() {
 		}
 	}, 4500);
 }
-
-
-
-// global_tags=[
-// {
-//  	"tag":"meta",
-//  	"attributes": [
-//  		{
-//  			"key":"name",
-//  			"value":"headline",
-//  		},
-//  		{
-//  			"key":"content",
-//  			"value":fullname
-//  		}]
-// },
-// {
-//  	"tag":"meta",
-//  	"attributes": [
-//  		{
-//  			"key":"name",
-//  			"value":"url"
-//  		},
-//  		{
-//  			"key":"content",
-//  			"value":url_root
-//  		}]
-// },
-// {
-//  	"tag":"meta",
-//  	"attributes": [
-//  		{
-//  			"key":"name",
-//  			"value":"@type",
-//  		},
-//  		{
-//  			"key":"content",
-//  			"value":"WebSite"
-//  		}]
-// },
-// {
-//  	"tag":"meta",
-//  	"attributes": [
-//  		{
-//  			"key":"property",
-//  			"value":"og:locale",
-//  		},
-//  		{
-//  			"key":"content",
-//  			"value":idioma
-//  		}]
-// },
-// {
-//  	"tag":"meta",
-//  	"attributes": [
-//  		{
-//  			"key":"name",
-//  			"value":"viewport",
-//  		},
-//  		{
-//  			"key":"content",
-//  			"value":viewport_settings.join(",")
-//  		}]
-// },
-// {
-//  	"tag":"meta",
-//  	"attributes": [
-//  		{
-//  			"key":"http-equiv",
-//  			"value":"X-UA-Compatible",
-//  		},
-//  		{
-//  			"key":"content",
-//  			"value":"IE=edge"
-//  		}]
-// },
-// {
-// 	"tag":"meta",
-// 	"attributes": [
-//  		{
-//  			"key":"property",
-// 			"value":"content",
-// 		},
-// 		{
-// 			"key":"og:image",
-// 			"value":url_jpg
-// 		}]
-// },
-// { 
-// 	"tag":"meta",
-// 	"attributes": [
-//  		{
-// 			"key":"property",
-//  			"value":"og:image:type",
-// 		},
-// 		{
-// 			"key":"content",
-// 			"value":"image/jpg"
-// 		}]
-// },
-// { 
-// 	"tag":"meta",
-// 	"attributes": [
-//  		{
-//  			"key":"content",
-// 			"value":"500"
-// 		},
-// 		{
-// 			"key":"property",
-// 			"value":"image:width",
-// 		}]
-// },
-// { 
-// 	"tag":"meta",
-// 	"attributes": [
-//  		{
-// 			"key":"property",
-// 			"value":"image:height",
-// 		},
-// 		{
-// 			"key":"content",
-// 			"value":"500"
-// 		}]
-// },
-// { 
-// 	"tag":"meta",
-// 	"attributes": [
-//  		{
-// 			"key":"name",
-// 			"value":"robots",
-// 		},
-// 		{
-// 			"key":"content",
-// 			"value":"index,follow"
-// 		}]
-// },
-// { 
-// 	"tag":"meta",
-// 	"attributes": [
-//  		{
-// 			"key":"name",
-// 			"value":"keywords",
-// 		},
-// 		{
-// 			"key":"content",
-// 			"value":keywords.join(',')+beretags.join(',')
-// 		}]
-// },
-// { 
-// 	"tag":"meta",
-// 	"attributes": [
-//  		{
-// 			"key":"property",
-// 			"value":"og:site_name",
-// 		},
-// 		{
-// 			"key":"content",
-// 			"value":bere
-// 		}]
-// },
-// { 
-// 	"tag":"meta",
-// 	"attributes": [
-//  		{
-// 			"key":"property",
-// 			"value":"og:url",
-// 		},
-// 		{
-// 			"key":"content",
-// 			"value":url_root
-// 		}]
-// },
-// { 
-// 	"tag":"link",
-// 	"attributes": [
-//  		{
-// 			"type":"rel",
-//  			"name":"icon",
-// 		},
-// 		{
-// 			"key":"href",
-// 			"value":url_ico,
-// 		},
-// 		{
-// 			"key":"type",
-// 			"value":"image/ico"
-// 		},
-// 		{
-// 			"key":"title",
-// 			"value":bere
-// 		}]
-// },
-// { 
-// 	"tag":"link",
-// 	"attributes": [
-//  		{
-// 			"key":"rel",
-//  			"value":"fluid-icon",
-// 		},
-// 		{
-// 			"key":"href",
-// 			"value":url_jpg,
-// 		},
-// 		{
-// 			"key":"type",
-// 			"value":"image/jpg"
-// 		},
-// 		{
-// 			"key":"title",
-// 			"value":bere
-// 		}]
-// },
-// { 
-// 	"tag":"link",
-// 	"attributes": [
-//  		{
-// 			"key":"rel",
-// 			"value":"canonical",
-// 		},
-// 		{
-// 			"key":"href",
-// 			"value":url_root
-// 		}]
-// },
-// {
-// 	"tag":"meta",
-// 	"attributes": [
-//  		{
-// 			"key":"property",
-// 			"value":"twitter:description",
-// 		},
-// 		{
-// 			"key":"content",
-// 			"value":bio
-// 		}]
-// },
-// {
-// 	"tag":"meta",
-// 	"attributes": [
-//  		{
-// 			"key":"property",
-// 			"value":"og:description",
-// 		},
-// 		{
-// 			"key":"content",
-// 			"value":bio
-// 		}]
-// },
-// {
-// 	"tag":"meta",
-// 	"attributes": [
-//  		{
-// 			"key":"property",
-// 			"value":"description",
-// 		},
-// 		{
-// 			"key":"content",
-// 			"value":bio
-// 		}]
-// }];
-
-// function meta() {
-// 	let i, head=document.head;
-// 	for (i=0;i<global_tags.length;i++) {
-// 		let e=global_tags[i];
-// 		let j=0, t=document.createElement(e['tag']), att=e['attributes'];
-// 		for(j in att) t.setAttribute(att[j]['key'],att[j]['value']);
-// 		head.appendChild(t)
-// 	}
-// 	console.log(head);
-// }
 
 function mobileCheck()
 {
