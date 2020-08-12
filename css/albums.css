@@ -8,10 +8,14 @@ h1 {
 	background-color:rgba(244, 254, 146,1);
 }
 
-a {
+/*a {
 	color:#8BC34A;
 }
-
+*/
 h3 {
     background: #aa2788;
+}
+
+footer {
+	background-color: rgb(10 255 108 / 100%);
 }
