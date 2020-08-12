@@ -21,7 +21,7 @@ var keywords=[
 	"instrumental",
 ];
 
-var bio="Berenice Llorens, artista cordobesa que busca expandir los límites del género, tanto en música como en poesía, con palabras, improvisaciones, imágenes, sonidos y ritmos que invitan a una escucha híbrida entre el cuerpo y el movimiento. Su trabajo está disponible en: "+url_root;
+
 
 
 var beremarquee = [
@@ -50,21 +50,32 @@ var butenice=[
 "ICE"];
 
 
-var fullname="Berenice Llorens";
-var idioma="es-AR"
-var bere="berenicellorens";
-var url_insta="https://www.instagram.com";
-var url_face="https://www.facebook.com";
-var url_twit="https://www.twitter.com";
-var root=bere+".github.io";
-var url_root="https://"+root;
-var sepchar="&nbsp;&middot;&nbsp;";
-var raw="https://raw.githubusercontent.com";
-var url_ico=raw+"/"+bere+"/"+root+"/master/img/logo.ico";
-var url_jpg=raw+"/"+bere+"/"+root+"/master/img/logo.jpg";
-var insta_png=raw+"/"+bere+"/"+root+"/master/img/instagram.png";
-var faceb_png=raw+"/"+bere+"/"+root+"/master/img/facebook.png";
-var twitt_png=raw+"/"+bere+"/"+root+"/master/img/twitter.png";
+var fullname  = "Berenice Llorens";
+var idioma    = "es-AR";
+var bere      = "berenicellorens";
+var url_insta = "https://www.instagram.com";
+var url_face  = "https://www.facebook.com";
+var url_twit  = "https://www.twitter.com";
+var url_sound = "https://www.soundcloud.com";
+var url_mix   = "https://www.mixcloud.com";
+var url_yout  = "https://www.youtube.com"
+var berechan  = "UCop84-W9fYAEaZfICstuvMA"
+var root      = bere + ".github.io";
+var url_root  = "https://"+root;
+var sepchar   = "&nbsp;&middot;&nbsp;";
+var raw       = "https://raw.githubusercontent.com";
+var url_img   = raw + "/" + bere + "/" + root + "/master/img";
+var url_ico   = url_img + "/logo.ico";
+var url_jpg   = url_img + "/logo.jpg";
+var insta_png = url_img + "/instagram.png";
+var faceb_png = url_img + "/facebook.png";
+var twitt_png = url_img + "/twitter.png";
+var back_img  = url_img + "/back.gif";
+var url_cv_logo = raw + "/" + bere + "/cv/master/bere-logo.jpeg";
+var url_bandcamp = "https://"+bere+".bandcamp.com";
+var bio="Berenice Llorens, artista cordobesa que busca expandir los límites del género, tanto en música como en poesía, con palabras, improvisaciones, imágenes, sonidos y ritmos que invitan a una escucha híbrida entre el cuerpo y el movimiento. Su trabajo está disponible en: "+url_root;
+
+var back_img_width = 50;
 
 var viewport_settings=[
 	"width=device-width",
@@ -75,8 +86,9 @@ var viewport_settings=[
 
 var iconsize = 35;
 var bRad = 0;
-
+var make_back_image=false;
 var h, hashtags=[];
+
 
 var links=[
 {	
@@ -153,8 +165,57 @@ var home=[
 	"type":"bio",
 	"title":"Cv",
 	"url":url_root+"/cv",
+}];
+
+var music=[
+{
+	"type":"solo",
+	"title":"Bandcamp",
+	"url":url_bandcamp
+},
+{
+	"type":"solo",
+	"title":"Soundcloud",
+	"url":url_sound+"/"+bere
+}];
+
+var soberynice=[
+{
+	"type":"duo",
+	"title":"@soberynice",
+	"url":url_insta+"/soberynice"
+},
+{
+	"type":"duo",
+	"title":"Mixcloud",
+	"url":url_mix+"/SoBeryNice"
+}];
+
+var marmotas=[
+{
+	"type":"duo",
+	"title":"@marmotasdreams",
+	"url":url_insta+"/marmotasdreams"
 }
 ];
+
+var arte=[
+{
+	"type" :"arte",
+	"title":"Youtube",
+	"url"  : url_yout + "/channel/" + berechan
+}];
+
+var electronica=[
+{
+	"type" : "solo",
+	"title": "Berenicecream",
+	"url"  : url_mix + "/berenicecream"
+}];
+
+var on_click = {
+	"home": ["onclick", "window.open(\'"+home[0]['url']+"\','_top')"]
+}
 
 var mobile = mobileCheck();
 
@@ -234,7 +295,7 @@ function append_to_div(array,tgt="_top",icon=0) {
 	return target;
 };
 
-function footer(nav) {
+function footer(nav=false) {
 	let footer = document.querySelector('footer');
 	let foot   = document.createElement('div');
 	foot.setAttribute('id','foot');
@@ -261,7 +322,7 @@ function footer(nav) {
 
 };
 
-function nav() {
+function make_nav() {
 	let header   = document.querySelector('header');
 	let nav = document.createElement('nav');
 	let menu = document.createElement('ul');
@@ -289,6 +350,154 @@ function nav() {
 	nav.appendChild(menu);
 	header.appendChild(nav);
 };
+
+function make_article(title,content) {
+	let titlediv = document.createElement('h3');
+	titlediv.appendChild(document.createTextNode(title));
+
+	let article = document.createElement('article');
+	article.appendChild(titlediv);
+
+	for (let i=0;i<content.length;i++) article.appendChild(content[i]);
+
+	return article;
+}
+
+
+function make_bio(subtitletext) {
+	
+	let bioimgdiv = document.createElement('div');
+	let biotxtdiv = document.createElement('div');
+	let bioimg = document.createElement('img');
+	let biotxt = document.createElement('p');
+
+	bioimg.setAttribute('src', url_cv_logo);
+	bioimg.setAttribute('class','image-container');
+	biotxt.appendChild(document.createTextNode(bio));
+	bioimgdiv.appendChild(bioimg);
+	biotxtdiv.appendChild(biotxt);
+
+
+	return [ make_article(subtitletext, [bioimgdiv, biotxtdiv]) ];
+}
+
+function make_title (titletext,backbutton=true) {
+	let titlediv = document.createElement('div');
+	
+	titlediv.setAttribute('class','title');
+	
+	let title = document.createElement('h1');
+	
+	title.appendChild(document.createTextNode(titletext));
+	
+	titlediv.appendChild(title);
+
+	if(backbutton) {
+
+		let backdiv = document.createElement('div');
+		backdiv.setAttribute('class','back');
+
+		Element.prototype.setAttribute.apply(backdiv,on_click['home'])
+		
+		
+		let backimg = document.createElement('img');
+		let backtext = document.createElement('div');
+		backtext.appendChild(document.createTextNode('home'));
+		
+			if (make_back_image) {
+				// make back image
+				backimg.setAttribute('src',back_img);
+				backimg.setAttribute('width',back_img_width);
+				backdiv.appendChild(backimg);
+			} else {
+				backdiv.appendChild(backtext)
+			}
+		titlediv.appendChild(backdiv);
+		
+	}
+
+	return titlediv;
+}
+
+function make_subtitle (title,url,text,type='h2') {
+	let subtitle = document.createElement(type);
+	subtitle.appendChild(document.createTextNode(title));
+	if (url) subtitle.appendChild(anchor(url?url:"/",text?text:title));
+	return subtitle;
+}
+
+function make_footlink (links) {
+	let footdiv = append_to_div(links,"_blank");
+	footdiv.setAttribute('id',"div");
+	
+	return footdiv;
+}
+
+function make(page, footnav=false) {
+	let titlediv, subtitlediv, subsubtitlediv, articles=[], footlink=[];
+	let foot = document.querySelector('footer');
+	let dark=false;
+	
+	switch(page) {
+		case "bio":
+			titlediv = make_title("Sobre mí");
+			articles = make_bio("Bio");
+			foot.appendChild(make_footlink(music));
+			break;
+		case "marmotas":
+			titlediv = make_title("Marmotas Dreams");
+			subtitlediv = make_subtitle("duo con ",
+				url_insta+"/constanzapellici",
+				"Constanza Pellici");
+			foot.appendChild(make_footlink(marmotas));
+			break;
+		case "sobery":
+			titlediv = make_title("SoBeryNice");
+			subtitlediv = make_subtitle("duo con ",
+				url_insta+"/sopiuzzi",
+				"So Piuzzi");
+			foot.appendChild(make_footlink(soberynice));
+			dark = true;
+			break;
+		case "arte":
+			titlediv = make_title("Videoarte");
+			foot.appendChild(make_footlink(arte));
+			break;
+		case "albums":
+			titlediv = make_title("Discos");
+			foot.appendChild(make_footlink(music));
+			dark = true;
+			break;
+		case "electronica":
+			titlediv = make_title("Electrónica");
+			foot.appendChild(make_footlink(electronica));
+			break;
+		case "home":
+			titlediv = make_title(bere,false);
+			subtitlediv = make_subtitle("artista · dj · productora");
+			subsubtitlediv = make_subtitle("arte sonoro",false,'','h4');
+			footnav = true;
+			break;
+		default:
+			break;
+	}
+	// append to page
+	let header = document.querySelector('header');
+	header.appendChild(titlediv);
+
+	if (subtitlediv) header.appendChild(subtitlediv);
+	if (subsubtitlediv) header.appendChild(subsubtitlediv);
+	
+	let main = document.querySelector('main');
+	for (let i=0;i<articles.length;i++) main.appendChild(articles[i]);
+	
+	if (footnav) make_nav();
+	
+	footer(footnav, dark);
+}
+
+
+
 
 function ber() {
 	let body = document.querySelector('body');
