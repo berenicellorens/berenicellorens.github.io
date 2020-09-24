@@ -73,7 +73,7 @@ var twitt_png = url_img + "/twitter.png";
 var back_img  = url_img + "/back.gif";
 var url_cv_logo = raw + "/" + bere + "/cv/master/bere-logo.jpeg";
 var url_bandcamp = "https://"+bere+".bandcamp.com";
-var bio="Berenice Llorens, artista cordobesa que busca expandir los límites del género, tanto en música como en poesía, con palabras, improvisaciones, imágenes, sonidos y ritmos que invitan a una escucha híbrida entre el cuerpo y el movimiento. Su trabajo está disponible en: "+url_root;
+var bio=""Berenice Llorens es artista, compositora y DJ cordobesa. Su carrera comienza en el 2007 participando como tecladista, bajista y guitarrista en bandas de reggae, afrobeat, rock alternativo y pop. Desde el inicio y, con búsqueda y estilo propio, desarrolla un repertorio solista de obras y canciones experimentales que, en el 2017, comienzan a tener una fuerte influencia de procesos y música electrónica, año que marca el inicio de su carrera como DJ y productora. Su trabajo está disponible en: "+url_root;
 
 var back_img_width = 50;
 
