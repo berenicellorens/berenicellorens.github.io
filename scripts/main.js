@@ -237,6 +237,8 @@ var sheet=[];
 for (let i=1;i<7;i++) sheet[i]=gs_url+"/"+gs_id+"/"+i.toString()+"/"+gs_type;
 
 
+
+
 function add_key(object, key, value) {
 	let obj=object;
 	obj[key]=value;
@@ -369,21 +371,40 @@ function make_article(title,content) {
 }
 
 
-function make_bio(subtitletext) {
-	
+var bioData=[];
+
+function make_bio() {
+
 	let bioimgdiv = document.createElement('div');
 	let biotxtdiv = document.createElement('div');
 	let bioimg = document.createElement('img');
 	let biotxt = document.createElement('p');
 
-	bioimg.setAttribute('src', url_cv_logo);
-	bioimg.setAttribute('class','image-container');
-	biotxt.appendChild(document.createTextNode(bio));
-	bioimgdiv.appendChild(bioimg);
-	biotxtdiv.appendChild(biotxt);
+	//bio
+	if(bioData.length==0)
+	{
+		loadJSON(sheet[6], async function(response) {
+			var f, e, i, entry;
+			f = JSON.parse(response);
+			entry = f.feed.entry;
+			for (i in entry) {
+			  e = entry[i];
+			  bioData[0] = e.gsx$title.$t;
+			  bioData[1] = e.gsx$text.$t;
+			  bioData[2] = e.gsx$image.$t;
+			}
 
+			bioimg.setAttribute('class','image-container');
+			biotxt.appendChild(document.createTextNode(bioData[1]));
+			bioimgdiv.appendChild(bioimg);
+			biotxtdiv.appendChild(biotxt);
+			bioimg.setAttribute('src', bioData[2].replace('file/d/','uc?id=').replace('/view',''));
 
-	return [ make_article(subtitletext, [bioimgdiv, biotxtdiv]) ];
+		});
+	}
+	// console.log(bioData);
+	biotext=bioData[0]?bioData[0]:"Bio";
+	return [ make_article(biotext, [bioimgdiv, biotxtdiv]) ];
 }
 
 function make_title (titletext,backbutton=true) {
@@ -461,6 +482,8 @@ function make(page, footnav=false) {
 	let main = document.querySelector('main');
 	let foot = document.querySelector('footer');
 	let dark=false;
+
+
 	
 	switch(page) {
 		case "bio":
