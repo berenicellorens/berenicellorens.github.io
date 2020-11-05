@@ -315,14 +315,14 @@ function footer(nav=false) {
 	let em=append_to_div(emails,"_blank");
 	em.setAttribute('id',"emails");
 	
-	foot.appendChild(ht);
+	//foot.appendChild(ht);
 	foot.appendChild(em);
 	foot.appendChild(ln);
 	
 	if (!nav)  {
 		let hm=append_to_div(home);
 		hm.setAttribute('id',"home");
-		foot.appendChild(hm);
+		//foot.appendChild(hm);
 	}
 	
 	footer.appendChild(foot);
