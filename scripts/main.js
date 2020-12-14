@@ -26,11 +26,11 @@ var keywords=[
 
 var beremarquee = [
 "berenicemusic",
-"blabladuriasdeb",
+"berenicemusicb",
 "berenicellorens",
 "berenicellorens",
 "blablablablabla",
-"rayadurasdeber",
+"berenicemusic",
 "movieniceberenice",
 "erenicellorensber",
 "renicellorensber",
