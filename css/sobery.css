@@ -6,9 +6,10 @@ body {
 	background-size:50%;
 
 }
-h1,h3,footer {
+h1 {
 	background-color: rgb(10 255 108 / 100%);
+	
 }
-h2 {
+h2, h3,footer {
 	background-color: rgb(216 114 220);
 }
