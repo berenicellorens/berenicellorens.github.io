@@ -11,29 +11,34 @@ h1 {
 	float:left;
 	font-weight:normal;
 }
-#but {
-	position:fixed;
-	top:25%;
-	left:25%;
-	background:black;
-	color:white;
-	padding:20px 40px;
-	border-radius:20px;
-}
+
 span {
 	position:relative;
 	font-size:3em;
 	margin:auto;
 	font-weight:bold;
 }
-#but div:hover {
+
+#butdiv_centered{
+ 	position:fixed;
+ 	margin: 0 auto;
+}
+
+.but {
+	/*position:relative;*/
+	background:black;
+	color:white;
+	padding:20px 40px;
+	border-radius:20px;
+}
+.but div:hover {
 	cursor:pointer;
 	background:yellow;
 	color:black;
 }
-#but div {
-	margin:20px;
+.but div {
+	/*margin:20px;*/
 }
-#but:hover {
+.but:hover {
 	background:white;
 }

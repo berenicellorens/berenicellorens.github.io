@@ -3,7 +3,7 @@
 ///////////////////////////////////////////////////////////////////////////////
 
 
-var beretags=[
+const beretags=[
 	"berenicemusic",
 	"blabladuriasdeberenice",
 	"rayaduras_berenice",
@@ -11,7 +11,7 @@ var beretags=[
 	"movienicemusic",
 ];
 
-var keywords=[
+const keywords=[
 	"berenicellorens",
 	"dj",
 	"composer",
@@ -23,8 +23,7 @@ var keywords=[
 
 
 
-
-var beremarquee = [
+const beremarquee = [
 "berenicemusic",
 "berenicemusic",
 "berenicellorens",
@@ -48,7 +47,10 @@ var beremarquee = [
 ]
 
 
-var butenice=[
+// boton BER EN ICE minimum height and width
+const minW = 200; 
+const minH = 150;
+const butenice=[
 "BER",
 "EN",
 "ICE"];
@@ -423,10 +425,10 @@ function make_bio() {
 	return [ make_article(biotext, [bioimgdiv, biotxtdiv]) ];
 }
 
-function make_title (titletext,backbutton=true) {
+function make_title (titletext,backbutton=true, titleclass='title') {
 	let titlediv = document.createElement('div');
 	
-	titlediv.setAttribute('class','title');
+	titlediv.setAttribute('class',titleclass);
 	
 	let title = document.createElement('h1');
 	
@@ -542,7 +544,7 @@ function make(page, footnav=false) {
 			load(main, sheet[2]);
 			break;
 		case "home":
-			titlediv = make_title(bere,false);
+			titlediv = make_title(bere,false, titleclass='maintitle');
 			subtitlediv = make_subtitle("experimental sound");
 			subsubtitlediv = make_subtitle("dj - productora",false,'','h4');
 			footnav = true;
@@ -569,6 +571,9 @@ function make(page, footnav=false) {
 
 function ber() {
 	let body = document.querySelector('body');
+	let butdiv = document.createElement('div');
+	let w = window.innerWidth;
+	let h = window.innerHeight;
 	let i,s;
 	if (mobile) { 
 		s=4;
@@ -590,9 +595,17 @@ function ber() {
         }, Math.floor(Math.random() * 1000));
     	})(i);
 	}
+	butdiv.setAttribute("id", "butdiv_centered");
+	let midW = w / 2;
+	let midH = h / 2;
+	butdiv.style.width = minW + "px";
+	butdiv.style.height = minH + "px";
+	butdiv.style.top = midH - (minH / 2) + "px";
+	butdiv.style.left = midW - (minW / 2) + "px";
+
 	setTimeout(function() {
 		let but = document.createElement('div');
-		but.setAttribute('id','but');
+		but.setAttribute('class','but');
 		for (x in butenice) {
 			(function(x) {
 			setTimeout(function() {
@@ -602,11 +615,12 @@ function ber() {
 				span.innerHTML = butenice[x];
 				div.appendChild(span);
 				but.appendChild(div);
-				body.appendChild(but);
+				butdiv.appendChild(but);
 			}, 450);
 			})(x);
-		}
-	}, 4500);
+		};
+		body.appendChild(butdiv);
+	}, 1000);
 }
 
 function mobileCheck()
