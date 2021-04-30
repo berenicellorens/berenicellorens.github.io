@@ -30,7 +30,7 @@ var beremarquee = [
 "berenicellorens",
 "berenicellorens",
 "blablablablabla",
-"blablablablabla"
+"blablablablabla",
 "berenicemusic",
 "movieniceberenice",
 "erenicellorensber",
