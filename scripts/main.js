@@ -26,15 +26,19 @@ var keywords=[
 
 var beremarquee = [
 "berenicemusic",
-"berenicemusicb",
+"berenicemusic",
 "berenicellorens",
 "berenicellorens",
 "blablablablabla",
+"blablablablabla"
 "berenicemusic",
 "movieniceberenice",
 "erenicellorensber",
+"erenicellorensber",
 "renicellorensber",
+"blablablablabla"
 "bereniceberenice",
+"erenicellorensber",
 "nicellorensnicebe",
 "icellorensicellor",
 "llorensllorenslor",
@@ -527,8 +531,8 @@ function make(page, footnav=false) {
 			break;
 		case "home":
 			titlediv = make_title(bere,false);
-			subtitlediv = make_subtitle("artista · dj · productora");
-			subsubtitlediv = make_subtitle("arte sonoro",false,'','h4');
+			subtitlediv = make_subtitle("experimental sound");
+			subsubtitlediv = make_subtitle("dj - productora",false,'','h4');
 			footnav = true;
 			break;
 		default:
