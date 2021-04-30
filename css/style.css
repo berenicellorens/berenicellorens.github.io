@@ -2,7 +2,7 @@ body {
 	font-family:helvetica-light;
   text-align: center;
   background-image:url("../img/logonuevo1.jpg");
-  background-size: 60px;
+  background-size: 200px;
   background-repeat:no-repeat;
   background-position:center top;
 }
@@ -67,7 +67,7 @@ article iframe {
 h1 {
     margin: 0;
     font-size:1.5em;
-    background-color:rgba(244, 254, 146, 0.5);
+    background-color:rgba(244, 254, 146, 0);
     position: absolute;
     top: 50%;
     left: 50%;
@@ -112,6 +112,7 @@ h4 {
 }
 
 .title {
+	color:rgba(255,255,255,0.0);
     height: 10em;
     position: relative;
 }
@@ -143,6 +144,7 @@ footer div {
 }
 #links div {
   display:inline;
+  padding: 0 4px;
 }
 #links img, div.back {
   opacity:0.8;
