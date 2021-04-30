@@ -58,8 +58,8 @@ var fullname  = "Berenice Llorens";
 var idioma    = "es-AR";
 var bere      = "berenicellorens";
 var url_insta = "https://www.instagram.com";
-var url_face  = "https://www.facebook.com";
-var url_twit  = "https://www.twitter.com";
+var url_spotify  = "https://open.spotify.com/artist/1wkoEOAEYnEflO8as4GCPG?si=3NvtjUmPSIyR4BTm6Mt3fA";
+var url_mixcloud  = "https://www.mixcloud.com/Berenicecream";
 var url_sound = "https://www.soundcloud.com";
 var url_mix   = "https://www.mixcloud.com";
 var url_yout  = "https://www.youtube.com"
@@ -72,8 +72,10 @@ var url_img   = raw + "/" + bere + "/" + root + "/master/img";
 var url_ico   = url_img + "/logo.ico";
 var url_jpg   = url_img + "/logo.jpg";
 var insta_png = url_img + "/instagram.png";
-var faceb_png = url_img + "/facebook.png";
-var twitt_png = url_img + "/twitter.png";
+var spotify_png = url_img + "/spotify.png";
+var bandcamp_png = url_img + "/bandcamp.png";
+var soundcloud_png = url_img + "/soundcloud.png";
+var mixcloud_png = url_img + "/mixcloud.png";
 var back_img  = url_img + "/back.gif";
 var url_cv_logo = raw + "/" + bere + "/cv/master/bere-logo.jpeg";
 var url_bandcamp = "https://"+bere+".bandcamp.com";
@@ -101,14 +103,24 @@ var links=[
 	"img"  :insta_png
 },
 {
-	"title":"facebook/berenicellorens",
-	"url"  :url_face+"/"+bere,
-	"img"  :faceb_png
+	"title":"spotify/berenicellorens",
+	"url"  :url_spotify,
+	"img"  :spotify_png
 },
 {
-	"title":"@berenicellorens",
-	"url"  :url_twit+"/"+bere,
-	"img"  :twitt_png
+	"title":"bandcamp",
+	"url"  :url_bandcamp,
+	"img"  :bandcamp_png
+},
+{
+	"title":"mixcloud",
+	"url"  :url_mixcloud,
+	"img"  :mixcloud_png
+},
+{
+	"title":"soundcloud",
+	"url"  :url_sound+"/"+bere,
+	"img"  :soundcloud_png
 }
 ];
 
