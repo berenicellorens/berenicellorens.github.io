@@ -465,8 +465,9 @@ function make_title (titletext,backbutton=true, titleclass='title') {
 	return titlediv;
 }
 
-function make_subtitle (title,url,text,type='h2') {
+function make_subtitle (title,url,text,type='h2',titleclass="subtitle") {
 	let subtitle = document.createElement(type);
+	subtitle.setAttribute("class",titleclass);
 	subtitle.appendChild(document.createTextNode(title));
 	if (url) subtitle.appendChild(anchor(url?url:"/",text?text:title));
 	return subtitle;
@@ -597,7 +598,7 @@ function ber() {
         setTimeout(function () {
             // console.log(i);
 			body.appendChild(h1);
-        }, Math.floor(Math.random() * 500));
+        }, Math.floor(Math.random() * 1000));
     	})(i);
 	}
 	butdiv.setAttribute("id", "butdiv_centered");
