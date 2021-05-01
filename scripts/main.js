@@ -528,9 +528,10 @@ function make(page, footnav=false) {
 			dark = true;
 			break;
 		case "arte":
-			titlediv = make_title("Videoarte");
+			titlediv = make_title("Videoarte", true,titleclass='maintitle');
 			foot.appendChild(make_footlink(arte));
 			load(main, sheet[3]);
+			dark = true;
 			break;
 		case "albums":
 			titlediv = make_title("Discos");
