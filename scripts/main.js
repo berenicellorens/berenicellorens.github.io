@@ -21,7 +21,10 @@ const keywords=[
 	"instrumental",
 ];
 
-
+// Velocidad de las palabras
+const scrolldelay=2;
+const scrollspeed=[5,15];
+const scrollwidth=[100,300];
 
 const beremarquee = [
 "berenicemusic",
@@ -45,7 +48,6 @@ const beremarquee = [
 "i c e i c e i c e",
 "b e r b e r b e r",
 ]
-
 
 // boton BER EN ICE minimum height and width
 const minW = 200; 
@@ -581,10 +583,12 @@ function ber() {
 	} else {
 		s=17;
 	}  
+
 	for (i=0; i<s; i++) {
 		let bermarquee = document.createElement('marquee');
-		bermarquee.setAttribute('scrolldelay',i*3);
-		bermarquee.setAttribute('style','width:'+Math.floor(Math.random()*300+100)+"px")
+		bermarquee.setAttribute('scrolldelay', i * scrolldelay);
+		bermarquee.setAttribute('scrollamount',Math.floor(Math.random()*scrollspeed[1]+scrollspeed[0]));
+		bermarquee.setAttribute('style','width:'+Math.floor(Math.random()*scrollwidth[1]+scrollwidth[0])+"px")
 		bermarquee.innerHTML = beremarquee[i%beremarquee.length];
 		let h1=document.createElement('h1');
 		h1.appendChild(bermarquee);
@@ -593,7 +597,7 @@ function ber() {
         setTimeout(function () {
             // console.log(i);
 			body.appendChild(h1);
-        }, Math.floor(Math.random() * 1000));
+        }, Math.floor(Math.random() * 500));
     	})(i);
 	}
 	butdiv.setAttribute("id", "butdiv_centered");
