@@ -508,7 +508,7 @@ function make(page, footnav=false) {
 	
 	switch(page) {
 		case "bio":
-			titlediv = make_title("Sobre mí");
+			titlediv = make_title("Sobre mí", true,titleclass='maintitle');
 			articles = make_bio("Bio");
 			foot.appendChild(make_footlink(music));
 			// load(main, sheet[6]);
