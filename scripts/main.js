@@ -23,7 +23,7 @@ const keywords=[
 
 // Velocidad de las palabras
 const scrolldelay=2;
-const scrollspeed=[5,15];
+const scrollspeed=[5,10];
 const scrollwidth=[100,300];
 
 const beremarquee = [
@@ -598,7 +598,7 @@ function ber() {
         setTimeout(function () {
             // console.log(i);
 			body.appendChild(h1);
-        }, Math.floor(Math.random() * 1000));
+        }, Math.floor(Math.random() * 1500));
     	})(i);
 	}
 	butdiv.setAttribute("id", "butdiv_centered");
@@ -626,7 +626,7 @@ function ber() {
 			})(x);
 		};
 		body.appendChild(butdiv);
-	}, 1000);
+	}, 2000);
 }
 
 function mobileCheck()
