@@ -530,8 +530,8 @@ function make(page, footnav=false) {
 			load(main, sheet[4]);
 			dark = true;
 			break;
-		case "arte":
-			titlediv = make_title("Videoarte", true,titleclass='maintitle');
+		case "arte": //Videoarte --> titulo borrado
+			titlediv = make_title("", true,titleclass='maintitle');
 			foot.appendChild(make_footlink(arte));
 			load(main, sheet[3]);
 			dark = true;
@@ -547,10 +547,24 @@ function make(page, footnav=false) {
 			foot.appendChild(make_footlink(electronica));
 			load(main, sheet[2]);
 			break;
-		case "home":
-			titlediv = make_title(bere,false, titleclass='maintitle');
-			subtitlediv = make_subtitle("experimental sound");
-			subsubtitlediv = make_subtitle("dj - productora",false,'','h4');
+		case "home": //berenicellorens --> titulo borrado
+			titlediv = make_title("",false, titleclass='maintitle');
+			swrap = document.createElement('div')
+			swrap.setAttribute('class','swrap-container')
+			title1 = make_subtitle("experimental sound",
+										false,
+										'',
+										'span',
+										titleclass='swrap-title');
+
+			title2 = make_subtitle("dj - productora",
+									false,
+									'',
+									'span',
+									titleclass='swrap-title');
+			swrap.appendChild(title1);
+			swrap.appendChild(title2);
+			subtitlediv = swrap;
 			footnav = true;
 			break;
 		default:
