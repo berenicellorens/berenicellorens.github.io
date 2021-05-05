@@ -183,6 +183,7 @@ div.back:hover {
 }
 .swrap-container {
   font-size:1em;
+  margin-top:10px;
 }
 .swrap-title {
   display:block;
