@@ -142,12 +142,12 @@ var home=[
 },
 {
 	"type":"solo",
-	"title":"Discos",
+	"title":"Discografia",
 	"url":url_root+"/solo/albums.html",
 },
 {
 	"type":"solo",
-	"title":"Electrónica",
+	"title":"Dj Sets",
 	"url":url_root+"/solo/dj.html",
 },
 	// add_key(hashtags[0],"type","solo"),
