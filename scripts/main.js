@@ -149,6 +149,7 @@ var home=[
 	"type":"bio",
 	"title":"Cv",
 	"url":url_root+"/cv",
+},
 {
 	"type":"solo",
 	"title":"Discografía",
@@ -184,8 +185,8 @@ var home=[
 	"type":"arte",
 	"title":"La Cursividad",
 	"url":"https://"+bere+".blogspot.com",
-},
-}];
+}
+];
 
 var music=[
 {
