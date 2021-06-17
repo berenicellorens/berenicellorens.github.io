@@ -141,8 +141,17 @@ var home=[
 	"url":url_root+"/home",
 },
 {
+	"type":"bio",
+	"title":"Sobre mí",
+	"url":url_root+"/bio",
+},
+{
+	"type":"bio",
+	"title":"Cv",
+	"url":url_root+"/cv",
+{
 	"type":"solo",
-	"title":"Discografia",
+	"title":"Discografía",
 	"url":url_root+"/solo/albums.html",
 },
 {
@@ -176,15 +185,6 @@ var home=[
 	"title":"La Cursividad",
 	"url":"https://"+bere+".blogspot.com",
 },
-{
-	"type":"bio",
-	"title":"Sobre mí",
-	"url":url_root+"/bio",
-},
-{
-	"type":"bio",
-	"title":"Cv",
-	"url":url_root+"/cv",
 }];
 
 var music=[
