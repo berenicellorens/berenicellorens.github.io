@@ -120,11 +120,11 @@ h4 {
 
 .maintitle {
     background-image:url("../img/blcirculoweb1.png");
-    background-size: 230px;
+    background-size: 260px;
     background-repeat:no-repeat;
     background-position:center top;
     color:rgba(255,255,255,0.0);
-    height: 11em;
+    height: 260px;
     position: relative;
 }
 
