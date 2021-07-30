@@ -265,7 +265,7 @@ main div {
     /* border-top: none; */
     padding:1vmin 3vmin;
     border-radius:1vmin;
-    max-width:20vmin;
+    max-width:30vmin;
     text-overflow: clip;
     line-break:loose;
     word-break:break-all;
