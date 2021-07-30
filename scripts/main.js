@@ -390,45 +390,65 @@ function make_article(title,content) {
 
 	return article;
 }
+let lang = 1;
+let langButton = document.getElementById('lang-button');
+let spanishStuff = Array.from(document.getElementsByClassName('spanish'));
+let englishStuff = Array.from(document.getElementsByClassName('english'));
+langButton.onclick = function () {
+	console.log(spanishStuff);
 
-
-var bioData=[];
-
-function make_bio() {
-
-	let bioimgdiv = document.createElement('div');
-	let biotxtdiv = document.createElement('div');
-	let bioimg = document.createElement('img');
-	let biotxt = document.createElement('p');
-
-	//bio
-	if(bioData.length==0)
-	{
-		loadJSON(sheet[6], async function(response) {
-			var f, e, i, entry;
-			f = JSON.parse(response);
-			entry = f.feed.entry;
-			for (i in entry) {
-			  e = entry[i];
-			  bioData[0] = e.gsx$title.$t;
-			  bioData[1] = e.gsx$text.$t;
-			  bioData[2] = e.gsx$image.$t;
-			}
-
-			bioimg.setAttribute('class','image-container');
-			biotxt.appendChild(document.createTextNode(bioData[1]));
-			bioimgdiv.appendChild(bioimg);
-			biotxtdiv.appendChild(biotxt);
-			bioimg.setAttribute('src', bioData[2].replace('file/d/','uc?id=').replace('/view',''));
-
-		});
+	if (lang == 1) {
+		spanishStuff.map((i) => i.style.display = 'none');
+		englishStuff.map((i) => i.style.display = 'flex');
+		lang=0;
+		
+	} else {
+		spanishStuff.map((i) => i.style.display = 'flex');
+		englishStuff.map((i) => i.style.display = 'none');
+		lang=1;
+	
 	}
-	// console.log(bioData);
-	biotext=bioData[0]?bioData[0]:"Bio";
-	return [ make_article(biotext, [bioimgdiv, biotxtdiv]) ];
+
+	console.log(lang);
 }
 
-function make_title (titletext,backbutton=true, titleclass='title') {
+// var bioData=[];
+
+// function make_bio() {
+
+// 	let bioimgdiv = document.createElement('div');
+// 	let biotxtdiv = document.createElement('div');
+// 	let bioimg = document.createElement('img');
+// 	let biotxt = document.createElement('p');
+
+// 	//bio
+// 	if(bioData.length==0)
+// 	{
+// 		loadJSON(sheet[6], async function(response) {
+// 			var f, e, i, entry;
+// 			f = JSON.parse(response);
+// 			entry = f.feed.entry;
+// 			for (i in entry) {
+// 			  e = entry[i];
+// 			  bioData[0] = e.gsx$title.$t;
+// 			  bioData[1] = e.gsx$text.$t;
+// 			  bioData[2] = e.gsx$image.$t;
+// 			}
+
+// 			bioimg.setAttribute('class','image-container');
+// 			biotxt.appendChild(document.createTextNode(bioData[1]));
+// 			bioimgdiv.appendChild(bioimg);
+// 			biotxtdiv.appendChild(biotxt);
+// 			bioimg.setAttribute('src', bioData[2].replace('file/d/','uc?id=').replace('/view',''));
+
+// 		});
+// 	}
+// 	// console.log(bioData);
+// 	biotext=bioData[0]?bioData[0]:"Bio";
+// 	return [ make_article(biotext, [bioimgdiv, biotxtdiv]) ];
+// }
+
+function make_title (titletext, titleclass='title') {
 	let titlediv = document.createElement('div');
 	
 	titlediv.setAttribute('class',titleclass);
@@ -438,30 +458,6 @@ function make_title (titletext,backbutton=true, titleclass='title') {
 	title.appendChild(document.createTextNode(titletext));
 	
 	titlediv.appendChild(title);
-
-	if(backbutton) {
-
-		let backdiv = document.createElement('div');
-		backdiv.setAttribute('class','back');
-
-		Element.prototype.setAttribute.apply(backdiv,on_click['home'])
-		
-		
-		let backimg = document.createElement('img');
-		let backtext = document.createElement('div');
-		backtext.appendChild(document.createTextNode('home'));
-		
-			if (make_back_image) {
-				// make back image
-				backimg.setAttribute('src',back_img);
-				backimg.setAttribute('width',back_img_width);
-				backdiv.appendChild(backimg);
-			} else {
-				backdiv.appendChild(backtext)
-			}
-		titlediv.appendChild(backdiv);
-		
-	}
 
 	return titlediv;
 }
@@ -490,10 +486,13 @@ function load(main,sheet) {
 		  var title  = e.gsx$title.$t;
 		  var iframe = e.gsx$iframe.$t;
 		  let art=document.createElement('article');
+		  let div=document.createElement('div');
 		  let tit=document.createElement('h3');
 		  tit.innerHTML=title;
+		  div.className='iframeWrapper';
 		  art.appendChild(tit);
-		  art.insertAdjacentHTML('beforeend',iframe);
+		  art.appendChild(div);
+		  div.insertAdjacentHTML('beforeend',iframe);
 		  main.appendChild(art);
 		}
 	});
@@ -504,35 +503,33 @@ function make(page, footnav=false) {
 	let main = document.querySelector('main');
 	let foot = document.querySelector('footer');
 	let dark=false;
-
-
-	
+	let backbutton=true;
 	switch(page) {
 		case "bio":
-			titlediv = make_title("Sobre mí", true,titleclass='maintitle');
-			articles = make_bio("Bio");
+			titlediv = make_title("Sobre mí",titleclass='maintitle');
 			foot.appendChild(make_footlink(music));
+			// articles = make_bio("Bio");
 			// load(main, sheet[6]);
 			break;
 		case "marmotas":
-			titlediv = make_title("Marmotas Dreams");
-			subtitlediv = make_subtitle("duo con ",
-				url_insta+"/constanzapellici",
-				"Constanza Pellici");
+			// titlediv = make_title("Marmotas Dreams");
+			// subtitlediv = make_subtitle("duo con ",
+				// url_insta+"/constanzapellici",
+				// "Constanza Pellici");
 			foot.appendChild(make_footlink(marmotas));
 			load(main, sheet[5]);
 			break;
 		case "sobery":
-			titlediv = make_title("SoBeryNice");
-			subtitlediv = make_subtitle("duo con ",
-				url_insta+"/sopiuzzi",
-				"So Piuzzi");
+			// titlediv = make_title("SoBeryNice");
+			// subtitlediv = make_subtitle("duo con ",
+				// url_insta+"/sopiuzzi",
+				// "So Piuzzi");
 			foot.appendChild(make_footlink(soberynice));
 			load(main, sheet[4]);
 			dark = true;
 			break;
 		case "arte": //Videoarte --> titulo borrado
-			titlediv = make_title("", true,titleclass='maintitle');
+			titlediv = make_title("",titleclass='maintitle');
 			foot.appendChild(make_footlink(arte));
 			load(main, sheet[3]);
 			dark = true;
@@ -549,7 +546,8 @@ function make(page, footnav=false) {
 			load(main, sheet[2]);
 			break;
 		case "home": //berenicellorens --> titulo borrado
-			titlediv = make_title("",false, titleclass='maintitle');
+			backbutton=false;
+			titlediv = make_title("", titleclass='maintitle');
 			swrap = document.createElement('div')
 			swrap.setAttribute('class','swrap-container')
 			title1 = make_subtitle("experimental sound",
@@ -573,7 +571,7 @@ function make(page, footnav=false) {
 	}
 	// append to page
 	let header = document.querySelector('header');
-	header.appendChild(titlediv);
+	if(titlediv) header.appendChild(titlediv);
 
 	if (subtitlediv) header.appendChild(subtitlediv);
 	if (subsubtitlediv) header.appendChild(subsubtitlediv);
@@ -583,6 +581,31 @@ function make(page, footnav=false) {
 	if (footnav) make_nav();
 	
 	footer(footnav, dark);
+	
+	if(backbutton) {
+
+		let backdiv = document.createElement('div');
+		backdiv.setAttribute('class','back');
+
+		Element.prototype.setAttribute.apply(backdiv,on_click['home'])
+		
+		
+		let backimg = document.createElement('img');
+		let backtext = document.createElement('div');
+		backtext.appendChild(document.createTextNode('home'));
+		
+			if (make_back_image) {
+				// make back image
+				backimg.setAttribute('src',back_img);
+				backimg.setAttribute('width',back_img_width);
+				backdiv.appendChild(backimg);
+			} else {
+				backdiv.appendChild(backtext)
+			}
+		header.appendChild(backdiv);
+		
+	}
+
 }
 
 

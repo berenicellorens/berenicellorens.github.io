@@ -13,3 +13,19 @@ h1 {
 h2, h3,footer {
 	background-color: rgb(216 114 220);
 }
+main {
+	display:flex;
+	flex-direction:column;
+	align-items: stretch;
+	justify-content: center;
+	padding:3vmin;
+	max-width:200vmin;
+	margin:auto;
+}
+.bio{
+	background-color: black;
+	color:white;
+	padding:3vmin;
+	margin:auto;
+	border-radius:2vmin;
+}

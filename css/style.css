@@ -85,7 +85,9 @@ h2 {
 }
 
 h3 {
-  background:pink;
+  background:black;
+  color:white;
+  padding:1vmin;
 }
 
 h4 {
@@ -191,4 +193,50 @@ div.back:hover {
   letter-spacing: 9px;
   margin-left:9px;
   text-align:center;
+}
+
+.bio {
+  font-size:calc(12px + 1vmin);
+  max-width:100vmin;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content: center;
+  text-align:justify;
+  margin:auto;
+}
+.spanish {
+  display:flex;
+}
+.english {
+  display: none;
+}
+.bio p {
+  padding:1vmin;
+  margin:auto;
+}
+main { 
+  display:flex;
+  flex-direction: column;
+  align-items:stretch;
+}
+main div {
+  margin:auto;
+}
+#lang-button { 
+  max-width:10vmin;
+  background:black;
+  color:white;
+  border:1px outset white;
+  border-radius:1vmin;
+  padding:2vmin;
+  font-weight:bold;
+  font-size: calc(10px + 1vmin);
+  margin:auto;
+}
+#lang-button:hover, #lang-button:focus, #lang-button:focus-within { 
+  background:white;
+  color:black;
+  border:1px inset black;
+  cursor:pointer;
 }
