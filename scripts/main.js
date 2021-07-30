@@ -287,6 +287,8 @@ function anchor(link, text = '', target = "_top") {
     tag.setAttribute('href', link);
     tag.setAttribute('rel', 'nofollow');
     tag.setAttribute('target', target);
+    tag.setAttribute('title', link);
+    tag.className = 'subtitle';
     tag.appendChild(document.createTextNode(text));
 
     return tag;
@@ -353,7 +355,8 @@ function make_nav() {
             //is new menuitem
             menuitem = document.createElement('li');
             menutitle = document.createElement('span');
-            menutitle.setAttribute('class', 'colored');
+            menuitem.className = 'menu-item';
+            menutitle.className = 'colored';
             menutitle.innerHTML = ntype;
             menuitem.appendChild(menutitle);
             menu.appendChild(menuitem);
