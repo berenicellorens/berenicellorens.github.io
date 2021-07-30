@@ -1,27 +1,22 @@
 body {
-	/*background-image:url("../img/marmotas.jpg");*/
-	background-image:none;
-	/*background-attachment:fixed;*/
-	/*background-position:left top;*/
-	/*background-repeat:repeat-y;*/
-	background-size:400px;
+    /*background-image:url("../img/marmotas.jpg");*/
+    background-image: none;
+    /*background-attachment:fixed;*/
+    /*background-position:left top;*/
+    /*background-repeat:repeat-y;*/
+    background-size: 400px;
 
 }
-h1,h3,footer {
-	color:black;
-	/*background-color: rgb(10 255 108 / 100%);*/
-	background: none;
+
+h1,
+h3,
+footer {
+    color: black;
+    /*background-color: rgb(10 255 108 / 100%);*/
+    background: none;
 }
+
 h2 {
-	background-color: none;
-	/*background-color: rgb(216 114 220);*/
-}
-main {
-	display:flex;
-	flex-direction:column;
-	align-items: stretch;
-	justify-content: center;
-	padding:3vmin;
-	max-width:200vmin;
-	margin:auto;
+    background-color: none;
+    /*background-color: rgb(216 114 220);*/
 }

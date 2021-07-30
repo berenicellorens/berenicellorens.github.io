@@ -1,44 +1,48 @@
 body {
-	padding:30px;
-	font-family:helvetica-light;
-	text-align:center; 
+    padding: 30px;
+    font-family: helvetica-light;
+    text-align: center;
 }
+
 h1 {
-	font-size:7em;
-	margin:0px;
-	padding:0px;
-	letter-spacing:-10px;
-	float:left;
-	font-weight:normal;
+    font-size: 7em;
+    margin: 0px;
+    padding: 0px;
+    letter-spacing: -10px;
+    float: left;
+    font-weight: normal;
 }
 
 span {
-	position:relative;
-	font-size:3em;
-	margin:auto;
-	font-weight:bold;
+    position: relative;
+    font-size: 3em;
+    margin: auto;
+    font-weight: bold;
 }
 
-#butdiv_centered{
- 	position:fixed;
- 	margin: 0 auto;
+#butdiv_centered {
+    position: fixed;
+    margin: 0 auto;
 }
 
 .but {
-	/*position:relative;*/
-	background:black;
-	color:white;
-	padding:20px 40px;
-	border-radius:20px;
+    /*position:relative;*/
+    background: black;
+    color: white;
+    padding: 20px 40px;
+    border-radius: 20px;
 }
+
 .but div:hover {
-	cursor:pointer;
-	background:yellow;
-	color:black;
+    cursor: pointer;
+    background: yellow;
+    color: black;
 }
+
 .but div {
-	/*margin:20px;*/
+    /*margin:20px;*/
 }
+
 .but:hover {
-	background:white;
+    background: white;
 }

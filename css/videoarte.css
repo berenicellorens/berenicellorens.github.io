@@ -1,13 +1,16 @@
 body {
-	/*background:none;*/
-	color:white;
+    /*background:none;*/
+    color: white;
 
 }
+
 h1 {
-	background:none;
-	
+    background: none;
+
 }
-h2, h3 {
-	background:none;
-	background-color:black;
+
+h2,
+h3 {
+    background: none;
+    background-color: black;
 }

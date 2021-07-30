@@ -1,31 +1,27 @@
 body {
-	background-image:url("../img/sobery.jpg");
-	background-attachment:fixed;
-	/*background-position:left top;*/
-	background-repeat:repeat;
-	background-size:50%;
+    background-image: url("../img/sobery.jpg");
+    background-attachment: fixed;
+    /*background-position:left top;*/
+    background-repeat: repeat;
+    background-size: 50%;
 
 }
+
 h1 {
-	background-color: rgb(10 255 108 / 100%);
-	
+    background-color: rgb(10 255 108 / 100%);
+
 }
-h2, h3,footer {
-	background-color: rgb(216 114 220);
+
+h2,
+h3,
+footer {
+    background-color: rgb(216 114 220);
 }
-main {
-	display:flex;
-	flex-direction:column;
-	align-items: stretch;
-	justify-content: center;
-	padding:3vmin;
-	max-width:200vmin;
-	margin:auto;
-}
-.bio{
-	background-color: black;
-	color:white;
-	padding:3vmin;
-	margin:auto;
-	border-radius:2vmin;
+
+.bio {
+    background-color: black;
+    color: white;
+    padding: 3vmin;
+    margin: auto;
+    border-radius: 2vmin;
 }

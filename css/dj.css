@@ -1,14 +1,14 @@
 body {
-	background-image:revert;
-	background-color:black;
+    background-image: revert;
+    background-color: black;
 }
 
 h1 {
-	background-color:rgba(244, 254, 146,1);
+    background-color: rgba(244, 254, 146, 1);
 }
 
 a {
-	color:#8BC34A;
+    color: #8BC34A;
 }
 
 h3 {
