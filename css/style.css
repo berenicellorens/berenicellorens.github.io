@@ -277,3 +277,10 @@ main div {
     /* border-bottom: none; */
     cursor:pointer;
 }
+.iframeWrapper {
+    max-width:80vmin;
+}
+
+.iframeWrapper iframe {
+    max-width:80vmin;
+}
