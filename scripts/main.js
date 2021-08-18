@@ -247,11 +247,13 @@ for (h in beretags) {
     });
 };
 
-var sheet = [];
-for (let i = 1; i < 7; i++) sheet[i] = gs_url + "/" + gs_id + "/" + i.toString() + "/" + gs_type;
-
-
-
+const sheet = {
+    "video" : "./video.csv",
+    "marmotas" : "./marmotas.csv",
+    "sobery" : "./sobery.csv",
+    "albums" : "./albums.csv",
+    "dj" : "./dj.csv"
+};
 
 function add_key(object, key, value) {
     let obj = object;
@@ -422,7 +424,7 @@ langButton.onclick = function () {
 // 	//bio
 // 	if(bioData.length==0)
 // 	{
-// 		loadJSON(sheet[6], async function(response) {
+// 		loadCSV(sheet[6], async function(response) {
 // 			var f, e, i, entry;
 // 			f = JSON.parse(response);
 // 			entry = f.feed.entry;
@@ -476,14 +478,17 @@ function make_footlink(links) {
 }
 
 function load(main, sheet) {
-    loadJSON(sheet, async function (response) {
-        var f, e, i, entry;
-        f = JSON.parse(response);
-        entry = f.feed.entry;
-        for (i in entry) {
-            e = entry[i];
-            var title = e.gsx$title.$t;
-            var iframe = e.gsx$iframe.$t;
+    loadCSV(sheet, async function (response) {
+        // var f, e, i, entry;
+        // f = JSON.parse(response);
+        let rows = response.split("\n");
+        // console.log("Load", rows);
+        rows.forEach((row, index) => {
+          if(index>0) {
+            let cols = row.split(",");
+            // console.log("Cols", index, cols);
+            let title = cols[0];
+            let iframe = cols[1].replaceAll("\"","");
             let art = document.createElement('article');
             let div = document.createElement('div');
             let tit = document.createElement('h3');
@@ -493,13 +498,29 @@ function load(main, sheet) {
             art.appendChild(div);
             div.insertAdjacentHTML('beforeend', iframe);
             main.appendChild(art);
-        }
+          }
+        });
+
+        // entry = f.feed.entry;
+        // for (i in entry) {
+        //     e = entry[i];
+        //     var title = e.gsx$title.$t;
+        //     var iframe = e.gsx$iframe.$t;
+        //     let art = document.createElement('article');
+        //     let div = document.createElement('div');
+        //     let tit = document.createElement('h3');
+        //     tit.innerHTML = title;
+        //     div.className = 'iframeWrapper';
+        //     art.appendChild(tit);
+        //     art.appendChild(div);
+        //     div.insertAdjacentHTML('beforeend', iframe);
+        //     main.appendChild(art);
+        // }
     });
 }
 
 function make(page, footnav = false) {
-    let titlediv, subtitlediv, subsubtitlediv, articles = [],
-        footlink = [];
+    let titlediv, subtitlediv, subsubtitlediv, articles = [];
     let main = document.querySelector('main');
     let foot = document.querySelector('footer');
     let dark = false;
@@ -519,7 +540,7 @@ function make(page, footnav = false) {
             // "Constanza Pellici");
             main.appendChild(langButton);
             foot.appendChild(make_footlink(marmotas));
-            load(main, sheet[5]);
+            load(main, sheet["marmotas"]);
             break;
             case "sobery":
                 // titlediv = make_title("SoBeryNice");
@@ -528,25 +549,25 @@ function make(page, footnav = false) {
             // "So Piuzzi");
             main.appendChild(langButton);
             foot.appendChild(make_footlink(soberynice));
-            load(main, sheet[4]);
+            load(main, sheet["sobery"]);
             dark = true;
             break;
         case "arte": //Videoarte --> titulo borrado
             titlediv = make_title("", titleclass = 'maintitle');
             foot.appendChild(make_footlink(arte));
-            load(main, sheet[3]);
+            load(main, sheet["video"]);
             dark = true;
             break;
         case "albums":
             titlediv = make_title("Discos");
             foot.appendChild(make_footlink(music));
             dark = true;
-            load(main, sheet[1]);
+            load(main, sheet["albums"]);
             break;
         case "electronica":
             titlediv = make_title("Electrónica");
             foot.appendChild(make_footlink(electronica));
-            load(main, sheet[2]);
+            load(main, sheet["dj"]);
             break;
         case "home": //berenicellorens --> titulo borrado
             backbutton = false;
@@ -679,9 +700,10 @@ function mobileCheck() {
 }
 
 
-function loadJSON(x, callback) {
-    var xobj = new XMLHttpRequest();
-    xobj.overrideMimeType("application/json");
+function loadCSV(x, callback) {
+    // console.log(x);
+    const xobj = new XMLHttpRequest();
+    xobj.overrideMimeType("text/csv");
     xobj.open('GET', x, true);
     xobj.onreadystatechange = function () {
         if (xobj.readyState == 4 && xobj.status == "200") {
