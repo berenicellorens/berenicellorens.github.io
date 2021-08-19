@@ -169,6 +169,11 @@ var home = [{
         "url": url_root + "/duo/sobery.html",
     },
     {
+        "type": "duo",
+        "title": "toros",
+        "url": "https://fdch.github.io/toros",
+    },
+    {
         "type": "arte",
         "title": "Videoarte",
         "url": url_root + "/arte/video.html",
