@@ -43,11 +43,12 @@
         <meta name="@type" content="WebSite">
         <meta name="robots" content="index,follow">
         <meta name="keywords"
-            content="berenicellorens,dj,composer,artist,electronics,live-video,instrumentalberenicemusic,blabladuriasdeberenice,rayaduras_berenice,berydual">
+        content="berenicellorens,dj,composer,artist,electronics,live-video,instrumentalberenicemusic,blabladuriasdeberenice,rayaduras_berenice,berydual">
         <meta property="og:site_name" content="Berenice Llorens">
         <meta property="og:url" content="https://berenicellorens.github.io">
-
-    </head>
+        
+        <script type='module' src="../scripts/main.js"></script>
+      </head>
 
     <body>
         <header>
@@ -97,8 +98,8 @@
         </main>
         <footer></footer>
     </body>
-    <script src="../scripts/main.js" charset="UTF-8"></script>
-    <script>
+    <script type='module'>
+      import { make } from '../scripts/main.js';
         make("sobery");
     </script>
     <!-- Global site tag (gtag.js) - Google Analytics -->

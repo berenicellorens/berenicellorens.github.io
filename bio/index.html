@@ -146,8 +146,9 @@
         </main>
         <footer></footer>
     </body>
-    <script src="../scripts/main.js" charset="UTF-8"></script>
-    <script>
+    <script type='module' src="../scripts/main.js"></script>
+    <script type='module'>
+      import { make } from '../scripts/main.js';
         make("bio");
     </script>
     <!-- Global site tag (gtag.js) - Google Analytics -->

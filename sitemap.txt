@@ -1,8 +1,11 @@
 https://berenicellorens.github.io/index.html
 https://berenicellorens.github.io/home/index.html
 https://berenicellorens.github.io/bio/index.html
+https://berenicellorens.github.io/arte/index.html
 https://berenicellorens.github.io/arte/video.html
+https://berenicellorens.github.io/solo/index.html
 https://berenicellorens.github.io/solo/dj.html
 https://berenicellorens.github.io/solo/albums.html
+https://berenicellorens.github.io/duo/index.html
 https://berenicellorens.github.io/duo/marmotas.html
 https://berenicellorens.github.io/duo/sobery.html

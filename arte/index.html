@@ -48,7 +48,7 @@
         <meta property="og:url" content="https://berenicellorens.github.io">
 
         <link rel="stylesheet" type="text/css" href="../css/style.css">
-        <script src="../scripts/main.js" charset="UTF-8"></script>
+        <script type='module' src="../scripts/main.js"></script>
 
     </head>
 
@@ -68,7 +68,8 @@
         </header>
         <footer></footer>
     </body>
-    <script>
+    <script type='module'>
+      import { footer, makeBackButton } from '../scripts/main.js';
         footer();
         makeBackButton(document.querySelector('header'));
     </script>
