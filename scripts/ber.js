@@ -5,7 +5,39 @@
  * 
 */
 import {mobile} from './mobile.js';
-import { scrolldelay, scrollspeed, scrollwidth, beremarquee, windowHeightMin, windowWidthMin, homeButtonTextArray } from './data.js';
+
+// Velocidad de las palabras
+const scrolldelay = 2;
+const scrollspeed = [5, 15];
+const scrollwidth = [100, 300];
+const beremarquee = [
+  "berenicemusic",
+  "berenicemusic",
+  "berenicellorens",
+  "welcometomysound",
+  "blablablablabla",
+  "blablablablabla",
+  "berenicemusic",
+  "berenicellorens",
+  "welcometomysound",
+  "berenicellorens",
+  "berenicellorens",
+  "blablablablabla",
+  "bereniceberenice",
+  "erenicellorensber",
+  "berenicellorens",
+  "icellorensicellor",
+  "llorensllorenslor",
+  "e n e n e n e n e",
+  "i c e i c e i c e",
+  "b e r b e r b e r",
+]
+
+// boton BER EN ICE minimum height and width
+const windowWidthMin = 200;
+const windowHeightMin = 150;
+const homeButtonTextArray = [ "BER", "EN", "ICE" ];
+
 
 export function ber() {
   // This helper returns a random integer given a offset and a range

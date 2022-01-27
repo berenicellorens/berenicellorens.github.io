@@ -1,11 +1,13 @@
-export function loadCSV(x, callback) {
-  // console.log(x);
+import { loader } from "./loader.js";
+
+export function loadCSV(url) {
+  // console.log(url);
   const xobj = new XMLHttpRequest();
   xobj.overrideMimeType("text/csv");
-  xobj.open('GET', x, true);
+  xobj.open('GET', url, true);
   xobj.onreadystatechange = function () {
     if (xobj.readyState == 4 && xobj.status == "200") {
-      callback(xobj.responseText);
+      loader(xobj.responseText);
     }
   };
   xobj.send(null);

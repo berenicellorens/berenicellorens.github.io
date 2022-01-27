@@ -7,241 +7,142 @@ export const beretags = [
   "movienicemusic",
 ];
 
-export const keywords = [
-  "berenicellorens",
-  "dj",
-  "composer",
-  "artist",
-  "electronics",
-  "live-video",
-  "instrumental",
-];
+export const name = "berenicellorens";
 
-// Velocidad de las palabras
-export const scrolldelay = 2;
-export const scrollspeed = [5, 15];
-export const scrollwidth = [100, 300];
-
-export const beremarquee = [
-  "berenicemusic",
-  "berenicemusic",
-  "berenicellorens",
-  "welcometomysound",
-  "blablablablabla",
-  "blablablablabla",
-  "berenicemusic",
-  "berenicellorens",
-  "welcometomysound",
-  "berenicellorens",
-  "berenicellorens",
-  "blablablablabla",
-  "bereniceberenice",
-  "erenicellorensber",
-  "berenicellorens",
-  "icellorensicellor",
-  "llorensllorenslor",
-  "e n e n e n e n e",
-  "i c e i c e i c e",
-  "b e r b e r b e r",
-]
-
-// boton BER EN ICE minimum height and width
-export const windowWidthMin = 200;
-export const windowHeightMin = 150;
-export const homeButtonTextArray = [
-  "BER",
-  "EN",
-  "ICE"
-];
-
-
-export const fullname = "Berenice Llorens";
-export const idioma = "es-AR";
-export const bere = "berenicellorens";
-export const url_insta = "https://www.instagram.com";
-export const url_spotify = "https://open.spotify.com/artist/1wkoEOAEYnEflO8as4GCPG?si=3NvtjUmPSIyR4BTm6Mt3fA";
-export const url_mixcloud = "https://www.mixcloud.com/Berenicecream";
-export const url_sound = "https://www.soundcloud.com";
-export const url_mix = "https://www.mixcloud.com";
-export const url_yout = "https://www.youtube.com"
-export const berechan = "UCop84-W9fYAEaZfICstuvMA"
-export const root = bere + ".github.io";
-export const url_root = "https://" + root;
 export const sepchar = "&nbsp;&middot;&nbsp;";
-export const raw = "https://raw.githubusercontent.com";
-export const url_img = raw + "/" + bere + "/" + root + "/master/img";
-export const url_ico = url_img + "/logo.ico";
-export const url_jpg = url_img + "/logo.jpg";
-export const insta_png = url_img + "/instagram.png";
-export const spotify_png = url_img + "/spotify.png";
-export const bandcamp_png = url_img + "/bandcamp.png";
-export const soundcloud_png = url_img + "/soundcloud.png";
-export const mixcloud_png = url_img + "/mixcloud.png";
-export const back_img = url_img + "/back.gif";
-export const url_cv_logo = raw + "/" + bere + "/cv/master/bere-logo.jpeg";
-export const url_bandcamp = "https://" + bere + ".bandcamp.com";
-export const bio = "Berenice Llorens es artista, compositora y DJ cordobesa. Su carrera comienza en el 2007 participando como tecladista, bajista y guitarrista en bandas de reggae, afrobeat, rock alternativo y pop. Desde el inicio y, con búsqueda y estilo propio, desarrolla un repertorio solista de obras y canciones experimentales que, en el 2017, comienzan a tener una fuerte influencia de procesos y música electrónica, año que marca el inicio de su carrera como DJ y productora. Su trabajo está disponible en: " + url_root;
 
-export const back_img_width = 50;
 
-export const viewport_settings = [
-  "width=device-width",
-  "minimum-scale=1.0",
-  "maximum-scale=1.0",
-  "user-scalable=no",
-];
-
+// Tamaño del icono en el footer
 export const iconsize = 35;
-export const bRad = 0;
-export let make_back_image = false;
-export const hashtags = beretags.map((tag)=> { 
-  return { 
+
+export const hashtags = beretags.map((tag) => {
+  return {
     "title": "#" + tag,
-    "url": url_insta + "/explore/tags/" + tag 
+    "url": "https://www.instagram.com/explore/tags/" + tag
   }
 });
-
-export const links = [{
-  "title": "@" + bere,
-  "url": url_insta + "/" + bere,
-  "img": insta_png
-},
-{
-  "title": "spotify/berenicellorens",
-  "url": url_spotify,
-  "img": spotify_png
-},
-{
-  "title": "bandcamp",
-  "url": url_bandcamp,
-  "img": bandcamp_png
-},
-{
-  "title": "mixcloud",
-  "url": url_mixcloud,
-  "img": mixcloud_png
-},
-{
-  "title": "soundcloud",
-  "url": url_sound + "/" + bere,
-  "img": soundcloud_png
+export const youtube = {
+  "name": "YouTube",
+  "title": "Watch Berenice Llorens on YouTube",
+  "url": "https://www.youtube.com/channel/UCop84-W9fYAEaZfICstuvMA",
+  "img": "/img/youtube.png",
 }
-];
+export const soundcloud = {
+  "name": "Soundcloud",
+  "title": "Listen to Berenice Llorens on Soundcloud",
+  "url": "https://soundcloud.com/berenicellorens",
+  "img": '/img/soundcloud.png'
+}
+export const instagram = {
+  "name": "@berenicellorens",
+  "title": "Follow @berenicellorens on Instagram",
+  "url": "https://www.instagram.com/berenicellorens",
+  "img": '/img/instagram.png'
+}
+export const spotify = {
+  "name": "Spotify",
+  "title": "Listen to Berenice Llorens on Spotify",
+  "url": "https://open.spotify.com/artist/1wkoEOAEYnEflO8as4GCPG?si=3NvtjUmPSIyR4BTm6Mt3fA",
+  "img": '/img/spotify.png'
+}
+export const bandcamp = {
+  "name": "Bandcamp",
+  "title": "Listen to Berenice Llorens on Bandcamp",
+  "url": "https://berenicellorens.bandcamp.com",
+  "img": '/img/bandcamp.png'
+}
+export const mixcloud = {
+  "name": "Berenicecream",
+  "title": "Listen to Berenice Llorens on Mixcloud",
+  "url": "https://www.mixcloud.com/Berenicecream",
+  "img": '/img/mixcloud.png'
+}
+export const cursividad = {
+  "type": "arte",
+  "name": "La Cursividad",
+  "title": "Read Berenice Lloren's blog: La Cursividad",
+  "url": "https://berenicellorens.blogspot.com",
+}
 
-export const emails = [{
-  "title": bere + "@gmail.com",
-  "url": "mailto:" + bere + "@gmail.com"
-}];
+export const rayaduras = {
+  "type": "arte",
+  "name": "Rayaduras",
+  "title": "Follow @rayaduras on Instagram",
+  "url": "https://www.instagram.com/rayaduras",
+}
+
+export const gmail = {
+  "name": "Email",
+  "title": "Email Berenice Llorens",
+  "url": "mailto:berenicellorens@gmail.com"
+}
+
+export const links = [instagram, spotify, bandcamp, mixcloud];
+
+export const emails = [gmail];
+
+export const marmotas = [{
+  "type": "duo",
+  "name": "@marmotasdreams",
+  "title": "Follow @marmotasdreams on Instagram",
+  "url": "https://www.instagram.com/marmotasdreams"
+}]
+
+export const sobery = [{
+  "type": "duo",
+  "name": "@soberynice",
+  "title": "Follow @soberynice on Instagram",
+  "url": "https://www.instagram.com/soberynice"
+},
+{
+  "type": "duo",
+  "name": "SoBeryNice",
+  "title": "Listen to SoBeryNice on Mixcloud",
+  "url": "https://www.mixcloud.com/SoBeryNice"
+}]
 
 export const home = [{
-  "title": "Home",
+  "name": "Home",
   "url": "/home/",
 },
 {
   "type": "bio",
-  "title": "Sobre mí",
+  "name": "Bio",
   "url": "/bio/",
 },
 {
   "type": "bio",
-  "title": "Cv",
+  "name": "CV",
   "url": "/cv",
 },
 {
   "type": "solo",
-  "title": "Discografía",
-  "url": "/solo/albums.html",
+  "name": "Discos",
+  "url": "/solo/discos/",
 },
 {
   "type": "solo",
-  "title": "Dj Sets",
-  "url": "/solo/dj.html",
-},
-// add_key(hashtags[0],"type","solo"),
-{
-  "type": "duo",
-  "title": "Marmotas Dreams",
-  "url": "/duo/marmotas.html",
+  "name": "Dj Sets",
+  "url": "/solo/dj/",
 },
 {
   "type": "duo",
-  "title": "SoBeryNice",
-  "url": "/duo/sobery.html",
+  "name": "Marmotas Dreams",
+  "url": "/colab/marmotas/",
 },
 {
   "type": "duo",
-  "title": "toros",
+  "name": "SoBeryNice",
+  "url": "/colab/sobery/",
+},
+{
+  "type": "duo",
+  "name": "toros",
+  "title": "Duo with ffddcchh",
   "url": "https://fdch.github.io/toros",
 },
 {
   "type": "arte",
-  "title": "Videoarte",
-  "url": "/arte/video.html",
-},
-{
-  "type": "arte",
-  "title": "Rayaduras",
-  "url": url_insta + "/rayaduras",
-},
-{
-  "type": "arte",
-  "title": "La Cursividad",
-  "url": "https://" + bere + ".blogspot.com",
-}
-];
-
-export const music = [{
-  "type": "solo",
-  "title": "Bandcamp",
-  "url": url_bandcamp
-},
-{
-  "type": "solo",
-  "title": "Soundcloud",
-  "url": url_sound + "/" + bere
-}
-];
-
-export const soberynice = [{
-  "type": "duo",
-  "title": "@soberynice",
-  "url": url_insta + "/soberynice"
-},
-{
-  "type": "duo",
-  "title": "Mixcloud",
-  "url": url_mix + "/SoBeryNice"
-}
-];
-
-export const marmotas = [{
-  "type": "duo",
-  "title": "@marmotasdreams",
-  "url": url_insta + "/marmotasdreams"
-}];
-
-export const arte = [{
-  "type": "arte",
-  "title": "Youtube",
-  "url": url_yout + "/channel/" + berechan
-}];
-
-export const electronica = [{
-  "type": "solo",
-  "title": "Berenicecream",
-  "url": url_mix + "/berenicecream"
-}];
-
-export const on_click = {
-  "home": ["onclick", "window.open(\'" + home[0]['url'] + "\','_top')"]
-}
-
-
-
-export const sheet = {
-  "video": "./video.csv",
-  "marmotas": "./marmotas.csv",
-  "sobery": "./sobery.csv",
-  "albums": "./albums.csv",
-  "dj": "./dj.csv"
-};
+  "name": "Videoarte",
+  "url": "/arte/video/",
+}, rayaduras, cursividad ];

@@ -173,8 +173,8 @@ div.back {
   display: none;
 }
 
-.bio p {
-  padding: 1vmin;
+.bio {
+  padding: 8vmin;
   margin: auto;
 }
 
@@ -185,10 +185,6 @@ main {
   justify-content: center;
   padding: 3vmin;
   max-width: 200vmin;
-  margin: auto;
-}
-
-main div {
   margin: auto;
 }
 
@@ -204,12 +200,7 @@ main div {
   margin: auto;
 }
 
-#lang-button:hover,
-#lang-button:focus,
-#lang-button:focus-within {
-  background: white;
-  color: black;
-  border: 1px inset black;
+#lang-button:hover {
   cursor: pointer;
 }
 
@@ -227,11 +218,6 @@ main div {
 li {
   display: flex;
   border-radius: 3vmin;
-}
-
-.menu-item span {
-  font-size: calc(10px + 1vmin);
-  font-style: italic;
 }
 
 nav {
@@ -266,4 +252,8 @@ ul li:focus {
 
 .iframeWrapper iframe {
   max-width: 80vmin;
+}
+.sepchar {
+  font-size: 1.2em;
+  font-weight: bold;
 }

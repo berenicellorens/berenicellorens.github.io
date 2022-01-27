@@ -1,14 +1,13 @@
-export const langButton = document.createElement('button');
-
-let lang = 1;
+export let lang = 1;
+const langBtn = document.createElement('button');
 const spanishStuff = Array.from(document.getElementsByClassName('spanish'));
 const englishStuff = Array.from(document.getElementsByClassName('english'));
 const language = [ 'Español', 'English' ];
-langButton.id = 'lang-button';
-langButton.innerHTML = language[lang];
-langButton.onclick = function () {
+langBtn.id = 'lang-button';
+langBtn.innerHTML = language[lang];
+langBtn.onclick = function () {
 
-  if (lang) {
+  if (lang===1) {
     spanishStuff.map((i) => i.style.display = 'none');
     englishStuff.map((i) => i.style.display = 'flex');
     lang = 0;
@@ -17,5 +16,10 @@ langButton.onclick = function () {
     englishStuff.map((i) => i.style.display = 'none');
     lang = 1;
   }
-  langButton.innerHTML = language[lang];
+  window.localStorage.setItem('lang', lang);
+  langBtn.innerHTML = language[lang];
+}
+
+export function langButton() {
+  document.querySelector('main').appendChild(langBtn);
 }

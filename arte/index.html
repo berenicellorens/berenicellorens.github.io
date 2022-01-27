@@ -47,20 +47,19 @@
         <meta property="og:site_name" content="Berenice Llorens">
         <meta property="og:url" content="https://berenicellorens.github.io">
 
-        <link rel="stylesheet" type="text/css" href="../css/style.css">
-        <script type='module' src="../scripts/main.js"></script>
+        <link rel="stylesheet" type="text/css" href="/css/style.css">
 
     </head>
 
     <body>
         <header>
-          <img src="../img/blcirculoweb1.png" alt="Berenice Llorens" class="logo" width="260px" height="260px"/>
+          <img src="/img/blcirculoweb1.png" alt="Berenice Llorens" class="logo" width="260px" height="260px"/>
           <div class='swrap-container'>
             <span class='swrap-title'>Arte</span>
           </div>
           <nav>
             <ul>
-              <li><a href='video.html'>Videoarte</a></li>
+              <li><a href='video/'>Videoarte</a></li>
               <li><a href='https://instagram.com/rayaduras'>Rayaduras</a></li>
               <li><a href='https://berenicellorens.blogspot.com/'>La Cursividad</a></li>
             </ul>
@@ -68,21 +67,7 @@
         </header>
         <footer></footer>
     </body>
-    <script type='module'>
-      import { footer, makeBackButton } from '../scripts/main.js';
-        footer();
-        makeBackButton(document.querySelector('header'));
-    </script>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-173546930-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-        gtag('config', 'UA-173546930-1');
-    </script>
+    <script type='module' src='/scripts/base.js'></script>
 
 </html>
