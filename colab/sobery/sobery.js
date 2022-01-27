@@ -1,11 +1,8 @@
 import { loadCSV } from '/scripts/loadcsv.js';
 import { footerLinks } from '/scripts/footer.js';
 import { sobery } from '/scripts/data.js';
-import { langButton } from '/scripts/language.js';
+import { loadFile } from '/scripts/langloader.js';
 
-langButton();
-
+loadFile('sobery');
 loadCSV('sobery.csv');
-
 footerLinks(sobery);
-

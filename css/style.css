@@ -165,14 +165,6 @@ div.back {
   margin: auto;
 }
 
-.spanish {
-  display: flex;
-}
-
-.english {
-  display: none;
-}
-
 .bio {
   padding: 8vmin;
   margin: auto;
