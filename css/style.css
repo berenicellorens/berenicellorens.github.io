@@ -85,24 +85,8 @@ h4 {
 
 }
 
-.colored {
-  font-style: italic;
-  margin-left: 25px;
-  font-size: 0.8em;
-}
-
 .title {
   height: 10em;
-  position: relative;
-}
-
-.maintitle {
-  background-image: url("../img/blcirculoweb1.png");
-  background-size: 260px;
-  background-repeat: no-repeat;
-  background-position: center top;
-  color: rgba(255, 255, 255, 0.0);
-  height: 260px;
   position: relative;
 }
 
@@ -250,9 +234,14 @@ li {
   font-style: italic;
 }
 
+nav {
+  max-width:800vmin;
+
+}
+
 ul {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;

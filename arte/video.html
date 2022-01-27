@@ -51,13 +51,17 @@
       </head>
       
       <body>
-        <header></header>
+        <header>
+          <img src="../img/blcirculoweb1.png" alt="Berenice Llorens" class="logo" width="260px" height="260px"/>
+
+        </header>
         <main></main>
         <footer></footer>
       </body>
       <script type='module'>
-        import { make } from '../scripts/main.js';
-        make("arte");
+        import { make, makeBackButton } from '../scripts/main.js';
+          make("arte");
+          makeBackButton(document.querySelector('header'));
     </script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-173546930-1"></script>

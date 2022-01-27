@@ -45,14 +45,15 @@
             content="berenicellorens,dj,composer,artist,electronics,live-video,instrumentalberenicemusic,blabladuriasdeberenice,rayaduras_berenice,berydual">
         <meta property="og:site_name" content="Berenice Llorens">
         <meta property="og:url" content="https://berenicellorens.github.io">
+        <script type='module' src="../scripts/main.js"></script>
 
     </head>
 
     <body>
         <header>
+          <img src="../img/blcirculoweb1.png" alt="Berenice Llorens" class="logo" width="260px" height="260px"/>
         </header>
         <main>
-            <h3>Bio</h3>
             <div class="bio spanish">
                 <p>
                     Berenice Llorens, es artista  multidisciplinar, compositora y DJ de Córdoba, Argentina.
@@ -146,10 +147,12 @@
         </main>
         <footer></footer>
     </body>
-    <script type='module' src="../scripts/main.js"></script>
     <script type='module'>
-      import { make } from '../scripts/main.js';
+      import { make, makeBackButton, langButton } from '../scripts/main.js';
+        document.querySelector('main').appendChild(langButton);
         make("bio");
+        makeBackButton(document.querySelector('header'));
+
     </script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-173546930-1"></script>

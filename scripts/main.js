@@ -2,6 +2,7 @@ import {hashtags, sepchar, links, iconsize, bRad, emails, home, music, make_back
 import {langButton} from './language.js';
 import { loadCSV } from './loadcsv.js';
 
+
 export function add_key(object, key, value) {
   let obj = object;
   obj[key] = value;
@@ -91,35 +92,35 @@ export function footer(nav = false) {
 
 };
 
-export function make_nav(header) {
-  let nav = document.createElement('nav');
-  let menu = document.createElement('ul');
-  let i, type = "none",
-    menuitem, menutitle, submenu;
+// export function make_nav(header) {
+//   let nav = document.createElement('nav');
+//   let menu = document.createElement('ul');
+//   let i, type = "none",
+//     menuitem, menutitle, submenu;
 
-  for (i = 1; i < home.length; i++) {
-    let ntype = home[i]['type'];
-    if (type.localeCompare(ntype)) {
-      //is new menuitem
-      menuitem = document.createElement('li');
-      menutitle = document.createElement('span');
-      menuitem.className = 'menu-item';
-      menutitle.className = 'colored';
-      menutitle.innerHTML = ntype;
-      menuitem.appendChild(menutitle);
-      menu.appendChild(menuitem);
-      submenu = document.createElement('ul');
-    }
-    submenuitem = document.createElement('li');
-    submenuitem.appendChild(anchor(home[i]['url'], home[i]['title']));
-    submenu.appendChild(submenuitem);
-    menuitem.appendChild(submenu);
-    type = ntype;
-  }
-  // console.log(menu);
-  nav.appendChild(menu);
-  header.appendChild(nav);
-};
+//   for (i = 1; i < home.length; i++) {
+//     let ntype = home[i]['type'];
+//     if (type.localeCompare(ntype)) {
+//       //is new menuitem
+//       menuitem = document.createElement('li');
+//       menutitle = document.createElement('span');
+//       menuitem.className = 'menu-item';
+//       menutitle.className = 'colored';
+//       menutitle.innerHTML = ntype;
+//       menuitem.appendChild(menutitle);
+//       menu.appendChild(menuitem);
+//       submenu = document.createElement('ul');
+//     }
+//     submenuitem = document.createElement('li');
+//     submenuitem.appendChild(anchor(home[i]['url'], home[i]['title']));
+//     submenu.appendChild(submenuitem);
+//     menuitem.appendChild(submenu);
+//     type = ntype;
+//   }
+//   // console.log(menu);
+//   nav.appendChild(menu);
+//   header.appendChild(nav);
+// };
 
 export function make_article(title, content) {
   let titlediv = document.createElement('h3');
@@ -211,41 +212,27 @@ export function makeBackButton(header) {
 
 }
 
-export function make(page, footnav = false) {
-  let titlediv, subtitlediv, subsubtitlediv, articles = [];
-  let main = document.querySelector('main');
-  let foot = document.querySelector('footer');
-  let dark = false;
-  let backbutton = true;
+export function make(page) {
+  let titlediv, dark = false;
+  const main = document.querySelector('main');
+  const foot = document.querySelector('footer');
   switch (page) {
     case "bio":
-      titlediv = make_title("Sobre mí", 'maintitle');
-      main.appendChild(langButton);
+      // main.appendChild(langButton);
       foot.appendChild(make_footlink(music));
-      // articles = make_bio("Bio");
-      // load(main, sheet[6]);
       break;
     case "marmotas":
-      // titlediv = make_title("Marmotas Dreams");
-      // subtitlediv = make_subtitle("duo con ",
-      // url_insta+"/constanzapellici",
-      // "Constanza Pellici");
       main.appendChild(langButton);
       foot.appendChild(make_footlink(marmotas));
       load(main, sheet["marmotas"]);
       break;
     case "sobery":
-      // titlediv = make_title("SoBeryNice");
-      // subtitlediv = make_subtitle("duo con ",
-      // url_insta+"/sopiuzzi",
-      // "So Piuzzi");
       main.appendChild(langButton);
       foot.appendChild(make_footlink(soberynice));
       load(main, sheet["sobery"]);
       dark = true;
       break;
     case "arte": //Videoarte --> titulo borrado
-      titlediv = make_title("", 'maintitle');
       foot.appendChild(make_footlink(arte));
       load(main, sheet["video"]);
       dark = true;
@@ -262,36 +249,13 @@ export function make(page, footnav = false) {
       load(main, sheet["dj"]);
       break;
     case "home": //berenicellorens --> titulo borrado
-      backbutton = false;
-      titlediv = make_title("", className = 'maintitle');
-      swrap = document.createElement('div')
-      swrap.setAttribute('class', 'swrap-container')
-      title1 = make_subtitle("experimental sound",
-        false,
-        '',
-        'span',
-        className = 'swrap-title');
-
-      title2 = make_subtitle("dj - productora",
-        false,
-        '',
-        'span',
-        className = 'swrap-title');
-      swrap.appendChild(title1);
-      swrap.appendChild(title2);
-      subtitlediv = swrap;
-      footnav = true;
-      break;
     default:
       break;
   }
   // append to page
   let header = document.querySelector('header');
   if (titlediv) header.appendChild(titlediv);
-  if (subtitlediv) header.appendChild(subtitlediv);
-  if (subsubtitlediv) header.appendChild(subsubtitlediv);
-  if (footnav) make_nav(header);
-  if (backbutton) makeBackButton(header);
-  articles.forEach((a) => main.appendChild(a))
   footer(dark);
 }
+
+export {langButton};
