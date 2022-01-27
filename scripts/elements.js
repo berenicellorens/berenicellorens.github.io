@@ -3,7 +3,7 @@ export function anchor(link, text, title, target, className) {
   const tag = document.createElement('a');
   const url = link ? link : '#';
   const content = text ? text : '';
-  tag.className = className;
+  tag.className = className ? className : 'subtitle';
   tag.href = url;
   tag.rel = 'nofollow';
   tag.target = target ? target : '_top';
