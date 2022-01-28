@@ -14,3 +14,15 @@ h3 {
   background: #aa2788;
   padding:2vmin;
 }
+
+.back, .btn {
+  border:1px solid white;
+}
+
+footer img {
+  filter: invert(100%);
+}
+
+.subtitle {
+  color: white;
+}
