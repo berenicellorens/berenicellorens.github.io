@@ -1,22 +1,16 @@
+/*  Adjust background image and positioning */
+
 body {
-    /*background-image:url("/img/marmotas.jpg");*/
-    background-image: none;
-    /*background-attachment:fixed;*/
-    /*background-position:left top;*/
-    /*background-repeat:repeat-y;*/
-    background-size: 400px;
-
+  background-color:lightgrey;
+  background-image: url("/img/marmotas.png");
+  background-blend-mode: multiply;
+  background-repeat: repeat-x;
+  background-size: 50%;
 }
 
-h1,
-h3,
-footer {
-    color: black;
-    /*background-color: rgb(10 255 108 / 100%);*/
-    background: none;
-}
+/* Adjust title coloring */
 
-h2 {
-    background-color: none;
-    /*background-color: rgb(216 114 220);*/
+.title {
+  /* background-image: url("/img/marmotas.png"); */
+  color:palevioletred;
 }

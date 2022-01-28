@@ -24,8 +24,8 @@ export function footer() {
 };
 
 
-export function footerLinks(links) {
-  let footdiv = append_to_div(links, "_blank");
+export function footerLinks(links, className) {
+  let footdiv = append_to_div(links, "_blank", 0, className);
   footdiv.id = "footLink";
   document.querySelector('footer').appendChild(footdiv);
 }

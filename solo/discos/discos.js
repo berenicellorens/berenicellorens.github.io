@@ -4,4 +4,4 @@ import { footerLinks } from '/scripts/footer.js';
 
 loadCSV('discos.csv');
 
-footerLinks([bandcamp, soundcloud, spotify]);
+footerLinks([bandcamp, soundcloud, spotify], 'btn');

@@ -1,0 +1,208 @@
+body {
+  font-family: helvetica-light;
+  font-size: 1.3em;
+  line-height: 1.7em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 130vmin;
+  margin: 4vmin auto auto auto;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+h2 {
+  margin: 0;
+  padding: 10px;
+  font-size: 1.5em;
+  line-height: 0.8em;
+}
+
+nav {
+  font-size: 0.7em;
+  line-height: 1.4em;
+
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  max-width: 200vmin;
+  margin: auto;
+}
+
+/* Make Lists of type Flex, with items aligning along the x-axis */
+
+ul {
+  list-style: none;
+  padding-inline-start: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+/* Turn list elements into big, bold buttons with rounded border */
+
+.back,
+a li,
+.btn {
+  color: white;
+  background: black;
+  font-weight: bold;
+  padding: 1.6vmin 3vmin;
+  border-radius: 2vmin;
+  font-size: 1.3em;
+  margin: 2vmin;
+}
+
+/* The back button */
+
+.back {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  font-size: 0.8em;
+  padding: 0.9vmin;
+}
+
+.btn:hover,
+.back:hover,
+li:hover {
+  color: black;
+  background: rgba(244, 254, 146, 0.5);
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+/* Remove underline from links and make them black */
+
+/*  Links in the footer use the .subtitle class. Make them black  */
+a,
+.subtitle {
+  text-decoration: none;
+  color: black;
+}
+
+.subtitle:hover,
+.subtitle:focus {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* Make open-in-new-tag links different */
+
+a.out {
+  font-style: italic;
+}
+
+/* Make Images in footer somewhat separated */
+
+footer div {
+  padding: 1.5vmin;
+}
+
+
+
+/* The Main Post Sections */
+
+main,
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 200vmin;
+  margin: auto;
+}
+
+section {
+  padding: 5vmin;
+}
+
+article {
+  max-width: 560px;
+  margin: 0 auto;
+}
+
+/* Make items align in a grid-like view */
+
+main {
+  flex-direction:row;
+  flex-wrap: wrap;
+}
+
+/* The Language Button */
+
+#language {
+  border-left: 1px;
+  border-radius: 1vmin;
+  padding: 0 2vmin;
+  font-weight: bold;
+  align-self: right;
+}
+
+#language:hover {
+  cursor: pointer;
+}
+
+/* The separation character for links in navigation tabs */
+
+.sepchar {
+  font-size: 1.2em;
+  font-weight: bold;
+  padding: 0 2px;
+}
+
+
+/* The main title */
+
+.title {
+  padding: 10vmin 1vmin 1vmin 1vmin;
+  border-radius: 5vmin;
+  margin: 0;
+}
+
+/* This contains every (div-wrapped) iframe + title element */
+
+article {
+  max-width: 300px;
+  padding: 6vmin;
+}
+
+/* This is the main bio section with a subarticle  */
+
+section article {
+  background-color: #eee;
+  border-radius: 5vmin;
+  padding: 3vmin;
+  max-width: 155vmin;
+}
+
+h3 {
+  color: #111;
+  font-size: 0.9em;
+  line-height: 1em;
+}
+
+iframe {
+  border: 1px outset darkgrey;
+}
+
+.iframeWrapper {
+  background-image: url("/img/loader.gif");
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position:center;
+}
+

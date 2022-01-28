@@ -4,4 +4,4 @@ import { footerLinks } from '/scripts/footer.js';
 
 loadCSV('dj.csv');
 
-footerLinks([mixcloud]);
+footerLinks([mixcloud], 'btn');

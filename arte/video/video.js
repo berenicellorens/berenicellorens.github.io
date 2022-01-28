@@ -4,4 +4,4 @@ import { footerLinks } from '/scripts/footer.js';
 
 loadCSV('video.csv');
 
-footerLinks([youtube]);
+footerLinks([youtube], 'btn');

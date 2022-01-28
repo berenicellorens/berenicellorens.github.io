@@ -5,7 +5,7 @@ const langBtn = document.createElement('button');
 const spanishStuff = Array.from(document.getElementsByClassName('spanish'));
 const englishStuff = Array.from(document.getElementsByClassName('english'));
 const language = [ 'Español', 'English' ];
-langBtn.id = 'lang-button';
+langBtn.id = 'language';
 langBtn.innerHTML = language[lang];
 langBtn.onclick = () => {
   lang = (lang + 1) % 2;

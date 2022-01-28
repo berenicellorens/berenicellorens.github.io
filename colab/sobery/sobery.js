@@ -5,4 +5,4 @@ import { loadFile } from '/scripts/langloader.js';
 
 loadFile('sobery');
 loadCSV('sobery.csv');
-footerLinks(sobery);
+footerLinks(sobery, 'btn');

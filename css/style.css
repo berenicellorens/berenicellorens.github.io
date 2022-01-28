@@ -165,8 +165,16 @@ div.back {
   margin: auto;
 }
 
+.spanish {
+  display: flex;
+}
+
+.english {
+  display: none;
+}
+
 .bio {
-  padding: 8vmin;
+  padding: 10vmin;
   margin: auto;
 }
 
@@ -180,7 +188,7 @@ main {
   margin: auto;
 }
 
-#lang-button {
+#language {
   max-width: 20vmin;
   background: black;
   color: white;
@@ -192,7 +200,7 @@ main {
   margin: auto;
 }
 
-#lang-button:hover {
+#language:hover {
   cursor: pointer;
 }
 
@@ -238,13 +246,6 @@ ul li:focus {
   cursor: pointer;
 }
 
-.iframeWrapper {
-  max-width: 80vmin;
-}
-
-.iframeWrapper iframe {
-  max-width: 80vmin;
-}
 .sepchar {
   font-size: 1.2em;
   font-weight: bold;

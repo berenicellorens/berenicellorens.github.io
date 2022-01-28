@@ -13,7 +13,10 @@ export const sepchar = "&nbsp;&middot;&nbsp;";
 
 
 // Tamaño del icono en el footer
-export const iconsize = 35;
+export const iconsize = 50;
+
+// Tamaño de los videos o iframes en la página
+export const iframeMaxWidth = 300;
 
 export const hashtags = beretags.map((tag) => {
   return {
@@ -77,7 +80,7 @@ export const gmail = {
   "url": "mailto:berenicellorens@gmail.com"
 }
 
-export const links = [instagram, spotify, bandcamp, mixcloud];
+export const links = [instagram, spotify, bandcamp, soundcloud];
 
 export const emails = [gmail];
 

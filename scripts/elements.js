@@ -30,14 +30,14 @@ export function img(src, width, title, alt, targetUrl) {
   return div;
 }
 
-export function append_to_div(array, tgt, icon = 0) {
+export function append_to_div(array, tgt, icon, className) {
   const target = document.createElement('nav');
   array.forEach( (e, i) => {
-    if (icon==0) {
+    if (icon==0 || icon==undefined || icon==null) {
       const sep = document.createElement('span');
       sep.innerHTML = i<array.length-1 ? ' &middot; ' : '';
       sep.className = 'sepchar';
-      target.appendChild(anchor(e['url'], e['name'], e['title'], tgt));
+      target.appendChild(anchor(e['url'], e['name'], e['title'], tgt, className));
       target.appendChild(sep);
     } else {
       target.appendChild(img(e['img'], icon, e['title'], e['name'], e['url']));

@@ -5,4 +5,4 @@ import { loadFile } from '/scripts/langloader.js';
 
 loadFile('marmotas');
 loadCSV('marmotas.csv');
-footerLinks(marmotas);
+footerLinks(marmotas, 'btn');

@@ -1,20 +1,19 @@
 body {
-    background-image: revert;
-    background-color: black;
+    background: black;
 }
 
 h1 {
-    background-color: rgba(244, 254, 146, 1);
-}
-
-a {
-    color: #8BC34A;
+    color: rgba(244, 254, 146, 1);
 }
 
 h3 {
-    background: #FF9800;
+    color: #FF9800;
 }
 
-footer {
-  background-color: rgb(10 255 108 / 100%);
+footer nav {
+  color: rgb(10 255 108 / 100%);
+}
+
+footer img {
+  filter: invert(100%);
 }
