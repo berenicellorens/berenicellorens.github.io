@@ -23,4 +23,4 @@ async function loader(response) {
 
 loadFile('bio', loader);
 
-footerLinks([bandcamp, soundcloud, spotify]);
+footerLinks([bandcamp, soundcloud, spotify], 'btn');
