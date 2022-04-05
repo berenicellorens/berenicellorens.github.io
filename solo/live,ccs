@@ -1,0 +1,23 @@
+body {
+  background: black;
+}
+
+h1 {
+  color: rgba(244, 254, 146, 1);
+}
+
+h3 {
+  color: #FF9800;
+}
+
+footer img {
+  filter: invert(100%);
+}
+
+.back, .btn {
+  border:1px solid white;
+}
+
+.subtitle {
+  color: rgb(10 255 108 / 100%);
+}
