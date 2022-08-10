@@ -17,7 +17,7 @@ const beremarquee = [
   "welcometomysound",
   "blablablablabla",
   "improvisation",
-  "berenicemusic",
+  "performance",
   "berenicellorens",
   "welcometomysound",
   "sound art",
@@ -29,7 +29,7 @@ const beremarquee = [
   "soundart",
   "llorensllorenslor",
   "w e l c o m e w e",
-  "i c e i c e i c e",
+  "d j d j d j i c e",
   "b e r b e r b e r",
 ]
 
