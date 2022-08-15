@@ -8,6 +8,7 @@ body {
   justify-content: center;
   max-width: 130vmin;
   margin: 4vmin auto auto auto;
+  line-break: anywhere;
 }
 
 header {
@@ -56,7 +57,7 @@ ul {
 
 .back,
 a li,
-.btn {
+.btn, .colorify {
   color: rgb(0, 0, 0);
   background: rgb(251, 255, 0);
   font-weight: bold;
@@ -79,7 +80,7 @@ a li,
 .back:hover,
 li:hover {
   color: black;
-  background: rgba(244, 254, 146, 0.5);
+  background: rgba(245, 20, 4, 0.81);
   cursor: pointer;
   text-decoration: underline;
 }
