@@ -1,5 +1,5 @@
 body {
-  font-family: helvetica-light;
+  font-family: 'Courier New', monospace;
   font-size: 1em;
   line-height: 1.7em;
   display: flex;
@@ -19,7 +19,7 @@ header {
 }
 
 h2 {
-  margin: 0;
+  margin: 60px 0;
   padding: 10px;
   font-size: 1.5em;
   line-height: 0.8em;
@@ -57,11 +57,10 @@ ul {
 .back,
 a li,
 .btn {
-  color: white;
-  background: black;
+  color: rgb(0, 0, 0);
+  background: rgb(251, 255, 0);
   font-weight: bold;
   padding: 1.6vmin 3vmin;
-  border-radius: 2vmin;
   font-size: 1.3em;
   margin: 2vmin;
 }
@@ -145,7 +144,7 @@ main {
 
 /* The Language Button */
 
-#language {
+.nicebutton {
   border-left: 1px;
   border-radius: 1vmin;
   padding: 0 2vmin;
@@ -153,7 +152,7 @@ main {
   align-self: right;
 }
 
-#language:hover {
+.nicebutton:hover {
   cursor: pointer;
 }
 
@@ -207,3 +206,10 @@ iframe {
   background-position:center;
 }
 
+.bigger {
+  font-size:1.6em;
+}
+
+.smaller {
+  font-size:1em;
+}

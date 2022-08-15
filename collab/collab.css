@@ -1,0 +1,32 @@
+/*  Adjust background image and positioning */
+
+section article {
+  line-height: normal;
+  background-color: #FFF;
+  width:fit-content;
+  margin: 20px 0;
+  max-width: 100vmin;
+  min-width: 50vmin;
+}
+
+h2 {
+  margin-bottom: 0;
+}
+
+img {
+  max-width: 80%
+}
+
+.image {
+  flex-basis: 60%;
+  flex-shrink: 0;
+}
+
+.text {
+  font-size: 20px;
+}
+
+a {
+  color:blue;
+  text-decoration: underline;
+}

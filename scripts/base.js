@@ -1,7 +1,4 @@
-import { footer } from '/scripts/footer.js';
 import { backButton } from '/scripts/backbutton.js'
-
-footer();
 
 backButton();
 

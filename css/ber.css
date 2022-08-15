@@ -1,6 +1,6 @@
 body {
     padding: 30px;
-    font-family: helvetica-light;
+    font-family: 'Courier New', monospace;
     text-align: center;
 }
 
@@ -37,10 +37,6 @@ span {
     cursor: pointer;
     background: yellow;
     color: black;
-}
-
-.but div {
-    /*margin:20px;*/
 }
 
 .but:hover {

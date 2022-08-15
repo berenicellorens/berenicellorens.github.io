@@ -119,24 +119,24 @@ export const home = [{
   "url": "/cv",
 },
 {
-  "type": "solo",
+  "type": "albums",
   "name": "Discos",
-  "url": "/solo/discos/",
+  "url": "/music/albums/",
 },
 {
-  "type": "solo",
+  "type": "dj",
   "name": "Dj Sets",
-  "url": "/solo/dj/",
+  "url": "/music/dj/",
 },
 {
   "type": "duo",
   "name": "Marmotas Dreams",
-  "url": "/colab/marmotas/",
+  "url": "/duo/marmotas/",
 },
 {
   "type": "duo",
   "name": "SoBeryNice",
-  "url": "/colab/sobery/",
+  "url": "/duo/sobery/",
 },
 {
   "type": "duo",
@@ -145,7 +145,7 @@ export const home = [{
   "url": "https://fdch.github.io/toros",
 },
 {
-  "type": "arte",
+  "type": "explorations",
   "name": "Videoarte",
-  "url": "/arte/video/",
+  "url": "/explorations/video/",
 }, rayaduras, cursividad ];
