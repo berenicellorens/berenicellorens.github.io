@@ -55,9 +55,9 @@ export const bandcamp = {
   "img": '/img/bandcamp.png'
 }
 export const mixcloud = {
-  "name": "Berenicecream",
-  "title": "Listen to Berenice Llorens on Mixcloud",
-  "url": "https://www.mixcloud.com/Berenicecream",
+  "name": "Soundcloud",
+  "title": "Listen to Berenice Llorens on Soundcloud",
+  "url": "https://soundcloud.com/berenicellorens",
   "img": '/img/mixcloud.png'
 }
 export const cursividad = {
