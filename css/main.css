@@ -20,9 +20,9 @@ header {
 }
  .mispalabras {
   font-family: 'helvetica';
+  font-size: 0,3em;
   margin: 30px 0;
   padding: 6px;
-  font-size: 0,3em;
   text-align: justify;
 
    }
