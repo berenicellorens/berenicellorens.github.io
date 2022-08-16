@@ -20,7 +20,7 @@ header {
 }
  .mispalabras {
   font-family: 'Garamond';
-  font-size: 0.9em;
+  font-size: 1em;
   line-height: 1em;
   margin: 30px 0;
   padding: 9px;
@@ -35,7 +35,7 @@ header {
 h2 {
   margin: 60px 0;
   padding: 10px;
-  font-size: 1.5em;
+  font-size: 1.7em;
   line-height: 0.8em;
   margin-top: 2em;
 }
