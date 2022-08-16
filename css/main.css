@@ -8,7 +8,7 @@ body {
   justify-content: center;
   max-width: 130vmin;
   margin: 4vmin auto auto auto;
-  line-break: anywhere;
+  text-align: justify;
 }
 
 header {
