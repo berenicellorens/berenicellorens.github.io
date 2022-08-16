@@ -4,4 +4,4 @@ import { footerLinks } from '/scripts/footer.js';
 
 loadCSV('dj.csv');
 
-footerLinks([soundcloud],[youtube], 'btn');
+footerLinks([soundcloud, youtube], 'btn');
