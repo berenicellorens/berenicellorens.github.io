@@ -27,6 +27,7 @@ header {
   text-align: justify;
   margin-right: 4em;
   margin-left: 4em;
+   margin-top: 2em;
    
 
    }
@@ -36,6 +37,7 @@ h2 {
   padding: 10px;
   font-size: 1.5em;
   line-height: 0.8em;
+  margin-top: 2em;
 }
 
 nav {
