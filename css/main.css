@@ -27,7 +27,7 @@ header {
   text-align: justify;
   margin-right: 4em;
   margin-left: 4em;
-   margin-top: 2em;
+   margin-top: 0.1em;
    
 
    }
@@ -50,7 +50,7 @@ nav {
   align-items: center;
   justify-content: center;
   max-width: 200vmin;
-  margin: auto;
+  margin: 2em;
 }
 
 /* Make Lists of type Flex, with items aligning along the x-axis */
