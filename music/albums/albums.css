@@ -1,8 +1,7 @@
 body {
   background-image: url('/img/el_pelo_verde.jpg');
-  background-repeat: repeat-x;
   background-color: #333;
-  background-size: 50%;
+  background-size: 200%;
 }
  
 h1 {
