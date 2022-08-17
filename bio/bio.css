@@ -11,3 +11,12 @@
 h2 {
   margin-bottom: 0;
 }
+
+img {
+  max-width: 80%
+}
+
+.image {
+  flex-basis: 60%;
+  flex-shrink: 0;
+}
