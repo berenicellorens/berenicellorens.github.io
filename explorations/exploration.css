@@ -1,1 +1,15 @@
+/*  Adjust background image and positioning */
 
+body {
+  background-image: url("/img/improlija.jpg");
+  background-blend-mode: multiply;
+  background-repeat: repeat-x;
+  background-size: 50%;
+}
+
+/* Adjust title coloring */
+
+.title {
+  /* background-image: url("/img/improlija.jpg"); */
+  color:palevioletred;
+}
