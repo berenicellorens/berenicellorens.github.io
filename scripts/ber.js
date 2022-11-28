@@ -21,6 +21,7 @@ const beremarquee = [
   "berenicellorens",
   "welcometomysound",
   "sound art",
+  "field recording"
   "berenicellorens",
   "atmospheres",
   "experimentaltechno",
