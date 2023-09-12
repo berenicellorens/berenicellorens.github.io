@@ -3,17 +3,19 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: auto;
+  margin: 0 auto;
   max-width: 100vmin;
+  text-align: center;
 } 
 .container a {
   text-decoration: underline;
-  color: blue;
+  color: black;
 }
 .container p {
   text-align: center;
 }
 .container img {
- width:100vmin; 
+ /* width:100vmin;  */
+ max-height:40vmin;
 }
 

@@ -24,14 +24,14 @@ async function loader(response) {
     const image_source = `./rayaduras/${data[0]}`;
     image.setAttribute('src', image_source);
     // add the image description to the alt-text attribute
-    const titulo = data[1] !== "" ? data[1] : data[0];
+    const titulo = String(data[1] !== "" ? data[1] : data[0]).replace('.jpg', '').replace('.jpeg', '').replace('.png', '');
     image.setAttribute('alt', titulo);
 
     // add the title to the title tag
     link.setAttribute('href', image_source);
     link.setAttribute('title', titulo);
     link.setAttribute('target', '_blank');
-    link.innerHTML = index + " " + titulo;
+    link.innerHTML = titulo;
     title.append(link);
     
     // wrap the image on the link as well
