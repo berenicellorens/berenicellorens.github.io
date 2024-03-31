@@ -1,8 +1,8 @@
 #lista_de_eventos {
     background-color: white;
-    line-height:1.5em;
+    line-height:1em;
     margin-bottom: 10vmin;
-    font-weight: bold;
+    font-weight: light;
 }
 
 .lista_de_eventos-item {
