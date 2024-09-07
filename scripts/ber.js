@@ -33,6 +33,7 @@ const beremarquee = [
   "fields",
   "pure",
   "data"
+
   "noises",
   "experimental",
   "techno",
