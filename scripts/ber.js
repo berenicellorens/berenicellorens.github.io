@@ -12,9 +12,8 @@ const scrollspeed = [5, 15];
 const scrollwidth = [100, 300];
 const beremarquee = [
   "experimental",
-  "music",
   "ser",
-  "improvisation",
+  "ecosystem",
   "atmospheres",
   "see",
   "blablablablabla",
@@ -28,7 +27,6 @@ const beremarquee = [
   "listen",
   "words",
   "sounds",
-  "ecosystem",
   "artificial",
   "play",
   "time",
@@ -38,7 +36,7 @@ const beremarquee = [
   "noises",
   "experimental",
   "techno",
-  "puls",
+  "pulse",
   "broken",
   "w e l c o m e",
   "dice",
