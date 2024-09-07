@@ -18,7 +18,6 @@ const beremarquee = [
   "see",
   "blablablablabla",
   "improvisation",
-  "performance",
   "observar",
   "free",
   "post",
@@ -39,7 +38,6 @@ const beremarquee = [
   "techno",
   "pulse",
   "broken",
-  "w e l c o m e",
   "dice",
   "ver",
 ]
