@@ -4,6 +4,7 @@ body {
 .bio {
   font-family:'Times New Roman', Times, serif;
   line-height: normal;
+  background-color: #000000;
   color:#fff;
   width:fit-content;
   margin: auto;
