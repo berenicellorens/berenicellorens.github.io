@@ -1,12 +1,18 @@
 /*  Adjust background image and positioning */
 
 section article {
-  line-height: normal;
+  line-height:18px;
   background-color: #FFF;
   width:fit-content;
-  margin: 20px 0;
-  max-width: 100vmin;
+  margin: 10px 0;
+  max-width: 120vmin;
   min-width: 50vmin;
+}
+
+h1 {
+ font-size: 18px ;
+ width:fit-content;
+ margin:auto;   
 }
 
 h2 {
@@ -18,13 +24,13 @@ img {
 }
 
 .image {
-  flex-basis: 60%;
+  flex-basis: 40%;
   flex-shrink: 0;
 }
 
 .text {
   font-family: 'helvetica';
-  font-size: 16px;
+  font-size: 14px;
 }
 
 a {
