@@ -4,6 +4,7 @@ body {
 .bio {
   font-family:'Times New Roman', Times, serif;
   line-height: normal;
+  color:#fff;}
   background-color: #00ff0f;
   width:fit-content;
   margin: auto;
@@ -16,7 +17,7 @@ img {
 }
 
 .image {
-  flex-basis: 60%;
+  flex-basis: 40%;
   flex-shrink: 0;
   text-align: center;
 }
