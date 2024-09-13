@@ -7,8 +7,8 @@
 import {mobile} from './mobile.js';
 
 // Velocidad de las palabras
-const scrolldelay = 2;
-const scrollspeed = [5, 15];
+const scrolldelay = 4;
+const scrollspeed = [5, 12];
 const scrollwidth = [100, 300];
 const beremarquee = [
   "experimental",
@@ -19,7 +19,6 @@ const beremarquee = [
   "blablablablabla",
   "improvisation",
   "observar",
-  "free",
   "post",
   "beyond of",
   "sound art",
