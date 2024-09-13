@@ -2,12 +2,11 @@ body {
     padding: 20px;
     font-family: 'Courier New', monospace;
     text-align: center;
-    font-size: 4px;
 
 }
 
 h1 {
-    font-size: 4em;
+    font-size: 7em;
     margin: 0px;
     padding: 0px;
     letter-spacing: -10px;
