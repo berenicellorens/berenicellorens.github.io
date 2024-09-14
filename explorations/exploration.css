@@ -2,8 +2,7 @@
 
 body {
   background-image: url("/img/2dosunoconcgpt.png");
-  background-blend-mode: multiply;
-  background-repeat: no repeat;
+  background-repeat: no-repeat;
   background-size: cover;
 }
 
