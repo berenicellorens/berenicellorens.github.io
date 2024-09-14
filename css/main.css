@@ -23,7 +23,8 @@ header {
     font-size: 1em;
     line-height: 1em;
     margin: 30px 0;
-    padding: 9px;  text-align: center;
+    padding: 9px; 
+     text-align: center;
   margin-right: 4em;
   margin-left: 4em;
    margin-top: 0.1em;
@@ -74,7 +75,8 @@ a li,
   color: rgb(0, 0, 0);
   background: rgb(251, 255, 0);
   font-weight: bold;
-  padding: 1.6vmin 3vmin;
+  text-align: center;
+  padding: 1vmin 2vmin;
   font-size: 1.3em;
   margin: 2vmin;
 }
@@ -221,13 +223,10 @@ iframe {
 }
 
 .bigger {
-  font-size:1.8em;
+  font-size:1.6em;
 }
 
 .smaller {
   font-size:1em;
+  text-align: center;
 }
-.sello {
-    text-align: center;
-  }
-  
