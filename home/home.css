@@ -1,9 +1,9 @@
 /*  Adjust background image and positioning */
 
 body {
-  background-image: url("/img/1tresunoconcgpt.png");
-  background-repeat:repeat-x;
-  background-position: top;
+  background-image: url("/img/.jpg");
+  background-repeat: repeat-x;
+  background-position:right;
   background-size:cover;
 }
 
