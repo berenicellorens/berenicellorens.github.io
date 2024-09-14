@@ -2,7 +2,8 @@
 
 body {
   background-image: url("/img/1unoconcgpt.png");
-  background-repeat: repeat;
+  background-repeat:repeat-x;
+  background-position: top;
   background-size:cover;
 }
 
