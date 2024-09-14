@@ -1,0 +1,13 @@
+/*  Adjust background image and positioning */
+
+body {
+  background-image: url("/img/1unoconcgpt.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Adjust title coloring */
+
+.title {
+  color:palevioletred;
+}
