@@ -223,10 +223,13 @@ iframe {
 }
 
 .bigger {
-  font-size:1.6em;
+  font-size:1.8em;
 }
 
 .smaller {
   font-size:1em;
   text-align: center;
 }
+.sello {
+    text-align: center;
+  }
