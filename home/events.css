@@ -10,7 +10,7 @@
 }
 
 .lista_de_eventos-item {
-    text-align: left;
+    text-align: center;
     display: flex;
     flex-direction: column;
     padding: 0;
