@@ -2,8 +2,8 @@
 
 body {
   background-image: url("/img/home5.jpg");
-  background-repeat: no-repeat;
-  background-position:top;
+  background-repeat: no repeat;
+  background-position:above;
   background-size:cover;
 }
 
