@@ -1,4 +1,4 @@
-#lista_de_eventos, #lista_de_eventos-past {
+#lista_de_eventos {
     background-color: rgb(110, 248, 128);
     color:#000000;
     line-height:1em;
@@ -8,21 +8,17 @@
     padding: 1vmin;
     display: block;
     margin: 0;
-    border-radius: 10px;
 }
-#lista_de_eventos-past {
-    background-color: rgb(55, 248, 55);
- }
 
-li.lista_de_eventos-item, li.lista_de_eventos-past-item {
-  border-radius: 10px;
-  padding: 0.5vmin;
- }
-
-li.lista_de_eventos-item:hover, li.lista_de_eventos-past-item:hover {
+li.lista_de_eventos-item:hover {
   text-decoration: none;
   cursor: default;
  }
+
+li.hidden {
+    display: none;
+}
+
 article {
     padding: 0;
     margin: 0;
