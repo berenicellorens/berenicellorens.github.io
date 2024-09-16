@@ -1,13 +1,23 @@
 #lista_de_eventos {
-    background-color: rgb(110, 248, 128);
-    color:#000000;
-    line-height:1em;
-    margin-bottom: 10vmin;
-    text-align: left;
-    list-style-position: inside;
-    padding: 1vmin;
-    display: block;
-    margin: 0;
+   background-color: rgb(110, 248, 128);
+   font-size: 0.8em;
+   color:#000000;
+   line-height:1em;
+   margin-bottom: 10vmin;
+   text-align: left;
+   list-style-position: inside;
+   display: block;
+   margin: 0;
+}
+
+.pancarta { 
+  padding: 1vmin;
+  font-weight: bold;
+}
+
+#more-button {
+  padding: 1vmin;
+  font-weight: bold;
 }
 
 li.lista_de_eventos-item:hover {
@@ -15,7 +25,7 @@ li.lista_de_eventos-item:hover {
   cursor: default;
  }
 
-li.hidden {
+div.hidden {
     display: none;
 }
 
