@@ -1,9 +1,9 @@
 /*  Adjust background image and positioning */
 
 body {
-  background-image: url("/img/music.jpg");
-  background-repeat:repeat-x;
-  background-position: top;
+  background-image: url("/img/music2.jpg");
+  background-repeat: no repeat;
+  background-position: center;
   background-size:cover;
 }
 
