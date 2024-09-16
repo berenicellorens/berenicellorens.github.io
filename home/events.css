@@ -1,21 +1,28 @@
-#lista_de_eventos {
+#lista_de_eventos, #lista_de_eventos-past {
     background-color: rgb(110, 248, 128);
-    font-style:xx;
-    font-size:small;
     color:#000000;
     line-height:1em;
     margin-bottom: 10vmin;
-    font-weight: light;
-}
-
-.lista_de_eventos-item {
     text-align: left;
-    display: flex;
-    flex-direction: column;
-    padding: 0;
-    margin: auto;
+    list-style-position: inside;
+    padding: 1vmin;
+    display: block;
+    margin: 0;
+    border-radius: 10px;
 }
+#lista_de_eventos-past {
+    background-color: rgb(55, 248, 55);
+ }
 
+li.lista_de_eventos-item, li.lista_de_eventos-past-item {
+  border-radius: 10px;
+  padding: 0.5vmin;
+ }
+
+li.lista_de_eventos-item:hover, li.lista_de_eventos-past-item:hover {
+  text-decoration: none;
+  cursor: default;
+ }
 article {
     padding: 0;
     margin: 0;
@@ -24,5 +31,4 @@ article {
 
 h3 {
     text-align: center;  
-
 }
