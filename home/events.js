@@ -1,28 +1,18 @@
+// define el boton de more/less en home
+const more = document.getElementById('more-button');
 
-let container = document.getElementById('lista_de_eventos');
+more.innerHTML = 'More';
 
-function displayEventList (text) {
-  // console.log('Display Event List', text);
-  Array.from(text.split('\n')).map((string, index) => {
-    const x = document.createElement('p');
-    x.innerHTML = String(string).replace('\n', '');
-    x.id = 'event-' + String(index);
-    x.className = 'lista_de_eventos-item';
-    container.appendChild(x);
-  })
+more.className = 'more-button';
+
+more.onclick = function() {
+
+  const items = document.getElementsByClassName('hidden');
+
+  Array.from(items).map((item) => {
+    item.style.display = item.style.display === 'block' ? 'none' : 'block';
+  });
+
+  more.innerHTML = more.innerHTML === 'More' ? 'Less' : 'More';
+
 }
-
-export function loadEventList(url, callback=displayEventList) {
-  // console.log(url);
-  const xobj = new XMLHttpRequest();
-  xobj.overrideMimeType("text/plain");
-  xobj.open('GET', url, true);
-  xobj.onreadystatechange = function () {
-    if (xobj.readyState == 4 && xobj.status == "200") {
-      callback(xobj.responseText);
-    }
-  };
-  xobj.send(null);
-}
-
-loadEventList('events.txt')

@@ -1,19 +1,32 @@
 #lista_de_eventos {
-    background-color: rgb(110, 248, 128);
-    font-style:xx;
-    font-size:small;
-    color:#000000;
-    line-height:1em;
-    margin-bottom: 10vmin;
-    font-weight: light;
+   background-color: rgb(110, 248, 128);
+   font-size: 0.8em;
+   color:#000000;
+   line-height:1em;
+   margin-bottom: 10vmin;
+   text-align: left;
+   list-style-position: inside;
+   display: block;
+   margin: 0;
 }
 
-.lista_de_eventos-item {
-    text-align: left;
-    display: flex;
-    flex-direction: column;
-    padding: 0;
-    margin: auto;
+.pancarta { 
+  padding: 1vmin;
+  font-weight: bold;
+}
+
+#more-button {
+  padding: 1vmin;
+  font-weight: bold;
+}
+
+li.lista_de_eventos-item:hover {
+  text-decoration: none;
+  cursor: default;
+ }
+
+div.hidden {
+    display: none;
 }
 
 article {
@@ -24,5 +37,4 @@ article {
 
 h3 {
     text-align: center;  
-
 }
