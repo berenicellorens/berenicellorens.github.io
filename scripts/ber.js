@@ -44,7 +44,7 @@ const beremarquee = [
 // boton BER EN ICE minimum height and width
 const windowWidthMin = 200;
 const windowHeightMin = 150;
-const homeButtonTextArray = [ "BER", "EN", "ICE" ];
+const homeButtonTextArray = [ "INHALE" ];
 
 
 export function ber() {
@@ -66,7 +66,7 @@ export function ber() {
 
   // Place the floating berenice marquee elements
   // 4 if we are on a mobile device, 17 otherwise
-  for (let i = 0; i < (mobile ? 4 : 17); i++) {
+  for (let i = 0; i < (mobile ? 6 : 40); i++) {
     const h1 = document.createElement('h1');
     const b = document.createElement('marquee');
     b.setAttribute('scrolldelay', i * scrolldelay);

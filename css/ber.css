@@ -5,8 +5,15 @@ body {
 
 }
 
+body {
+    background-image: url("/img/.jpg");
+    background-repeat: no repeat;
+    background-position:above;
+    background-size:cover;
+  }
+  
 h1 {
-    font-size: 7em;
+    font-size: 5em;
     margin: 0px;
     padding: 0px;
     letter-spacing: -10px;
@@ -16,29 +23,28 @@ h1 {
 
 span {
     position: relative;
-    font-size: 3em;
-    margin: auto;
+    text-align: center;
+    font-size: 2em;
+    margin:0;
     font-weight: bold;
 }
 
 #butdiv_centered {
     position: fixed;
-    margin: 0 auto;
+    margin: 0 ;
+    padding: 0;
 }
+
 
 .but {
     /*position:relative;*/
-    background: black;
-    color: white;
-    padding: 20px 40px;
-    border-radius: 20px;
+    background: rgb(218, 255, 9);
+    color: rgb(167, 5, 255);
+    padding: 1em 1em;
+    text-align: center;
+
 }
 
-.but div:hover {
-    cursor: pointer;
-    background: yellow;
-    color: black;
-}
 
 .but:hover {
     background: white;
