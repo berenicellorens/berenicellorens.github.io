@@ -14,8 +14,9 @@ body {
 }
 
 .mispalabras {
-    font-family: 'Garamond bold ';
-    font-size: 0.8em;
+    font-family: 'Courier New', monospace;
+    font-weight: regular;
+    font-size: 1em;
     line-height: 1em;
     margin: 30px 0;
     padding: 9px; 
