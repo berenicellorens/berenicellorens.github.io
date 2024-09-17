@@ -37,3 +37,13 @@ a {
   color:blue;
   text-decoration: underline;
 }
+
+.colorify {
+    color: rgb(0, 0, 0);
+    background: rgb(251, 255, 0);
+    font-weight: bold;
+    text-align: center;
+    padding: 0.5vmin 0.4vmin;
+    font-size: 1em;
+    margin: 0;
+  }
