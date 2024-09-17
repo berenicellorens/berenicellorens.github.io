@@ -95,7 +95,7 @@ a li,
 .back:hover,
 li:hover {
   color: black;
-  background: rgba(245, 4, 4, 1);
+  background: rgb(155, 83, 255);
   cursor: pointer;
   text-decoration: underline;
 }
