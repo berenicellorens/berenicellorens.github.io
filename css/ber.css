@@ -24,8 +24,9 @@ h1 {
 span {
     position: relative;
     text-align: center;
-    font-size: 2em;
+    font-size: 1.5em;
     margin:0;
+    padding: auto;
     font-weight: bold;
 }
 
@@ -39,7 +40,7 @@ span {
 .but {
     /*position:relative;*/
     background: rgb(218, 255, 9);
-    color: rgb(167, 5, 255);
+    color: rgb(108, 0, 167);
     padding: 1em 1em;
     text-align: center;
 
