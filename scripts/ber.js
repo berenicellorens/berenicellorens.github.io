@@ -58,30 +58,21 @@ export function ber() {
 
   const timeToWaitForButton = 2000; // in milliseconds
   const documentBody = document.querySelector('body');
-  const divMainContent = document.getElementById('maincontent') ;
   const homeButtonWrapper = document.createElement('div');
   const homeButton = document.createElement('div');
   const [winHeight, winWidth] = [window.innerHeight, window.innerWidth];
 
   // Place the floating berenice marquee elements
   // 4 if we are on a mobile device, 17 otherwise
-  
-  for (let i = 0; i < (mobile ? 6 : 30); i++) {
+  for (let i = 0; i < (mobile ? 6 : 40); i++) {
     const h1 = document.createElement('h1');
     const b = document.createElement('marquee');
-    const divMainContent = document.getElementById('maincontent') ;
-
-     // Añadir posicionamiento dentro del viewport
-  h1.style.position = 'absolute';
-  h1.style.top = rand(0, window.innerHeight - 100) + 'px'; // Ajusta posición vertical
-  h1.style.left = rand(0, window.innerWidth - 300) + 'px'; // Ajusta posición horizontal
-
     b.setAttribute('scrolldelay', i * scrolldelay);
     b.setAttribute('scrollamount', rand(scrollspeed[0], scrollspeed[1]));
     b.style.width = rand(scrollwidth[0], scrollwidth[1]) + 'px';
     b.innerHTML = beremarquee[i % beremarquee.length];
     h1.appendChild(b);
-    setRandTimeout(() => divMainContent.appendChild(h1), timeToWaitForButton);
+    setRandTimeout(() => documentBody.appendChild(h1), timeToWaitForButton);
   }
 
   setTimeout(() => {
