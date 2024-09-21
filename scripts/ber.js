@@ -75,6 +75,7 @@ export function ber() {
     setRandTimeout(() => documentBody.appendChild(h1), timeToWaitForButton);
   }
 
+
   setTimeout(() => {
     // Prepare the floating berenice button
     homeButtonWrapper.setAttribute("id", "butdiv_centered");
