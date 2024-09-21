@@ -6,6 +6,7 @@ https://berenicellorens.github.io/explorations/video/index.html
 https://berenicellorens.github.io/music/index.html
 https://berenicellorens.github.io/music/dj/index.html
 https://berenicellorens.github.io/music/albums/index.html
+https://berenicellorens.github.io/music/radio/index.html
 https://berenicellorens.github.io/collab/index.html
 https://berenicellorens.github.io/duo/marmotas/index.html
 https://berenicellorens.github.io/duo/sobery/index.html

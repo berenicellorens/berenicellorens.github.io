@@ -123,6 +123,11 @@ export const home = [{
   "url": "/music/dj/",
 },
 {
+    "type": "radio",
+    "name": "Radio Works",
+    "url": "/music/radio/",
+  },
+{
   "type": "duo",
   "name": "Marmotas Dreams",
   "url": "/duo/marmotas/",
