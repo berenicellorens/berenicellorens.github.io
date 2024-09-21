@@ -48,7 +48,21 @@
     <script type='module' src="scripts/ber.js"></script>
   </head>
 
-  <body></body>
+  <body>
+    
+    <div class="video-background">
+        <video autoplay loop muted playsinline>
+          <source src="/img/paginavideo.mp4" type="video/mp4">
+          Tu navegador no soporta la reproducción de video.
+        </video>
+      </div>
+      
+      <div id="maincontent">
+        <!-- Aquí irán los elementos de marquee -->
+      </div>
+   
+  </body>
+
   <script type='module'>
     import { ber } from './scripts/ber.js';
     ber();
