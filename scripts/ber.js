@@ -71,10 +71,10 @@ export function ber() {
     const b = document.createElement('marquee');
     const divMainContent = document.getElementById('maincontent') ;
 
-     // Añadir posicionamiento dentro del viewport
-  h1.style.position = 'absolute';
-  h1.style.top = rand(0, window.innerHeight - 100) + 'px'; // Ajusta posición vertical
-  h1.style.left = rand(0, window.innerWidth - 300) + 'px'; // Ajusta posición horizontal
+//      // Añadir posicionamiento dentro del viewport
+//   h1.style.position = 'absolute';
+//   h1.style.top = rand(0, window.innerHeight ) + 'px'; // Ajusta posición vertical
+//   h1.style.left = rand(0, window.innerWidth ) + 'px'; // Ajusta posición horizontal
 
     b.setAttribute('scrolldelay', i * scrolldelay);
     b.setAttribute('scrollamount', rand(scrollspeed[0], scrollspeed[1]));
