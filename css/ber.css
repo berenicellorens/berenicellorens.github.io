@@ -2,15 +2,12 @@ body {
     padding: 20px;
     font-family: 'Courier New', monospace;
     text-align: center;
+    background-image: url("/img/piezareducida.jpg");
+    background-repeat:no-repeat;
+    background-position: center;
+    background-size: cover;
 
 }
-
-body {
-    background-image: url("/img/piezaprincipal2.jpg");
-    background-repeat:no-repeat;
-    background-position: center center;
-    background-size: cover;
-  }
   
 h1 {
     font-size: 5em;
