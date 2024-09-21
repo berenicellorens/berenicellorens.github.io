@@ -1,5 +1,5 @@
 body {
-  background: rgb(12, 107, 232);
+  background: rgb(0, 0, 0);
 
 }
 
@@ -22,3 +22,18 @@ footer img {
 .subtitle {
   color: rgb(10 255 108 / 100%);
 }
+.mispalabras {
+    font-family: 'Courier New', monospace;
+    font-weight: regular;
+    color: azure;
+    font-size: 1em;
+    line-height: 1em;
+    margin: 30px 0;
+    padding: 9px; 
+     text-align: center;
+  margin-right: 4em;
+  margin-left: 4em;
+   margin-top: 0.1em;
+   
+
+   }
