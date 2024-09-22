@@ -113,6 +113,11 @@ export const home = [{
   "url": "/cv",
 },
 {
+  "type": "radio",
+  "name": "radio",
+  "url": "/radio/",
+  },
+{
   "type": "albums",
   "name": "Discos",
   "url": "/music/albums/",
@@ -122,11 +127,6 @@ export const home = [{
   "name": "Dj Sets",
   "url": "/music/dj/",
 },
-{
-    "type": "radio",
-    "name": "Radio Works",
-    "url": "/music/radio/",
-  },
 {
   "type": "duo",
   "name": "Marmotas Dreams",
