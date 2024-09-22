@@ -1,8 +1,14 @@
 /*  Adjust background image and positioning */
 
+body {
+    
+background-color: black;
+
+}
+
 section article {
   line-height:18px;
-  background-color: #FFF;
+  background-color: #070000;
   width:fit-content;
   margin: 10px 0;
   max-width: 120vmin;
@@ -13,24 +19,29 @@ h1 {
  font-size: 18px ;
  width:fit-content;
  margin:auto;   
+ color: aliceblue;
 }
 
 h2 {
   margin-bottom: 0;
+  color: aliceblue;
 }
 
 img {
-  max-width: 80%
+  max-width: 60%;
+  size: smaller;
 }
 
 .image {
-  flex-basis: 40%;
+  flex-basis: 20%;
   flex-shrink: 0;
+   size: smaller ;
 }
 
 .text {
-  font-family: 'helvetica';
-  font-size: 14px;
+  font-family: 'Courier New', monospace;
+  font-size: 0.8em;
+  color: aliceblue;
 }
 
 a {
@@ -59,6 +70,7 @@ a {
   margin-right: 4em;
   margin-left: 4em;
    margin-top: 0.1em;
+   color: aliceblue;
    
 
    }
