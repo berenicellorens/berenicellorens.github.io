@@ -223,10 +223,9 @@ iframe {
 }
 
 .bigger {
-  font-size:1.8em;
-  text-shadow: 2px 2px 4px rgb(255, 255, 255); /* Adding a shadow for better readability */
-  text-overflow: ellipsis;
-}
+    font-size:1.8em;
+    text-overflow: ellipsis;
+  }
 
 .smaller {
   font-size:1em;

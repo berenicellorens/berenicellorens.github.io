@@ -39,7 +39,7 @@ img {
 }
 
 .text {
-  font-family: 'Courier New', monospace;
+  font-family: 'Lucida sans', 'Lucida Sans Regular' , sans-serif;
   font-size: 0.8em;
   color: aliceblue;
 }

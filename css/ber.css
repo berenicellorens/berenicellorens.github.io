@@ -36,8 +36,8 @@ span {
 
 .but {
     /*position:relative;*/
-    background: rgb(218, 255, 9);
-    color: rgb(108, 0, 167);
+    background: rgb(203, 232, 37);
+    color: rgb(0, 0, 0);
     padding: 1em 1em;
     text-align: center;
 
@@ -45,7 +45,7 @@ span {
 
 
 .but:hover {
-    background: rgb(33, 199, 0);
+    background: rgb(207, 17, 249);
 }
 
 }
