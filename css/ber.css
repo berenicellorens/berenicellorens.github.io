@@ -1,14 +1,26 @@
 body {
-    padding: 4em;
-    margin: 4em;
     font-family: 'Courier New', monospace;
     text-align: center;
     background-image: url("/img/music4.jpg");
-    background-repeat: no-repeat;
-    background-position: fixed;
-    background-size: cover;
+  background-repeat: no repeat;
+  background-position: center;
+  background-size:cover;
 }
- 
+ /* Para pantallas más pequeñas */
+@media (max-width: 768px) {
+    body {
+      background-size: cover; /* Cambia a 'contain' para asegurar que toda la imagen se vea */
+      background-position: top center; /* Puedes ajustar la posición en pantallas móviles */
+    }
+  }
+  
+  /* Para pantallas muy grandes */
+  @media (min-width: 1200px) {
+    body {
+      background-size: cover; /* Mantiene el 'cover' para pantallas grandes */
+    }
+  
+  
   
 h1 {
     font-size: 5em;
@@ -50,7 +62,6 @@ span {
     background: rgb(207, 17, 249);
 }
 
-}
 
 #maincontent {
     display: grid;
