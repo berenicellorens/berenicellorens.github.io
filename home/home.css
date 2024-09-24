@@ -7,6 +7,22 @@ body {
   background-size:cover;
 }
 
+/* Para pantallas más pequeñas */
+@media (max-width: 768px) {
+    body {
+      background-size: cover; /* Cambia a 'contain' para asegurar que toda la imagen se vea */
+      background-position: top center; /* Puedes ajustar la posición en pantallas móviles */
+    }
+  }
+  
+  /* Para pantallas muy grandes */
+  @media (min-width: 1200px) {
+    body {
+      background-size: cover; /* Mantiene el 'cover' para pantallas grandes */
+    }
+
+}
+
 /* Adjust title coloring */
 
 .title {
