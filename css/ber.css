@@ -1,9 +1,10 @@
 body {
-    padding: 20px;
+    padding: 4em;
+    margin: 4em;
     font-family: 'Courier New', monospace;
     text-align: center;
-    background-image: url("/img/agua-montaña1.jpg");
-    background-repeat:initial;
+    background-image: url("/img/music4.jpg");
+    background-repeat:center;
     background-size: cover;
 }
  
