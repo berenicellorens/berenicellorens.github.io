@@ -4,7 +4,8 @@ body {
     font-family: 'Courier New', monospace;
     text-align: center;
     background-image: url("/img/music4.jpg");
-    background-repeat:center;
+    background-repeat: no-repeat;
+    background-position: fixed;
     background-size: cover;
 }
  
