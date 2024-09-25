@@ -72,8 +72,8 @@ ul {
 .back,
 a li,
 .btn, .colorify {
-  color: rgb(0, 0, 0);
-  background: rgb(251, 255, 0);
+  color: rgb(230, 250, 0);
+  background: rgb(0, 0, 0);
   font-weight: bold;
   text-align: center;
   padding: 1vmin 2vmin;
