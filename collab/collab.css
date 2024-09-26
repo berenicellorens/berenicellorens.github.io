@@ -1,8 +1,24 @@
 /*  Adjust background image and positioning */
-
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1em;
+    margin-left: 2em;
+    margin-right: 2em;
+}
 body {
     
 background-color: black;
+line-height: 1.7em;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: right;
+max-width: 150vmin;
+margin: auto auto auto;
+text-align: justify;
 
 }
 
@@ -10,20 +26,25 @@ section article {
   line-height:18px;
   background-color: #070000;
   width:fit-content;
-  margin: 10px 0;
-  max-width: 120vmin;
-  min-width: 50vmin;
-  margin-right: 2em;
-    margin-left: 2em;
+  box-sizing:border-box;
+  margin: 8px 0;
+  max-width: 190vmin;
+  min-width: 70vmin;
+  margin-right: 0;
+  margin-left: 2em;
+  justify-content: right;
+  
 }
 
 h1 {
- font-size: 15px ;
+ font-size: 18px ;
  font-weight: bold;
  width:fit-content;
  margin:auto;   
  color: aliceblue;
+ justify-content: right;
 }
+
 
 h2 {
     
@@ -47,6 +68,7 @@ img {
   font-family: 'Lucida sans', 'Lucida Sans Regular' , sans-serif;
   font-size: 0.8em;
   color: aliceblue;
+  text-align: justify;
 }
 
 a {
