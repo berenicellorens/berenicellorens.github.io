@@ -27,3 +27,42 @@ body {
 .title {
   color:palevioletred;
 }
+
+/* Estilo del menú fijo */
+#fixed-menu {
+    font-family: 'Lucida Sans', 'Lucida Sans italic';
+    position: fixed; /* Hace que el menú esté fijo en la parte superior */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Asegura que el menú esté por encima de otros elementos */
+    padding: 10px 0;
+}
+
+#fixed-menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center; /* Alinea el menú al centro */
+}
+
+#fixed-menu ul li {
+    margin: 0 15px;
+}
+
+#fixed-menu ul li a {
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+#fixed-menu ul li a:hover {
+    color: #f0f0f0; /* Color al pasar el cursor */
+}
+
+/* Añade padding al cuerpo para que no se superponga el contenido con el menú */
+body {
+    padding-top: 60px; /* Ajusta según el tamaño del menú */
+}
+
