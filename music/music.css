@@ -1,7 +1,7 @@
 /*  Adjust background image and positioning */
 
 body {
-  background-image: url("/img/music4.jpg");
+  background-image: url("/img/berenicellorens3.jpg");
   background-repeat: no repeat;
   background-position: center;
   background-size:cover;
@@ -26,4 +26,41 @@ body {
 
 .title {
   color:palevioletred;
+}
+
+
+}
+
+section article {
+  line-height:18px;
+  background-color: #070000;
+  width:fit-content;
+  box-sizing:border-box;
+  margin: 8px 0;
+  max-width: 190vmin;
+  min-width: 70vmin;
+  margin-right: 1em;
+  margin-left: 1em;
+  justify-content: right;
+  }
+ 
+  img {
+    max-width: 60%;
+    size: smaller;
+  }
+  
+  .image {
+    flex-basis: 20%;
+    flex-shrink: 0;
+     size: smaller ;
+  }
+  
+  .colorify {
+    color: rgb(230, 250, 0);
+    background: rgb(0, 0, 0);
+    font-weight: bold;
+    text-align: center;
+    padding: o,5vmin 1vmin;
+    font-size: 1em;
+    margin: 1vmin;
 }
