@@ -72,13 +72,14 @@ ul {
 .back,
 a li,
 .btn, .colorify {
-  color: rgb(230, 250, 0);
-  background: rgb(0, 0, 0);
+  color: rgb(186, 255, 10);
+  background-color: #000000;
   font-weight: bold;
   text-align: center;
   padding: 1vmin 2vmin;
   font-size: 1.3em;
   margin: 2vmin;
+  
 }
 
 /* The back button */
@@ -91,11 +92,12 @@ a li,
   padding: 0.9vmin;
 }
 
+
 .btn:hover,
 .back:hover,
 li:hover {
+  background-image: url("/img/homehome.jpg");
   color: black;
-  background: rgb(155, 83, 255);
   cursor: pointer;
   text-decoration: underline;
 }
@@ -125,6 +127,7 @@ a.out {
 
 footer div {
   padding: 1.5vmin;
+  font: 'Courier New', monospace;
 }
 
 
