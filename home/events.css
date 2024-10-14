@@ -3,11 +3,12 @@
    font-size: 0.8em;
    color: rgb(186, 255, 10);
    line-height:1em;
-   margin-bottom: 10vmin;
+   margin-bottom: 10em;
    text-align: left;
    list-style-position: inside;
    display: block;
-   margin: 0;
+   margin: 2em;
+   margin-bottom: 7em;
 }
 
 .pancarta { 
