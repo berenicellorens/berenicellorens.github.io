@@ -2,9 +2,9 @@ body {
     font-family: 'Courier New', monospace;
     text-align: center;
     background-image: url("/img/improverdesmall.jpg");
-  background-repeat: no repeat;
-  background-position:top;
-  background-size:cover;
+    background-repeat: no repeat;
+    background-position:top;
+    background-size:cover;
 }
  /* Para pantallas más pequeñas */
 @media (max-width: 768px) {
@@ -53,7 +53,8 @@ span {
 
 .but {
     /*position:relative;*/
-    background: rgb(186, 255, 10);
+    background-image: url("/img/Booter-bandcamp.jpg");
+    
     color: rgb(0, 0, 0);
     padding: 1em 1em;
     text-align: center;
@@ -62,7 +63,9 @@ span {
 
 
 .but:hover {
-    background: rgb(155, 83, 255);
+    background-image: url("/img/Cascadas-WEb.png");
+    background-position: center;
+
 }
 
 
