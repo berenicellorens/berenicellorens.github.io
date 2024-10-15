@@ -4,7 +4,12 @@
  * And then places a button to go to the home page
  * 
 */
-import {mobile} from './mobile.js';
+import { mobile } from './mobile.js';
+
+function play() {
+  var audio = new Audio('/sound/slow trip.mp3');
+  audio.play();
+}
 
 // Velocidad de las palabras
 const scrolldelay = 4;
@@ -42,7 +47,7 @@ const beremarquee = [
 // boton BER EN ICE minimum height and width
 const windowWidthMin = 200;
 const windowHeightMin = 150;
-const homeButtonTextArray = [ "SPACE/TIME" ];
+const homeButtonTextArray = ["SPACE/TIME"];
 
 
 export function ber() {
@@ -71,6 +76,7 @@ export function ber() {
     b.setAttribute('scrollamount', rand(scrollspeed[0], scrollspeed[1]));
     b.style.width = rand(scrollwidth[0], scrollwidth[1]) + 'px';
     b.innerHTML = beremarquee[i % beremarquee.length];
+    b.onmouseenter = () => play();
     h1.appendChild(b);
     setRandTimeout(() => documentBody.appendChild(h1), timeToWaitForButton);
   }
