@@ -3,22 +3,26 @@
 header {
     display: flex;
     flex-direction: column;
-
-   
+}
+    
 
 body {
-  background-image: url("/img/.jpg");
-  background-repeat:no-repeat;
+  background-image: url("/img/autoretrato-2.jpg");
+  background-repeat: repeat;
   background-position:top;
-  background-size:auto;
+  background-size: contain;
   margin: 1em;
+  margin-top: 3em;
   margin-left: 2em;
   margin-right: 2em;
 }
 
 .mispalabras {
     font-family: 'Courier New', monospace;
+    background-color: white;
     font-weight: regular;
+    text-align: justify;
+    color: rgb(0, 0, 0);
     font-size: 0.9em;
     line-height: 1em;
     margin-right: 1em;
@@ -26,19 +30,19 @@ body {
     margin-top: 0.1em;
     margin: 1em;
     padding: 20px; 
-    text-align: justify;
-    color: rgb(0, 0, 0);
+   
    
 
    }
 
 /* Adjust title coloring */
 
-.title {
-  color:palevioletred;
+h2 {
+    background-color: white;
+  
 }
 
-/* Estilo del menú fijo */
+Estilo del menú fijo
 #fixed-menu {
     font-family: 'Lucida Sans', 'Lucida Sans italic';
     position: fixed; /* Hace que el menú esté fijo en la parte superior */
@@ -47,32 +51,5 @@ body {
     width: 100%;
     z-index: 1000; /* Asegura que el menú esté por encima de otros elementos */
     padding: 10px 0;
-}
-
-#fixed-menu ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    display: flex;
-    justify-content: center; /* Alinea el menú al centro */
-}
-
-#fixed-menu ul li {
-    margin: 0 15px;
-}
-
-#fixed-menu ul li a {
-    color: rgb(0, 0, 0);
-    font-size: 18px;
-    text-transform: uppercase;
-}
-
-#fixed-menu ul li a:hover {
-    color: #f0f0f0; /* Color al pasar el cursor */
-}
-
-/* Añade padding al cuerpo para que no se superponga el contenido con el menú */
-body {
-    padding-top: 60px; /* Ajusta según el tamaño del menú */
 }
 
