@@ -15,7 +15,7 @@ body {
   background-repeat: no-repeat;
   background-position:top;
   background-size: contain;
-  background-color: black;
+  background-color: rgb(255, 248, 248);
   line-height: 1.7em;
   display: flex;
   flex-direction: column;
@@ -38,9 +38,9 @@ body {
     margin-top: 0.1em;
     margin: 1em;
     padding: 1em; 
-    text-align: right;
-    text-align: justify;
-    color: aliceblue;
+    
+    text-align: left;
+    color: black;
    
 
   }
@@ -48,8 +48,8 @@ body {
 div {
     display:content;
     unicode-bidi:isolate;
-    margin: 0.5em;
-    padding: 0.5em;
+    margin: em;
+    padding: em;
   
 }
 
@@ -87,7 +87,7 @@ h2 {
 .text {
     font-family: 'Lucida sans', 'Lucida Sans Regular', sans-serif;
     font-size: 0.8em;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     text-align: right; /* Cambiado a 'right' */
     text-align: justify;
     margin: 1em;
@@ -131,7 +131,7 @@ a {
 }
 
 .sello {
-    color: rgb(255, 255, 255);
+    color: rgb(255, 0, 0);
     font-weight: bold;
 
 }
