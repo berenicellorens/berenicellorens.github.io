@@ -11,32 +11,30 @@ const scrolldelay = 4;
 const scrollspeed = [5, 12];
 const scrollwidth = [100, 300];
 const beremarquee = [
-  "what you are listening?",
   "experimental",
   "monte",
   "ser",
   "ecosystem",
   "atmospheres",
   "ver",
-  "bird",
   "here now",
   "observar",
   "beyond of everithing",
   "words",
   "sounds",
   "do you listen?",
+  "integrate",
+  "reinterpret",
   "artificial",
   "play",
   "time",
-  "what the time is?",
-  "are you feeling?",
   "broken paths",
   "noises",
   "experimental",
-  "feel the air",
   "pulse",
   "broken",
   "dice",
+  "explorar",
 ]
 
 // boton BER EN ICE minimum height and width
