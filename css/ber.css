@@ -1,76 +1,69 @@
 body {
-    font-family: 'Courier New', monospace;
-    text-align: center;
-    background-image: url("/img/improverdesmall.jpg");
-    background-repeat: no repeat;
-    background-position:top;
-    background-size:cover;
+  font-family: 'Courier New', monospace;
+  text-align: center;
+  background-image: url('/img/improverdesmall.jpg');
+  background-repeat: no repeat;
+  background-position: top;
+  background-size: cover;
 }
- /* Para pantallas más pequeñas */
+/* Para pantallas más pequeñas */
 @media (max-width: 768px) {
-    body {
-      background-size: cover; /* Cambia a 'contain' para asegurar que toda la imagen se vea */
-      background-position: top center; /* Puedes ajustar la posición en pantallas móviles */
-      background-repeat: no repeat;
-    }
+  body {
+    background-size: cover; /* Cambia a 'contain' para asegurar que toda la imagen se vea */
+    background-position: top center; /* Puedes ajustar la posición en pantallas móviles */
+    background-repeat: no repeat;
   }
-  
-  /* Para pantallas muy grandes */
-  @media (min-width: 1200px) {
-    body {
-      background-size: cover; /* Mantiene el 'cover' para pantallas grandes */
-      background-repeat: no repeat;
-    }
 }
-  
-  
-  
+
+/* Para pantallas muy grandes */
+@media (min-width: 1200px) {
+  body {
+    background-size: cover; /* Mantiene el 'cover' para pantallas grandes */
+    background-repeat: no repeat;
+  }
+}
+
 h1 {
-    font-size: 5em;
-    margin: 0px;
-    padding: 0px;
-    letter-spacing: -10px;
-    float: left;
-    font-weight: normal;
-  
+  font-size: 5em;
+  margin: 0px;
+  padding: 0px;
+  letter-spacing: -10px;
+  float: left;
+  font-weight: normal;
 }
 
 span {
-    position: relative;
-    text-align: center;
-    font-size: 1.5em;
-    margin:0;
-    padding: auto;
-    font-weight: bold;
+  position: relative;
+  text-align: center;
+  font-size: 1.5em;
+  margin: 0;
+  padding: auto;
+  font-weight: bold;
 }
 
-#butdiv_centered {
-    position: fixed;
-    margin: 0 ;
-    padding: 0;
+button {
+  position: fixed;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
 }
-
 
 .but {
-    /*position:relative;*/
-    background-image: url("/img/Booter-bandcamp.jpg");
-    
-    color: rgb(0, 0, 0);
-    padding: 1em 1em;
-    text-align: center;
+  /*position:relative;*/
+  background-image: url('/img/Booter-bandcamp.jpg');
 
+  color: rgb(0, 0, 0);
+  padding: 1em 1em;
+  text-align: center;
 }
-
 
 .but:hover {
-    background-image: url("/img/Cascadas-WEb.png");
-    background-position: center;
-
+  background-image: url('/img/Cascadas-WEb.png');
+  background-position: center;
 }
 
-
 #maincontent {
-    display: grid;
-    grid-template-rows: repeat(1, 20fr); /* 6 filas iguales */
-    gap: 10px; /* Espacio entre las filas */
+  display: grid;
+  grid-template-rows: repeat(1, 20fr); /* 6 filas iguales */
+  gap: 10px; /* Espacio entre las filas */
 }
