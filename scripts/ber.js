@@ -38,9 +38,6 @@ const beremarquee = [
 ]
 
 // boton BER EN ICE minimum height and width
-const windowWidthMin = 200
-const windowHeightMin = 150
-const homeButtonTextArray = ['SPACE/TIME']
 
 export function ber() {
   // This helper returns a random integer given a offset and a range
@@ -56,35 +53,24 @@ export function ber() {
   const timeToWaitForButton = 2000 // in milliseconds
   const documentBody = document.querySelector('body')
   const homeButtonWrapper = document.createElement('button')
-  const homeButton = document.createElement('div')
-  const [winHeight, winWidth] = [window.innerHeight, window.innerWidth]
 
   // Place the floating berenice marquee elements
   // 4 if we are on a mobile device, 17 otherwise
   for (let i = 0; i < (mobile ? 6 : 40); i++) {
-    const h1 = document.createElement('h1')
+    const span = document.createElement('span')
     const b = document.createElement('marquee')
     b.setAttribute('scrolldelay', i * scrolldelay)
     b.setAttribute('scrollamount', rand(scrollspeed[0], scrollspeed[1]))
     b.style.width = rand(scrollwidth[0], scrollwidth[1]) + 'px'
     b.innerHTML = beremarquee[i % beremarquee.length]
-    h1.appendChild(b)
-    setRandTimeout(() => documentBody.appendChild(h1), timeToWaitForButton)
+    span.appendChild(b)
+    setRandTimeout(() => documentBody.appendChild(span), timeToWaitForButton)
   }
 
   setTimeout(() => {
     // Prepare the floating berenice button
-
-    homeButton.setAttribute('class', 'but')
-    homeButtonTextArray.forEach((textItem) => {
-      const homeButtonClickable = document.createElement('div')
-      const homeButtonText = document.createElement('span')
-      homeButtonClickable.onclick = () => (document.location.href = 'home/')
-      homeButtonText.innerHTML = textItem
-      homeButtonClickable.appendChild(homeButtonText)
-      homeButton.appendChild(homeButtonClickable)
-      homeButtonWrapper.appendChild(homeButton)
-    })
+    homeButtonWrapper.onclick = () => (document.location.href = 'home/')
+    homeButtonWrapper.innerHTML = 'SPACE/TIME'
     documentBody.appendChild(homeButtonWrapper)
   }, timeToWaitForButton)
 }
