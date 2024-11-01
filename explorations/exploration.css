@@ -7,8 +7,9 @@ header {
     
 
 body {
-  background-image: url("/img/autoretrato-2.jpg");
-  background-repeat: repeat;
+  background-image: url("/img/Foto-exploration.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   background-position:top;
   background-size: contain;
   margin: 1em;
@@ -20,16 +21,15 @@ body {
 .mispalabras {
     font-family: 'Courier New', monospace;
     background-color: white;
-    font-weight: regular;
-    text-align: justify;
+    font-weight: normal; /* Cambié "regular" a "normal" */
     color: rgb(0, 0, 0);
     font-size: 0.9em;
     line-height: 1em;
+    margin-top: 0.1em;
     margin-right: 1em;
     margin-left: 1em;
-    margin-top: 0.1em;
-    margin: 1em;
-    padding: 20px; 
+    padding: 20px;
+}
    
    
 
