@@ -18,6 +18,14 @@ body {
   margin-right: 2em;
 }
 
+/* Para pantallas más pequeñas */
+@media (max-width:968px) {
+    body {
+      background-size: cover; /* Cambia a 'contain' para asegurar que toda la imagen se vea */
+      background-position: center; /* Puedes ajustar la posición en pantallas móviles */
+    }
+  }
+
 .mispalabras {
     font-family: 'Courier New', monospace;
     background-color: white;
