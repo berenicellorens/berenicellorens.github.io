@@ -6,7 +6,7 @@ async function loader(response) {
   const section = document.querySelector('main')
   const article = document.createElement('article')
   if (section.lastChild) section.removeChild(section.lastChild)
-  article.className = 'bio'
+  article.className = 'exploration_images_container'
   const text = response.split('\n')
   // const header = document.createElement('h1');
   // header.innerHTML = text[0];
