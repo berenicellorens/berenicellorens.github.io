@@ -44,12 +44,3 @@ h2 {
   background-color: white;
 }
 
-Estilo del menú fijo #fixed-menu {
-  font-family: 'Lucida Sans', 'Lucida Sans italic';
-  position: fixed; /* Hace que el menú esté fijo en la parte superior */
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1000; /* Asegura que el menú esté por encima de otros elementos */
-  padding: 10px 0;
-}
