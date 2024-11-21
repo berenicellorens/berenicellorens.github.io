@@ -70,7 +70,7 @@ export function ber() {
   setTimeout(() => {
     // Prepare the floating berenice button
     homeButtonWrapper.onclick = () => (document.location.href = 'home/')
-    homeButtonWrapper.innerHTML = 'SPACE/TIME'
+    homeButtonWrapper.innerHTML = 'h e r e'
     documentBody.appendChild(homeButtonWrapper)
   }, timeToWaitForButton)
 }
