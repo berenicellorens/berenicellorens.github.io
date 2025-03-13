@@ -3,46 +3,37 @@
 
   <head>
     <meta charset="UTF-8">
-
     <title>Berenice Llorens: about</title>
     <meta property="og:title" content="Berenice Llorens: about" />
     <meta property="twitter:title" content="Berenice Llorens: about" />
     <link rel="canonical" href="https://berenicellorens.github.io/bio/index.html" />
-
     <!-- Mobile display -->
     <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
-    <!-- Description -->
     <meta property="description"
-      content="Berenice Llorens, artista cordobesa que busca expandir los límites del género, tanto en música como en poesía, con palabras, improvisaciones, imágenes, sonidos y ritmos que invitan a una escucha híbrida entre el cuerpo y el movimiento. Su trabajo está disponible en: https://berenicellorens.github.io">
-    <!-- Open Graph / Facebook -->
+      content="Berenice Llorens, artista cordobesa que busca expandir los límites del género, tanto en música como en poesía, con palabras, improvisaciones, imágenes, sonidos y ritmos que invitan a una escucha híbrida entre el cuerpo y el movimiento.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://berenicellorens.github.io/">
     <meta property="og:locale" content="es-AR">
     <meta property="og:description"
-      content="Berenice Llorens, artista cordobesa que busca expandir los límites del género, tanto en música como en poesía, con palabras, improvisaciones, imágenes, sonidos y ritmos que invitan a una escucha híbrida entre el cuerpo y el movimiento. Su trabajo está disponible en: https://berenicellorens.github.io">
+      content="Berenice Llorens, artista cordobesa que busca expandir los límites del género, tanto en música como en poesía, con palabras, improvisaciones, imágenes, sonidos y ritmos que invitan a una escucha híbrida entre el cuerpo y el movimiento.">
     <meta property="og:image" content="https://raw.githubusercontent.com/berenicellorens/cv/master/bere-logo.jpeg">
-    <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://berenicellorens.github.io/">
     <meta property="twitter:description"
-      content="Berenice Llorens, artista cordobesa que busca expandir los límites del género, tanto en música como en poesía, con palabras, improvisaciones, imágenes, sonidos y ritmos que invitan a una escucha híbrida entre el cuerpo y el movimiento. Su trabajo está disponible en: https://berenicellorens.github.io">
+      content="Berenice Llorens, artista cordobesa que busca expandir los límites del género, tanto en música como en poesía, con palabras, improvisaciones, imágenes, sonidos y ritmos que invitan a una escucha híbrida entre el cuerpo y el movimiento.">
     <meta property="twitter:image" content="https://raw.githubusercontent.com/berenicellorens/cv/master/bere-logo.jpeg">
-    <!-- Icons	 -->
+    <!-- Icons -->
     <link rel="icon"
       href="https://raw.githubusercontent.com/berenicellorens/berenicellorens.github.io/master/img/logo.ico"
       type="image/ico" title="berenicellorens" sizes="32x32">
     <link rel="fluid-icon"
       href="https://raw.githubusercontent.com/berenicellorens/berenicellorens.github.io/master/img/logo.jpg"
       type="image/jpg" title="img/LlorensbyLasHeras.jpeg" sizes="32x32">
-    <!-- Compatibility -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="url" content="https://berenicellorens.github.io">
-    <meta name="@type" content="WebSite">
     <meta name="robots" content="index,follow">
     <meta name="keywords"
       content="berenicellorens,dj,composer,artist,electronics,live-video,instrumentalberenicemusic,blabladuriasdeberenice,rayaduras_berenice,berydual">
     <meta property="og:site_name" content="Berenice Llorens">
-    <meta property="og:url" content="https://berenicellorens.github.io">
     
     <link rel="stylesheet" type="text/css" href="/css/main.css">
     <link rel="stylesheet" type="text/css" href="bio.css">
@@ -52,30 +43,37 @@
   <body>
     <header>
       <h2><span class="summary_large_image">about</span></h2>
-
       <div class="image">
-              <img src="/img/bioportfolio.jpg" />
-         
+        <img src="/img/bioportfolio.jpg" />
       </div>
     </header>
     <main>
       <nav>
-        <!-- the language button -->
+        <!-- Language Button -->
         <div id="language"></div>
-        <!-- download link for cv file -->
-        <a href="Berenice Llorens CV - NOV 2024 - BerlinEN.pdf" download><button href="Berenice Llorens CV - Febrero 2024 - Berlin-english.pdf" download>Download CV</button></a>
-        <a href="https://drive.google.com/drive/folders/1QoebfqQtDvtcjQOwm4tXHEHlDPIIh_Kx?usp=sharing" target="_blank" > 
-        <button>press</button> </a>
         
+        <!-- Enlace al CV -->
+        <a href="cv.html">
+          <button>Ver CV</button>
+        </a>
+        
+        <a href="https://drive.google.com/drive/folders/1QoebfqQtDvtcjQOwm4tXHEHlDPIIh_Kx?usp=sharing" target="_blank">
+          <button>press</button>
+        </a>
       </nav>
-      <section class="bio"></section>
+      
+      <section class="bio">
+        <!-- Aquí se muestra el CV solo cuando se navega a la página cv.html -->
+        <div id="cv-frame" style="cv: .css">
+          <!-- Este iframe ya no es necesario si rediriges a una página nueva -->
+        </div>
+      </section>
     </main>
     <footer></footer>
+
+    <script type="module" src='bio.js'></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-173546930-1"></script>
+    <script type='module' src='/scripts/base.js'></script>
+
   </body>
-  <script type='module' src='bio.js'></script>
-
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-173546930-1"></script>
-
-  <script type='module' src='/scripts/base.js'></script>
-
 </html>
