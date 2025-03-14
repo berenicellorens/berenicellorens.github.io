@@ -8,6 +8,8 @@ header {
     
 }
 
+
+
 body {
   background-image: url("/img/berenicellorens3.jpg");
   background-repeat: no-repeat;
@@ -29,18 +31,17 @@ body {
 .mispalabras {
     font-family: 'Courier New', monospace;
     font-weight: regular;
-    font-size: 0.9em;
+    font-size: 15px;
     line-height: 1em;
-    margin-right: 2em;
-    margin-left: 1em;
+    margin: 30px 0;
+    padding: 9px; 
+    text-align: left, justify;
+    margin-right: 4em;
+    margin-left: 4em;
     margin-top: 0.1em;
-    margin: 1em;
-    padding: 1em; 
-    text-align: left;
-    color: black;
    
 
-  }
+   }
 
 div {
     display:content;
