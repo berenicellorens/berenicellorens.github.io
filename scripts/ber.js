@@ -55,7 +55,7 @@ export function ber() {
   const homeButtonWrapper = document.createElement('button')
 
   // Place the floating berenice marquee elements
-  // 4 if we are on a mobile device, 17 otherwise
+  // 8 if we are on a mobile device, 17 otherwise
   for (let i = 0; i < (mobile ? 6 : 40); i++) {
     const span = document.createElement('span')
     const b = document.createElement('marquee')
