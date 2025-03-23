@@ -19,15 +19,15 @@ header {
   margin: auto;
 }
  .mispalabras {
-    font-family: 'Garamond bold ';
+    font-family: 'Courier New', monospace;
     font-size: 1em;
     line-height: 1em;
     margin: 30px 0;
     padding: 9px; 
-     text-align: left;
-  margin-right: 4em;
-  margin-left: 4em;
-   margin-top: 0.1em;
+    text-align: left;
+    margin-right: 4em;
+    margin-left: 4em;
+    margin-top: 0.1em;
    
 
    }
@@ -41,9 +41,8 @@ h2 {
 }
 
 nav {
-  font-size: 0.7em;
+  font-size: 0.8em;
   line-height: 1.4em;
-
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -72,15 +71,18 @@ ul {
 .back,
 a li,
 .btn, .colorify {
+ font-family: 'Courier New', monospace;
   color: rgb(186, 255, 10);
   background-color: #000000;
   font-weight: bold;
   text-align: center;
   padding: 1vmin 2vmin;
-  font-size: 1.3em;
+  font-size: 0,8em;
   margin: 2vmin;
   
 }
+
+
 
 /* The back button */
 
