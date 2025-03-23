@@ -27,3 +27,12 @@ h2 {
   margin-bottom: 0;
   color:#ffffff;
 }
+
+button {
+    color: rgb(186, 255, 10);
+    background: rgb(0, 0, 0);
+    text-align: center;
+    padding:auto;
+    font-size: 1em;
+    margin: 1vmin;
+  }
