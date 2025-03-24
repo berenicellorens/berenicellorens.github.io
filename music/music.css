@@ -1,13 +1,3 @@
-/* Ajuste de la imagen de fondo y el posicionamiento */
-header {
-    display: flex;
-    flex-direction: column; 
-    margin: 1em;
-    margin-left: 2em;
-    margin-right: 2em;
-    
-}
-
 
 
 body {
@@ -21,52 +11,58 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: right;
-  max-width: 50em;
+  max-width: 130vmin;
   margin: auto auto auto;
-  max-width: 60em;
-  margin: auto;
-  text-align: right; /* Cambiado a 'right' */
+  text-align: justify; /* Cambiado a 'right' */
 }
+
+/* Ajuste de la imagen de fondo y el posicionamiento */
+header {
+    display: flex;
+    flex-direction: column; 
+    margin: 1em;
+    margin-left: 2em;
+    margin-right: 2em;
+    
+}
+
+#intro {
+    width:fit-content;  
+  }
+
 
 .mispalabras {
     font-family: 'Courier New', monospace;
     font-weight: regular;
-    font-size: 15px;
+    font-size: 0.9em;
     line-height: 1em;
-    margin: 30px 0;
-    padding: 9px; 
-    text-align: left, justify;
-    margin-right: 4em;
-    margin-left: 4em;
-    margin-top: 0.1em;
-   
-
+    margin-right: 1em;
+    margin-left: 1em;
+    margin-top: 1em;
+    margin: 1em;
+    padding: 20px;
+    text-align: justify;
+    
    }
 
-div {
-    display:content;
-    unicode-bidi:isolate;
-    margin: em;
-    padding: em;
+   .sello {
+    color: rgb(0, 0, 0);
+    font-weight: bold;
 
-    
-  
 }
+
 
 article {
-    line-height: 14px;
-    max-width: 70em;
-    padding: 1em;
-    text-align: right; /* Cambiado a 'right' */
-    font-family: 'Lucida sans', 'Lucida Sans Regular', sans-serif;
-    
-}
-
-section article {
-  line-height: 12px;
-  background-color: #070000;
-  text-align: right; /* Cambiado a 'right' */
   
+    line-height: 18px;
+    width:fit-content;
+    box-sizing:border-box;
+    text-align: right; /* Cambiado a 'right' */
+    margin-right: 1em;
+    margin-left: 1em;
+    max-width: 130vmin;
+    min-width: 70vmin;
+    justify-content: left;
 }
 
 h1{
@@ -93,22 +89,7 @@ h2 {
     color: rgb(0, 0, 0);
 }
 
-.text {
-    font-family: 'Lucida sans', 'Lucida Sans Regular', sans-serif;
-    font-size: 0.8em;
-    color: rgb(0, 0, 0);
-    text-align: right; /* Cambiado a 'right' */
-    text-align: justify;
-    margin: 1em;
-    max-width: 50em;
-    font-size: 0.9em;
-    line-height: 1em;
-    margin-right: 1em;
-    margin-left: 1em;
-    margin-top: 0.1em;
-    margin: 1em;
-    padding: 20px; 
-}
+
 
 img {
     max-width: 40%;
@@ -125,22 +106,56 @@ img {
      size: smaller ;
   }
   
-.colorify {
+  .text {
+    font-family: 'calibri', sans-serif;
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+    text-align: justify;
+  }
+
+/* .colorify {
     color: rgb(230, 250, 0);
     background: rgb(0, 0, 0);
     font-weight: bold;
     text-align: right; /* Cambiado a 'right' */
     font-size: 1em;
    
-}
+} */
 
 a {
     color: blue;
     text-decoration: underline;
 }
 
-.sello {
-    color: rgb(0, 0, 0);
-    font-weight: bold;
-
+nav {
+    font-size: 0.8em;
+    line-height: 1.4em;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    max-width: 200vmin;
+    margin: 2em;
 }
+  ul {
+    position: top;
+    top: 100%;
+    width: 200%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  .back, a li, .btn, .colorify {
+    font-family: 'Courier New', monospace;
+    color: rgb(186, 255, 10);
+    background-color: #000000;
+    font-weight: bold;
+    text-align: center;
+    padding: 0%
+    font-size: 0, 8em;
+    margin:0%,
+}
+
+

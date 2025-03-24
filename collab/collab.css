@@ -26,7 +26,30 @@ header {
     width:fit-content;  
   }
 
+  .mispalabras {
+    font-family: 'Courier New', monospace;
+    font-weight: regular;
+    font-size: 0.9em;
+    line-height: 1em;
+    margin-right: 1em;
+    margin-left: 1em;
+    margin-top: 1em;
+    margin: 1em;
+    padding: 20px; 
+    text-align: justify;
+    color: aliceblue;
+   
+   }
+
+   .sello {
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+
+}
+
+
 article {
+
   line-height:18px;
   background-color: #070000;
   width:fit-content;
@@ -78,21 +101,7 @@ a {
 
 
 
-  .mispalabras {
-    font-family: 'Courier New', monospace;
-    font-weight: regular;
-    font-size: 0.9em;
-    line-height: 1em;
-    margin-right: 1em;
-    margin-left: 1em;
-    margin-top: 0.1em;
-    margin: 1em;
-    padding: 20px; 
-    text-align: justify;
-    color: aliceblue;
-   
-
-   }
+ 
 
    nav {
     font-size: 0.8em;
