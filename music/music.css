@@ -32,6 +32,8 @@ header {
 
 
 .mispalabras {
+    background: rgba(255, 255, 255, 0.2); /* Blanco semitransparente */
+    backdrop-filter: blur(10px); /* Desenfoque */
     font-family: 'Courier New', monospace;
     font-weight: regular;
     font-size: 0.9em;
@@ -46,6 +48,7 @@ header {
    }
 
    .sello {
+    
     color: rgb(0, 0, 0);
     font-weight: bold;
 
@@ -91,26 +94,31 @@ h2 {
 
 
 
-img {
+
+  
+  .text {
+    background: rgba(255, 255, 255, 0.2); /* Blanco semitransparente */
+    backdrop-filter: blur(10px); /* Desenfoque */
+    font-family: 'calibri', sans-serif;
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+    text-align: justify;
+    
+  }
+
+  img {
     max-width: 40%;
     margin-top: 1em;
     margin-bottom: 1em;
     margin-left: 1em;
     margin-right: 1em;
-    float: left; /* Cambiado a 'right' */
+    display: flex
 }
 
 .image {
     flex-basis: 20%;
     flex-shrink: 0;
      size: smaller ;
-  }
-  
-  .text {
-    font-family: 'calibri', sans-serif;
-    font-size: 15px;
-    color: rgb(0, 0, 0);
-    text-align: justify;
   }
 
 /* .colorify {
