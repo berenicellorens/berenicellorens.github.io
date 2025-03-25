@@ -58,13 +58,11 @@ nav {
 ul {
   list-style: none;
   padding-inline-start: 0;
-  margin: 0;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  margin: auto;
 }
 
 /* Turn list elements into big, bold buttons with rounded border */
@@ -82,8 +80,6 @@ a li,
   /* margin: 2vmin; */
   
 }
-
-
 
 /* The back button */
 

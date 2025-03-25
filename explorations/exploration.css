@@ -1,6 +1,11 @@
 
 /*  Adjust background image and positioning */
 
+header {
+    display: flex;
+    flex-direction: column;
+    max-width: 140vmin;
+  }
 
 
 body {  
@@ -23,17 +28,8 @@ body {
   }
 }
 
-header {
-    display: flex;
-    flex-direction: column;
-  }
-
-
 /* Adjust title coloring */
 
-h2 {
-  
-}
 
 .mispalabras {
     font-family: 'Courier New', monospace;
@@ -52,17 +48,25 @@ h2 {
 
    p {
     background-color: white;
-
-
    }
 
- a li ;.colorify {
-    color: rgb(186, 255, 10);
+
+ a   {
     background-color: #000000;
-    font-weight: bold;
     text-align: center;
     padding: 1vmin 1vmin;
-    font-size: 1.5em;
     margin: 1vmin;
 }
+
+li, .colorify {
+    font-size: 1em;
+    font-weight: bold;
+    text-align: center;
+    color: rgb(186, 255, 10);
+    background-color: #000000;  
+    text-align: center;
+    padding: 0;
+}
+
+
 
