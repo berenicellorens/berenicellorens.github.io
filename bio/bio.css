@@ -1,17 +1,16 @@
 body {
-    font-family: 'Courier New', monospace;
-    font-size: 1,5em;
+    
+    background-color: black;
     line-height: 1.7em;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: right;
     max-width: 130vmin;
     margin: auto auto auto;
     text-align: justify;
-    background: black;
-  }
-
+    
+    }
 
 header {
     padding:0%;
@@ -42,7 +41,7 @@ header {
 }
 
 img {
-  max-width: 50%
+  max-width: 40%
     
 }
 
@@ -53,33 +52,34 @@ img {
 }
 
 h2 {
+    text-align: right;
   margin-bottom: 0;
-  color:#ffffff;
+  color: aliceblue;
 }
 
-button {
+/* button {
     color: rgb(186, 255, 10);
     background: rgb(0, 0, 0);
     text-align: center;
     padding:auto;
     font-size: 1em;
     margin: 1vmin;
-  }
+  } */
 
  
   este es el 
 
   nav {
     font-size: 0.8em;
-    line-height: 1em;
+    line-height: 1.4em;
+    display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    align-items: right;
+    align-items: center;
     justify-content: center;
-    max-width: 100%;
+    max-width: 200vmin;
     margin: 2em;
 }
-
   ul {
     position: top;
     top: 100%;
@@ -91,7 +91,6 @@ button {
   }
   
   .back, a li, .btn, .colorify {
-    font-size: 1em;
     font-family: 'Courier New', monospace;
     color: rgb(186, 255, 10);
     background-color: #000000;
@@ -100,6 +99,7 @@ button {
     padding: 0%
     font-size: 0, 8em;
     margin:0%,
-    
 }
+
+
 
