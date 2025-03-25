@@ -1,9 +1,7 @@
+
 /*  Adjust background image and positioning */
 
-header {
-  display: flex;
-  flex-direction: column;
-}
+
 
 body {  
   background-image: url('/img/Foto-exploration-3-.jpg');
@@ -25,6 +23,10 @@ body {
   }
 }
 
+header {
+    display: flex;
+    flex-direction: column;
+  }
 
 
 /* Adjust title coloring */
@@ -48,7 +50,11 @@ h2 {
 
    }
 
+   p {
+    background-color: white;
 
+
+   }
 
  a li ;.colorify {
     color: rgb(186, 255, 10);
