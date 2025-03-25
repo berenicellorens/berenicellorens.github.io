@@ -14,10 +14,19 @@ body {
   background-attachment: fixed;
   background-position: top;
   background-size: contain;
-  margin: 1em;
+  /* margin: 1em;
   margin-top: 3em;
   margin-left: 2em;
-  margin-right: 2em;
+  margin-right: 2em; */
+  line-height: 1.7em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+  margin: auto;
+  text-align: justify;
+  
 }
 
 /* Para pantallas más pequeñas */
@@ -29,6 +38,10 @@ body {
 }
 
 /* Adjust title coloring */
+
+#intro {
+    width:fit-content;  
+  }
 
 
 .mispalabras {
@@ -52,20 +65,20 @@ body {
 
 
  a   {
-    background-color: #000000;
+    background-color: #ffffff;
     text-align: center;
-    padding: 1vmin 1vmin;
-    margin: 1vmin;
+    padding: vmin vmin;
+    margin: vmin;
 }
 
-li, .colorify {
-    font-size: 1em;
+.back, li, .btn, .colorify {
+    font-family: 'Courier New', monospace;
+    font-size: 1.1em;
     font-weight: bold;
     text-align: center;
     color: rgb(186, 255, 10);
     background-color: #000000;  
-    text-align: center;
-    padding: 0;
+    padding: 0%;
 }
 
 
