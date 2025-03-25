@@ -1,3 +1,11 @@
+header {
+    display: flex;
+    flex-direction: column; 
+    max-width: 140vmin;
+  
+    
+}
+
 body {
   background: rgb(0, 0, 0);
   line-height: 1.7em;
@@ -5,20 +13,13 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: right;
-  max-width: 130vmin;
-  margin: auto auto auto;
+  max-width: 100%;
+  margin: auto ;
   text-align: justify; /* Cambiado a 'right' */
 
 }
 
-header {
-    display: flex;
-    flex-direction: column; 
-    margin: 1em;
-    margin-left: 2em;
-    margin-right: 2em;
-    
-}
+
 
 #intro {
     width:fit-content;  
@@ -31,7 +32,6 @@ header {
     margin-bottom: 0;
     color: rgb(186, 255, 10);
     
-
 }
 
 
@@ -43,7 +43,7 @@ color: rgb(186, 255, 10);
 .mispalabras {
     font-family: 'Courier New', monospace;
     font-weight: regular;
-    font-size: 0.9em;
+    font-size: 1em;
     line-height: 1em;
     margin-right: 1em;
     margin-left: 1em;
@@ -61,24 +61,24 @@ color: rgb(186, 255, 10);
 
 }
 
-footer img {
+/* footer img {
   filter: invert(100%);
-}
+} */
 
-.back, .btn {
+/* .back, .btn {
   border:1px solid white;
-}
+} */
 
 .subtitle {
   color: rgb(10 255 108 / 100%);
 }
 
-a {
+/* a {
     color: blue;
     text-decoration: underline;
-}
+} */
 
-nav {
+/* /* nav {
     font-size: 0.8em;
     line-height: 1.4em;
     display: flex;
@@ -88,25 +88,32 @@ nav {
     justify-content: center;
     max-width: 200vmin;
     margin: 2em;
-}
-  ul {
+} */
+
+  /* ul {
     position: top;
     top: 100%;
     width: 200%;
     margin: 0;
     padding: 0;
     overflow: hidden;
-  }
+  }  */
+
+  a   {
+    background-color: #ffffff;
+    text-align: center;
+    padding: vmin vmin;
+    margin: vmin;
+}
   
-  .back, a li, .btn, .colorify {
+  .back, li, .btn, .colorify {
     font-family: 'Courier New', monospace;
-    color: rgb(186, 255, 10);
-    background-color: #000000;
+    font-size: 1.1em;
+    color: rgb(186, 255, 10); 
     font-weight: bold;
     text-align: center;
+    background-color: #000000;
     padding: 0%
-    font-size: 0, 8em;
-    margin:0%,
 }
 
 
