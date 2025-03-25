@@ -181,7 +181,7 @@ div.back {
 main {
   display: flex;
   flex-direction: column;
-  align-items: stretch;
+  align-items: center;
   justify-content: center;
   padding: 3vmin;
   max-width: 200vmin;

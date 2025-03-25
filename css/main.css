@@ -160,7 +160,7 @@ article {
 /* Make items align in a grid-like view */
 
 main {
-  flex-direction:row;
+  flex-direction:column;
   flex-wrap: wrap;
 }
 
