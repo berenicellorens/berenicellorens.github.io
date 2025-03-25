@@ -21,7 +21,6 @@ header {
  .mispalabras {
     font-family: 'Courier New', monospace;
     font-size: 1em;
-
     line-height: 1em;
     margin: 30px 0;
     padding: 9px; 
@@ -50,7 +49,7 @@ nav {
   align-items: center;
   justify-content: center;
   max-width: 200vmin;
-  margin: 2em;
+  /* margin: 2em; */
 }
 
 /* Make Lists of type Flex, with items aligning along the x-axis */
