@@ -1,3 +1,10 @@
+header {
+    display: flex;
+    flex-direction: column;
+    max-width: 140vmin;
+
+ }
+
 body {
     
     background-color: black;
@@ -12,11 +19,6 @@ body {
     
     }
 
-header {
-    display: flex;
-    flex-direction: column;
-
- }
 
  #intro {
     width:fit-content;  
@@ -38,12 +40,12 @@ header {
 }
 
 img {
-  max-width: 40%
+  max-width: 60%
     
 }
 
 .image {
-  flex-basis: 20%;
+  flex-basis: 40%;
   flex-shrink: 0;
   text-align: center;
 }
@@ -66,7 +68,7 @@ h2 {
  
   este es el 
 
-  nav {
+  /* nav {
     font-size: 1.5em;
     line-height: 1.4em;
     display: flex;
@@ -76,8 +78,8 @@ h2 {
     justify-content: center;
     max-width: 100%;
     margin: auto;
-}
-  ul {
+} */
+  /* ul {
     position: top;
     top: 100%;
     width: 200%;
@@ -85,17 +87,25 @@ h2 {
     padding: 0;
     overflow: hidden;
     background-color: #000000;
-  }
+  } */
   
-  .back, a li, .btn, .colorify {
+  a   {
+    background-color: #000000;
+    text-align: center;
+    padding: vmin vmin;
+    margin: vmin;
+}
+
+  .back, li, .btn, .colorify {
+    font-size: 1.1em;
     font-family: 'Courier New', monospace;
     color: rgb(186, 255, 10);
     background-color: #000000;
     font-weight: bold;
     text-align: center;
-    padding: 0%
-    font-size: 1em;
-    margin:auto,
+    padding: 0%;
+    
+   
 }
 
 
