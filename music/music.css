@@ -1,37 +1,36 @@
 body {
 
-  background-image: url("/img/berenicellorens3.jpg");
-  background-repeat: no-repeat;
-  background-position:top;
-  background-size: contain;
-  background-color: rgb(255, 248, 248);
-  line-height: 1.7em;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  max-width: 100%;
-  margin: auto;
-  text-align: justify;
-  
-  }
+    background-image: url("/img/berenicellorens3.jpg");
+    background-repeat: no-repeat;
+    background-position:top;
+    background-size: contain;
+    background-color: rgb(255, 248, 248);
+    line-height: 1.7em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 130vmin;
+    margin: auto auto auto;
+    text-align: justify;
+    
+    
+    }
 
 
 
 /* Ajuste de la imagen de fondo y el posicionamiento */
 header {
-    /* padding:0%;
+    padding:0%;
     margin: 0%;
     align-items: right;
-    display: flex; */
-
     display: flex;
-    flex-direction: column;
 
  }
 
 #intro {
-    width:fit-content;  
+    width:fit-content; 
+    margin: 3em; 
   }
 
 
@@ -140,16 +139,17 @@ a {
 }
 
 nav {
-    font-size: 1.5em;
+    font-size: 1em;
     line-height: 1.4em;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    max-width: 100%;
-    margin: auto;
+    max-width: 200vmin;
+    margin: 2em;
 }
+
   ul {
     position: top;
     top: 100%;
@@ -166,7 +166,7 @@ nav {
     font-weight: bold;
     text-align: center;
     padding: 0%
-    font-size: 1.1em;
+    font-size: 1em;
     margin:0%,
 }
 
