@@ -1,13 +1,13 @@
 body {
   font-family: 'Courier New', monospace;
-  font-size: 1.5em;
-  line-height: 1.7em;
+  font-size: 1,5em;
+  line-height: 1,7em;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   max-width: 130vmin;
-  margin: auto auto auto auto;
+  margin: 4vmin auto auto auto;
   text-align: justify;
 }
 
