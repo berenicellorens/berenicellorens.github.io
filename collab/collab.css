@@ -1,4 +1,11 @@
-/*  Adjust background image and positioning */
+
+header {
+    display: flex;
+    flex-direction: column;
+    max-width: 140vmin;
+
+ }
+
 body {
     
 background-color: black;
@@ -6,35 +13,29 @@ line-height: 1.7em;
 display: flex;
 flex-direction: column;
 align-items: center;
-justify-content: right;
+justify-content: center;
 max-width: 100%;
 margin: auto;
 text-align: justify;
 
 }
 
-header {
-    padding:0%;
-    margin: 0%;
-    align-items: right;
-    display: flex;
-    width: 140%;
 
- }
-
- #intro {
-    width:fit-content;  
+#intro {
+    width:fit-content; 
+    margin: 3em; 
   }
+
 
   .mispalabras {
     font-family: 'Courier New', monospace;
     font-weight: regular;
     font-size: 0.9em;
     line-height: 1em;
-    margin-right: 1em;
+    /* margin-right: 1em;
     margin-left: 1em;
     margin-top: 1em;
-    margin: 1em;
+    margin: 1em; */
     padding: 20px; 
     text-align: justify;
     color: aliceblue;
@@ -54,14 +55,14 @@ article {
   background-color: #070000;
   width:fit-content;
   box-sizing:border-box;
-  margin: 8px 0;
-  max-width: 130vmin;
-  min-width: 70vmin;
+  text-align: right; /* Cambiado a 'right' */
   margin-right: 1em;
   margin-left: 1em;
-  justify-content: center;
-  
+  max-width: 130vmin;
+  min-width: 70vmin;
+  justify-content: left;
 }
+
 
 h1 {
  font-size: 18px ;
@@ -94,16 +95,16 @@ img {
   text-align: justify;
 }
 
-a {
+/* a {
   color:blue;
   text-decoration: underline;
-}
+} */
 
 
 
  
 
-   nav {
+   /* nav {
     font-size:1.3em;
     line-height: 1.4em;
     display: flex;
@@ -122,9 +123,16 @@ a {
     padding: 0;
     overflow: hidden;
     background-color: #000000;
-  }
+  } */
   
-  .back, a li, .btn, .colorify {
+  a   {
+    background-color: #ffffff;
+    text-align: center;
+    padding: vmin vmin;
+    margin: vmin;
+}
+  
+  .back, li, .btn, .colorify {
     font-family: 'Courier New', monospace;
     color: rgb(186, 255, 10);
     background-color: #000000;
