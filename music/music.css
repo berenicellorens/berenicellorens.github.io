@@ -10,25 +10,24 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: right;
+  justify-content: center;
   max-width: 130vmin;
   margin: auto auto auto;
-  text-align: justify; /* Cambiado a 'right' */
-}
-
-/* Para pantallas más pequeñas */
-@media (max-width: 968px) {
-    body {
-      background-size: cover; /* Cambia a 'contain' para asegurar que toda la imagen se vea */
-      background-position: center; /* Puedes ajustar la posición en pantallas móviles */
-    }
+  text-align: justify;
+  
   }
+
+
 
 /* Ajuste de la imagen de fondo y el posicionamiento */
 header {
+    padding:0%;
+    margin: 0%;
+    align-items: right;
     display: flex;
-    flex-direction: column;    
-}
+    width: 140%;
+
+ }
 
 #intro {
     width:fit-content;  
