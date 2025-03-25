@@ -18,6 +18,7 @@ header {
   justify-content: center;
   margin: auto;
 }
+
  .mispalabras {
     font-family: 'Courier New', monospace;
     font-size: 1em;
@@ -41,7 +42,7 @@ h2 {
 }
 
 nav {
-  font-size: 0.8em;
+  font-size: 1em;
   line-height: 1.4em;
   display: flex;
   flex-wrap: wrap;
@@ -49,7 +50,7 @@ nav {
   align-items: center;
   justify-content: center;
   max-width: 200vmin;
-  /* margin: 2em; */
+  margin: auto;
 }
 
 /* Make Lists of type Flex, with items aligning along the x-axis */
@@ -107,10 +108,10 @@ li:hover {
 /* Remove underline from links and make them black */
 
 /*  Links in the footer use the .subtitle class. Make them black  */
-a,
-.subtitle {
+a{
   text-decoration: none;
   color: black;
+  margin: 1vmin
 }
 
 .subtitle:hover,
