@@ -1,13 +1,13 @@
 body {
   font-family: 'Courier New', monospace;
-  font-size: 1,5em;
+  font-size: 1.5em;
   line-height: 1.7em;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   max-width: 130vmin;
-  margin: auto auto auto auto;
+  margin: 0 auto;
   text-align: justify;
 }
 
@@ -16,7 +16,7 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: auto;
+  margin: auto auto auto auto;
 }
  .mispalabras {
     font-family: 'Courier New', monospace;
@@ -27,8 +27,8 @@ header {
     text-align: left;
     margin-right: 4em;
     margin-left: 4em;
-    margin-top: 0.1em;
-    padding: auto;
+    margin-top: 0em;
+    padding: 0 auto;
    
    }
 
@@ -63,7 +63,6 @@ ul {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  margin: auto;
 }
 
 /* Turn list elements into big, bold buttons with rounded border */
@@ -76,9 +75,9 @@ a li,
   background-color: #000000;
   font-weight: bold;
   text-align: center;
-  padding: 1vmin 2vmin;
-  font-size: 0,8em;
-  margin: 2vmin;
+  padding: 1vmin 1vmin;
+  font-size: 0.8em;
+  /* margin: 2vmin; */
   
 }
 
@@ -127,7 +126,7 @@ a.out {
 
 /* Make Images in footer somewhat separated */
 
-footer div {
+footer {
   padding: 1.5vmin;
   font: 'Courier New', monospace;
 }
