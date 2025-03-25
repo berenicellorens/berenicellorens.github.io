@@ -7,7 +7,7 @@ body {
   align-items: center;
   justify-content: center;
   max-width: 130vmin;
-  margin: 0 auto;
+  margin: auto auto auto auto;
   text-align: justify;
 }
 
@@ -16,7 +16,7 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: auto auto auto auto;
+  margin: auto;
 }
  .mispalabras {
     font-family: 'Courier New', monospace;
@@ -27,8 +27,8 @@ header {
     text-align: left;
     margin-right: 4em;
     margin-left: 4em;
-    margin-top: 0em;
-    padding: 0 auto;
+    margin-top: 0.2em;
+    padding: auto;
    
    }
 
@@ -63,6 +63,7 @@ ul {
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  margin: auto;
 }
 
 /* Turn list elements into big, bold buttons with rounded border */
@@ -75,9 +76,9 @@ a li,
   background-color: #000000;
   font-weight: bold;
   text-align: center;
-  padding: 1vmin 1vmin;
+  padding: 1vmin 2vmin;
   font-size: 0.8em;
-  /* margin: 2vmin; */
+  margin: 2vmin;
   
 }
 
