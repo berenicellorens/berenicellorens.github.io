@@ -1,3 +1,10 @@
+header {
+    display: flex;
+    flex-direction: column;
+    max-width: 140vmin;
+
+ }
+
 body {
 
     background-image: url("/img/berenicellorens3.jpg");
@@ -10,9 +17,10 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    max-width: 130vmin;
-    margin: auto auto auto;
+    max-width: 100%;
+    margin: auto;
     text-align: justify;
+    
     
     
     }
@@ -20,13 +28,7 @@ body {
 
 
 /* Ajuste de la imagen de fondo y el posicionamiento */
-header {
-    padding:0%;
-    margin: 0%;
-    align-items: right;
-    display: flex;
 
- }
 
 #intro {
     width:fit-content; 
@@ -41,10 +43,10 @@ header {
     font-weight: regular;
     font-size: 0.9em;
     line-height: 1em;
-    margin-right: 1em;
+    /* margin-right: 1em;
     margin-left: 1em;
     margin-top: 1em;
-    margin: 1em;
+    margin: 1em; */
     padding: 20px;
     text-align: justify;
     
@@ -96,9 +98,6 @@ h2 {
 }
 
 
-
-
-  
   .text {
     background: rgba(255, 255, 255, 0.2); /* Blanco semitransparente */
     backdrop-filter: blur(10px); /* Desenfoque */
@@ -110,35 +109,22 @@ h2 {
   }
 
   img {
-    max-width: 40%;
+    max-width: 30%;
     margin-top: 1em;
     margin-bottom: 1em;
     margin-left: 1em;
     margin-right: 1em;
-    display: flex
+    display: flex;
 }
 
 .image {
-    flex-basis: 20%;
+    flex-basis: 30%;
     flex-shrink: 0;
      size: smaller ;
   }
 
-/* .colorify {
-    color: rgb(230, 250, 0);
-    background: rgb(0, 0, 0);
-    font-weight: bold;
-    text-align: right; /* Cambiado a 'right' */
-    font-size: 1em;
-   
-} */
 
-a {
-    color: blue;
-    text-decoration: underline;
-}
-
-nav {
+/* nav {
     font-size: 1em;
     line-height: 1.4em;
     display: flex;
@@ -150,24 +136,30 @@ nav {
     margin: 2em;
 }
 
-  ul {
+ul {
     position: top;
     top: 100%;
     width: 200%;
     margin: 0;
     padding: 0;
     overflow: hidden;
-  }
-  
-  .back, a li, .btn, .colorify {
-    font-family: 'Courier New', monospace;
-    color: rgb(186, 255, 10);
-    background-color: #000000;
-    font-weight: bold;
+  } */
+
+
+  a   {
+    background-color: #ffffff;
     text-align: center;
-    padding: 0%
-    font-size: 1em;
-    margin:0%,
+    padding: vmin vmin;
+    margin: vmin;
 }
 
+.back, li, .btn, .colorify {
+    font-family: 'Courier New', monospace;
+    font-size: 1.1em;
+    font-weight: bold;
+    text-align: center;
+    color: rgb(186, 255, 10);
+    background-color: #000000;  
+    padding: 0%;
+}
 
