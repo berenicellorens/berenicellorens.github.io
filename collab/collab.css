@@ -63,12 +63,19 @@ article {
 }
 
 
+
 h1 {
  font-size: 18px ;
  font-weight: bold;
  width:fit-content; 
  color: aliceblue;
  justify-content: left;
+}
+
+.b{
+    text-align: right; 
+    padding right: 3em;
+
 }
 
 
@@ -88,11 +95,15 @@ img {
 
 
 .text {
-  font-family: 'calibri', sans-serif;
-  font-size: 15px;
   color: aliceblue;
-  text-align: justify;
-}
+  font-family: 'calibri', sans-serif;
+  font-size: 0.8em;
+   color: rgb(255, 255, 255);
+   text-align: justify;
+   line-height: 18px;
+    
+  }
+
 
 
 /* a {
