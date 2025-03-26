@@ -23,7 +23,6 @@ text-align: justify;
 
 #intro {
     width:fit-content; 
-    margin: 3em; 
   }
 
 
@@ -82,7 +81,7 @@ h2 {
 
 
 img {
-  max-width: 40%;
+  max-width: 50%;
   size: smaller;
 }
 
@@ -94,6 +93,7 @@ img {
   color: aliceblue;
   text-align: justify;
 }
+
 
 /* a {
   color:blue;
