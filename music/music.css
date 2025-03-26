@@ -7,10 +7,10 @@ header {
 
 body {
 
-    background-image: url("/img/berenicellorens3.jpg");
+    background-image: url("/img/blorensbyMarcusMeyer2024.jpg");
     background-repeat: no-repeat;
     background-position:top;
-    background-size: contain;
+    background-size:contain;
     background-color: rgb(255, 248, 248);
     line-height: 1.7em;
     display: flex;
@@ -32,7 +32,6 @@ body {
 
 #intro {
     width:fit-content; 
-    margin: 3em; 
   }
 
 
@@ -40,14 +39,12 @@ body {
     background: rgba(255, 255, 255, 0.2); /* Blanco semitransparente */
     backdrop-filter: blur(10px); /* Desenfoque */
     font-family: 'Courier New', monospace;
-    font-weight: regular;
     font-size: 0.9em;
     line-height: 1em;
     /* margin-right: 1em;
     margin-left: 1em;
     margin-top: 1em;
     margin: 1em; */
-    padding: 20px;
     text-align: justify;
     
    }
@@ -56,13 +53,15 @@ body {
     
     color: rgb(0, 0, 0);
     font-weight: bold;
+    line-height: 12px;
+
 
 }
 
 
 article {
   
-    line-height: 18px;
+   
     width:fit-content;
     box-sizing:border-box;
     text-align: right; /* Cambiado a 'right' */
@@ -99,12 +98,13 @@ h2 {
 
 
   .text {
+    font-family: 'calibri', sans-serif;
     background: rgba(255, 255, 255, 0.2); /* Blanco semitransparente */
     backdrop-filter: blur(10px); /* Desenfoque */
-    font-family: 'calibri', sans-serif;
-    font-size: 15px;
+    font-size: 0.8em;
     color: rgb(0, 0, 0);
     text-align: justify;
+    line-height: 18px;
     
   }
 
