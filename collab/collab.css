@@ -2,7 +2,8 @@
 header {
     display: flex;
     flex-direction: column;
-    max-width: 140vmin;
+    max-width: 100%;
+    margin: auto;
 
  }
 
@@ -25,10 +26,22 @@ text-align: justify;
     width:fit-content; 
   }
 
+  h2 {
+   text-align: right;
+   margin-bottom: 0;
+   color: aliceblue;
+   /* justify-content: center; */
+
+   .bigger {
+    font-size: 1.5em;
+    text-align: right;
+  }
+   
+
+}
 
   .mispalabras {
     font-family: 'Courier New', monospace;
-    font-weight: regular;
     font-size: 0.9em;
     line-height: 1em;
     /* margin-right: 1em;
@@ -44,16 +57,9 @@ text-align: justify;
    
    }
 
-   .sello {
-    color: rgb(0, 0, 0);
-    font-weight: bold;
-
-}
-
 
 article {
 
-  line-height:18px;
   background-color: #070000;
   width:fit-content;
   box-sizing:border-box;
@@ -73,21 +79,14 @@ h1 {
  width:fit-content; 
  color: aliceblue;
  justify-content: left;
+ padding right: 3em;
+ object position: right;
 }
 
-.b{
+/* .b{
     text-align: right; 
     padding right: 3em;
-
-}
-
-
-h2 {
-    text-align: right;
-  margin-bottom: 0;
-  color: aliceblue;
-}
-
+} */
 
 
 img {
@@ -98,6 +97,7 @@ img {
 
 
 .text {
+  font-family: 'calibri', sans-serif;
   color: aliceblue;
   font-family: 'calibri', sans-serif;
   font-size: 0.8em;
@@ -148,13 +148,13 @@ img {
   
   .back, li, .btn, .colorify {
     font-family: 'Courier New', monospace;
+    font-size: 1.1em;
     color: rgb(186, 255, 10);
     background-color: #000000;
     font-weight: bold;
     text-align: center;
     padding: 0%
-    font-size: 0, 8em;
-    margin:0%,
+    
 }
 
 

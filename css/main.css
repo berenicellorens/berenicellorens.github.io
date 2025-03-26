@@ -225,8 +225,8 @@ iframe {
 }
 
 .bigger {
-    font-size: 1.8em;
-    text-overflow: ellipsis;
+    font-size: 1.5em;
+    text-align: center;
   }
 
 .smaller {
