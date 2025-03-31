@@ -29,6 +29,11 @@ body {
   color:palevioletred;
 }
 
+#intro {
+    padding: 1em;  
+  }
+
+
 .mispalabras {
     font-family: 'Courier New', monospace;
     font-size: 0.9em;
@@ -54,9 +59,15 @@ a li,
   background: rgb(0, 0, 0);
   font-weight: bold;
   text-align: center;
-  padding: 0.7vmin 1,5vmin;
+  padding: 0.5vmin 0.5vmin;
   font-size: 1.2em;
-  margin: 1vmin;
+  margin: 0vmin;
+}
+
+section{
+    padding: 1vmin;
+   
+
 }
 
 nav {
@@ -74,6 +85,4 @@ nav {
   
   }
 
-  #intro {
-    padding: 1em;  
-  }
+  
