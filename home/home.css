@@ -1,9 +1,9 @@
 /*  Adjust background image and positioning */
 
 body {
-  background-image: url("/img/Foto-HOme.jpg");
-  background-repeat: no repeat;
-  background-position:above;
+  background-image: url("/img/Home-Intro.jpg");
+  background-repeat: no-repeat;
+  background-position:center;
   background-size:cover;
 }
 
