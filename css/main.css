@@ -23,22 +23,21 @@ header {
     font-family: 'Courier New', monospace;
     font-size: 1em;
     line-height: 1em;
-    margin: 30px 0;
     padding: 9px; 
     text-align: left;
     margin-right: 4em;
     margin-left: 4em;
     margin-top: 0.2em;
+    margin-bottom: 1em;
     padding: auto;
    
    }
 
 h2 {
-  margin: 60px 0;
+  margin: 1em 1em 1em 1em;
   padding: 10px;
   font-size: 1.5em;
   line-height: 0.8em;
-  margin-top: 2em;
 }
 
 nav {

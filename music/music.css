@@ -34,18 +34,35 @@ body {
     width:fit-content; 
   }
 
+  h2 {
+    color: rgb(0, 0, 0);
+}
+
+h1{
+    font-size: 18px;
+    font-weight: bold;
+    width: fit-content;
+    margin top: 1em;
+    color: rgb(0, 0, 0);
+    padding right: 3em;
+    object position: right;
+   
+   
+}
+
+
 
 .mispalabras {
+    font-family: 'Courier New', monospace;
     background: rgba(255, 255, 255, 0.2); /* Blanco semitransparente */
     backdrop-filter: blur(10px); /* Desenfoque */
-    font-family: 'Courier New', monospace;
     font-size: 0.9em;
     line-height: 1em;
+    text-align: justify;
     /* margin-right: 1em;
     margin-left: 1em;
     margin-top: 1em;
     margin: 1em; */
-    text-align: justify;
     
    }
 
@@ -72,17 +89,7 @@ article {
     justify-content: left;
 }
 
-h1{
-    font-size: 18px;
-    font-weight: bold;
-    width: fit-content;
-    margin top: 1em;
-    color: rgb(0, 0, 0);
-    padding right: 3em;
-    object position: right;
-   
-   
-}
+
 
 .b{
     text-align: right; 
@@ -90,11 +97,6 @@ h1{
 
 }
 
-h2 {
-    text-align: right; /* Cambiado a 'right' */
-    margin-bottom: 0;
-    color: rgb(0, 0, 0);
-}
 
 
   .text {
