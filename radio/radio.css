@@ -28,10 +28,7 @@ body {
 
 
   h2 {
-    text-align: center; /* Cambiado a 'right' */
-    margin-bottom: 0;
-    color: rgb(186, 255, 10);
-    
+    color: rgb(186, 255, 10);    
 }
 
 
@@ -42,14 +39,9 @@ color: rgb(186, 255, 10);
 
 .mispalabras {
     font-family: 'Courier New', monospace;
-    font-weight: regular;
-    font-size: 1em;
+    backdrop-filter: blur(10px); /* Desenfoque */
+    font-size: 0.9em;
     line-height: 1em;
-    margin-right: 1em;
-    margin-left: 1em;
-    margin-top: 1em;
-    margin: 1em;
-    padding: 20px;
     text-align: justify;
     color: aliceblue;
     
