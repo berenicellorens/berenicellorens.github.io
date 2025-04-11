@@ -1,10 +1,6 @@
-header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: auto;
-  }
+/* ===================
+   ESTILOS GENERALES
+   =================== */
 
 body {
   font-family: 'Courier New', monospace;
@@ -19,6 +15,33 @@ body {
   text-align: justify;
 }
 
+/* ===================
+   ESTRUCTURA PRINCIPAL
+   =================== */
+
+   header, main, section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+  }
+  
+  /* Make items align in a grid-like view */
+
+  main {
+    flex-wrap: wrap;
+    max-width: 200vmin;
+  }
+  
+  section {
+    padding: 5vmin;
+  }
+
+  /* ===================
+   TITULOS
+   =================== */
+  
 /* The main title */
 
 .title {
@@ -27,10 +50,10 @@ body {
     margin: 0;
   }
 
-h2 {
-    margin: 1em 1em 1em 1em;
+  h2 {
+    margin: 1em;
     padding: 10px;
-    font-size: 1,5em;
+    font-size: 1.5em;
     line-height: 0.8em;
   }
 
@@ -49,66 +72,42 @@ h2 {
     object position: right;   
 }
 
-/* otros titulos */
 
-.bigger {
-    font-size: 1.5em;
-    text-align: center;
-  }
-
-.smaller {
-  font-size: 1em;
-  text-align: center;
-}
-
-.sello {
-    text-align: center;
-    font-weight: bold;
-    line-height: 12px;
-  }
-
-
- .mispalabras {
-    font-family: 'Courier New', monospace;
+/* ===================
+   NAVEGACION
+   =================== */
+   nav {
     font-size: 1em;
-    line-height: 1em;
-    padding: 9px; 
-    text-align: left;
-    margin-right: 4em;
-    margin-left: 4em;
-    margin-top: 0.2em;
-    margin-bottom: 1em;
-    padding: auto;
-   
-   }
+    line-height: 1.4em;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    max-width: 200vmin;
+    margin: auto;
+  }
 
-
-
-nav {
-  font-size: 1em;
-  line-height: 1.4em;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  max-width: 200vmin;
-  margin: auto;
-}
-
-/* Make Lists of type Flex, with items aligning along the x-axis */
+  /* Make Lists of type Flex, with items aligning along the x-axis */
 
 ul {
-  list-style: none;
-  padding-inline-start: 0;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-}
+    list-style: none;
+    padding-inline-start: 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
 
-/* Turn list elements into big, bold buttons with rounded border */
+/* otros titulos */
+
+
+
+
+/* ===================
+   BOTONES Y ENLACES
+   =================== */
 
 .back,
 a li,
@@ -144,8 +143,6 @@ li:hover {
   text-decoration: underline;
 }
 
-/* Remove underline from links and make them black */
-
 /*  Links in the footer use the .subtitle class. Make them black  */
 a{
   text-decoration: none;
@@ -165,27 +162,10 @@ a.out {
   font-style: italic;
 }
 
-/* Make Images in footer somewhat separated */
+/* ===================
+   CONTENIDO PRINCIPAL
+   =================== */
 
-
-
-
-
-/* The Main Post Sections */
-
-main,
-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  max-width: 200vmin;
-  margin: auto;
-}
-
-section {
-  padding: 5vmin;
-}
 
 article {
   max-width: 560px;
@@ -193,12 +173,48 @@ article {
   padding: 1vmin;
 }
 
-/* Make items align in a grid-like view */
+article {
+    max-width: 300px;
+    padding: 6vmin;
+  }
 
-main {
-  flex-direction:column;
-  flex-wrap: wrap;
+  .mispalabras {
+    font-size: 1em;
+    line-height: 1em;
+    padding: 9px;
+    text-align: left;
+    margin: 0.2em 4em 1em 4em;
+  }
+  
+  /* This is the main bio section with a subarticle  */
+  
+  section article {
+    background-color: #eee;
+    border-radius: 5vmin;
+    padding: 3vmin;
+    max-width: 155vmin;
+  }
+  
+  
+  .bigger {
+    font-size: 1.5em;
+    text-align: center;
+  }
+
+.smaller {
+  font-size: 1em;
+  text-align: center;
 }
+
+.sello {
+    text-align: center;
+    font-weight: bold;
+    line-height: 12px;
+  }
+
+/* ===================
+   EXTRA
+   =================== */
 
 /* The Language Button */
 
@@ -226,20 +242,6 @@ main {
 
 
 /* This contains every (div-wrapped) iframe + title element */
-
-article {
-  max-width: 300px;
-  padding: 6vmin;
-}
-
-/* This is the main bio section with a subarticle  */
-
-section article {
-  background-color: #eee;
-  border-radius: 5vmin;
-  padding: 3vmin;
-  max-width: 155vmin;
-}
 
 
 iframe {
