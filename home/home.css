@@ -25,9 +25,6 @@ body {
 
 /* Adjust title coloring */
 
-.title {
-  color:palevioletred;
-}
 
 #intro {
     padding: 1em;  
@@ -59,7 +56,6 @@ a li,
   background: rgb(0, 0, 0);
   font-weight: bold;
   text-align: center;
-  padding: 0.5vmin 0.5vmin;
   font-size: 1.2em;
   margin: 0vmin;
 }

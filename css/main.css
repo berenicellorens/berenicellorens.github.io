@@ -45,9 +45,10 @@ body {
 /* The main title */
 
 .title {
-    padding: 10vmin 1vmin 1vmin 1vmin;
+   color: #000000;
     border-radius: 5vmin;
     margin: 0;
+    font-size: 2em;
   }
 
   h2 {
