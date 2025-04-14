@@ -32,11 +32,7 @@ div.hidden {
     display: none;
 }
 
-article {
-    padding: 1vmin;
-    margin: 0;
-    max-width:110vmin;
-}
+
 
 h3 {
     text-align: center;  

@@ -43,7 +43,6 @@ body {
     margin-top: 0.1em;
     margin-bottom: 0.1em;
    
-
    }
 a,
 .subtitle {
@@ -61,12 +60,19 @@ a li,
 }
 
 section{
-    padding: 1vmin;
-   
+    padding: 1vmin;   
+}
 
+
+  /* Para pantallas muy grandes */
+  @media (min-width: 1000px) {
+#menu-eventos{
+     display: flex;
+     flex-direction: row;
 }
 
 nav {
+    
     font-size: 0.7em;
     line-height: 1.2em;
     display: flex;
@@ -75,10 +81,27 @@ nav {
     align-items: center;
     justify-content: center;
     max-width: 200vmin;
-    margin: 0.5em;
-    padding: 1em;
-    
-  
-  }
+     margin: 0.5em;
+     padding: 1em;  
+     margin-right: 6em;
+          
+          }
+}
+   
+
+/* Para pantallas más pequeñas */
+@media (max-width: 768px) {
+#menu-eventos{
+     display: flex;
+     flex-direction: column;
+       
+    }
+
+}
+
+
+
+
+
 
   
