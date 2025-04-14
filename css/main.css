@@ -53,10 +53,12 @@ body {
   }
 
   h2 {
+    margin:60px 0;
     margin: 1em;
     padding: 10px;
     font-size: 1.5em;
     line-height: 0.8em;
+    margin-top: 2em;
   }
 
   h3 {
@@ -185,7 +187,13 @@ article {
     line-height: 1em;
     padding: 9px;
     text-align: left;
-    margin: 0.2em 4em 1em 4em;
+    margin: 30px 0;
+    margin-right: 4em;
+    margin-left: 4em;
+    margin-top: 0.2em;
+    margin-bottom: 1em;
+    padding: auto;
+
   }
   
   /* This is the main bio section with a subarticle  */

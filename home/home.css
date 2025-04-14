@@ -96,6 +96,20 @@ nav {
      flex-direction: column;
        
     }
+    nav {
+    
+        font-size: 0.7em;
+        line-height: 1.2em;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        max-width: 200vmin;
+         margin: 0.5em;
+         padding: 1em;  
+              
+              }
 
 }
 
