@@ -81,12 +81,13 @@ nav {
     align-items: center;
     justify-content: center;
     max-width: 200vmin;
-     margin: 0.5em;
-     padding: 1em;  
-     margin-right: 6em;
-          
-          }
+    margin: 2em;
+    margin-bottom: 5em;
 }
+
+          
+          
+
    
 
 /* Para pantallas más pequeñas */

@@ -201,7 +201,7 @@ article {
   section article {
     
     border-radius: 5vmin;
-    padding: 3vmin;
+    /* padding: 5vmin; */
     max-width: 155vmin;
   }
   
