@@ -64,11 +64,11 @@ body {
    }
 
 
- a   {
+
+  a   {
     background-color: #ffffff;
     text-align: center;
-    padding: vmin vmin;
-    margin: vmin;
+   
 }
 
 .back, li, .btn, .colorify {
@@ -79,6 +79,7 @@ body {
     color: rgb(186, 255, 10);
     background-color: #000000;  
     padding: 0%;
+
 }
 
 

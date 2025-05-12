@@ -26,6 +26,13 @@ body {
 
     }
 
+     header li {
+
+    padding: 0px !important;
+    font-size: 17.6px !important;
+
+    }
+
    header, main, section {
     display: flex;
     flex-direction: column;
