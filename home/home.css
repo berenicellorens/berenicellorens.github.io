@@ -28,6 +28,7 @@ body {
 
 #intro {
     padding: 1em;  
+    max-width: 70%;
   }
 
 
@@ -42,6 +43,7 @@ body {
     margin-left: 4em;
     margin-top: 0.1em;
     margin-bottom: 0.1em;
+   
    
    }
 a,

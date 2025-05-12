@@ -3,7 +3,6 @@ header {
     flex-direction: column; 
     max-width: 140vmin;
   
-    
 }
 
 body {
@@ -11,9 +10,9 @@ body {
   line-height: 1.7em;
   display: flex;
   flex-direction: column;
+  max-width: 100%;
   align-items: center;
   justify-content: right;
-  max-width: 100%;
   margin: auto ;
   text-align: justify; /* Cambiado a 'right' */
 
@@ -24,6 +23,7 @@ body {
 #intro {
     width:fit-content;  
     justify-content: center;
+    max-width: 80%;
   }
 
 
@@ -109,3 +109,12 @@ color: rgb(186, 255, 10);
 }
 
 
+article { 
+
+    padding: 1em;
+    margin: 1em;
+    
+}
+
+
+    
