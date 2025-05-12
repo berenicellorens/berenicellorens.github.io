@@ -20,7 +20,7 @@ color: white ;
 }
 
 #intro {
-    width:fit-content; 
+    max-width: 80%; 
   }
 
 h2 {
