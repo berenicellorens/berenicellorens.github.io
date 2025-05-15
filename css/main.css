@@ -23,6 +23,7 @@ body {
     position: fixed;
     top: 0px;
     z-index: 999;
+    
 
     }
 
@@ -49,7 +50,9 @@ body {
   }
   
   section {
-    padding: 5vmin;
+    padding-top: 5vmin;
+    margin-top: 10vmin;
+
   }
 
   /* ===================
