@@ -1,5 +1,5 @@
 import { footerLinks } from '/scripts/footer.js';
-import { bandcamp, soundcloud, spotify } from '/scripts/data.js';
+import { bandcamp, soundcloud } from '/scripts/data.js';
 // import { langButton, loadLangFile } from '/scripts/language.js';
 import { loadFile } from '/scripts/langloader.js';
 
