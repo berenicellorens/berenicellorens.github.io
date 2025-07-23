@@ -3,12 +3,17 @@ body {
 }
  
 h1 {
-  background-color: rgba(244, 254, 146, 1);
   padding:2vmin;
 }
 
+h2 {
+  color:  #FF9800;
+  padding: 2em;
+}
+
+
 h3 {
-  background: #aa2788;
+  color: #FF9800;
   padding:2vmin;
 }
 
