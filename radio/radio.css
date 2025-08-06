@@ -40,7 +40,6 @@ color: rgb(186, 255, 10);
 .mispalabras {
     font-family: 'Courier New', monospace;
     backdrop-filter: blur(10px); /* Desenfoque */
-    font-size: 0.9em;
     line-height: 1em;
     text-align: justify;
     color: aliceblue;

@@ -49,7 +49,6 @@ h1{
     font-family: 'Courier New', monospace;
     background: rgba(255, 255, 255, 0.2); /* Blanco semitransparente */
     backdrop-filter: blur(10px); /* Desenfoque */
-    font-size: 0.9em;
     line-height: 1em;
     text-align: justify;
     /* margin-right: 1em;

@@ -43,7 +43,6 @@ h2 {
   .mispalabras {
     font-family: 'Courier New', monospace;
     background: rgba(255, 255, 255, 0.2); /* Blanco semitransparente */
-    font-size: 0.9em;
     line-height: 1em;
     padding: 3em; 
     text-align: left;
