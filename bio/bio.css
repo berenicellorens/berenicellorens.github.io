@@ -26,18 +26,23 @@ body {
   }
 
 
-
 .bio {
-  font-family:'calibri', sans-serif;
-  font-size:0.9em;
+  font-family: 'calibri', sans-serif;
+  font-size: 1em;
   line-height: normal;
   background-color: #000000;
-  color:#fff;
-  width:fit-content;
-  margin: auto;
-  color:#fff;
+  color: #fff;
+  width: fit-content;
+  margin: auto; /* para móvil */
+}
 
-
+/* Pantallas grandes: margen a izquierda y derecha */
+@media (min-width: 1024px) {
+  .bio {
+    padding-left: 15em;
+    padding-right: 15em;
+    width: auto; /* se adapta mejor */
+  }
 }
 
 img {
