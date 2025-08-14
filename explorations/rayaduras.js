@@ -1,51 +1,55 @@
-//import { youtube } from '/scripts/data.js';
 import { loadCSV } from '/scripts/loadcsv.js'
-//import { footerLinks } from '/scripts/footer.js';
 
 async function loader(response) {
   const section = document.querySelector('main')
   const article = document.createElement('article')
   if (section.lastChild) section.removeChild(section.lastChild)
   article.className = 'exploration_images_container'
+
   const text = response.split('\n')
-  // const header = document.createElement('h1');
-  // header.innerHTML = text[0];
-  // article.appendChild(header);
-  text.slice(1).forEach((line, index) => {
+
+  text.slice(1).forEach((line) => {
     const data = line.split(',')
-    if (data[0] === undefined || data === undefined || data[0] === '') return
+    if (!data[0]) return // salta filas vacías
+
+    const [name, title, description, year, media] = data
+
     const container = document.createElement('div') // container div
-    const image = document.createElement('img') // the image
-    const link = document.createElement('a') // the anchor on the title
+    container.className = 'exploration-container'
 
-    container.className = 'container'
-    // add the url attribute
-    const image_source = `./rayaduras/${data[0]}`
+    const image = document.createElement('img') // imagen
+    const link = document.createElement('a') // anchor sobre la imagen
+
+    // ruta de la imagen
+    const image_source = `./rayaduras/${name}`
     image.setAttribute('src', image_source)
-    // add the image description to the alt-text attribute
-    const titulo = String(data[1] !== '' ? data[1] : data[0])
-      .replace('.jpg', '')
-      .replace('.jpeg', '')
-      .replace('.png', '')
-    image.setAttribute('alt', titulo)
 
-    // add the title to the title tag
+    // título para alt
+    const displayTitle = title !== '' ? title : name.replace(/\.(jpg|jpeg|png|gif)$/i, '')
+    image.setAttribute('alt', displayTitle)
+
+    // link
     link.setAttribute('href', image_source)
-    link.setAttribute('title', titulo)
+    link.setAttribute('title', displayTitle)
     link.setAttribute('target', '_blank')
-    link.innerHTML = titulo
-
-    // wrap the image on the link as well
     link.appendChild(image)
 
-    // place the title, image and description tags inside the container
+    // descripción debajo
+    const descDiv = document.createElement('div')
+    descDiv.className = 'desc'
+    let descText = displayTitle
+    if (year) descText += ` | ${year}`
+    if (media) descText += ` | ${media}`
+    if (description) descText += ` | ${description}`
+    descDiv.innerText = descText
 
-    container.appendChild(link) // link now wraps the image so you can click it
+    // agregar al container
+    container.appendChild(link)
+    container.appendChild(descDiv)
     article.appendChild(container)
   })
+
   section.appendChild(article)
 }
 
 loadCSV('rayaduras.csv', loader)
-
-//footerLinks([youtube], 'btn');
