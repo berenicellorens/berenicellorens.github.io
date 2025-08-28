@@ -36,6 +36,13 @@ body {
   margin: auto; /* para móvil */
 }
 
+.press-note {
+  margin-top: 1em;
+  font-size: 0.9em;
+  text-align: center;
+  color: #555;
+}
+
 /* Pantallas grandes: margen a izquierda y derecha */
 @media (min-width: 1024px) {
   .bio {
