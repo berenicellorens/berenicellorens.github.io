@@ -46,10 +46,12 @@ body {
    
    
    }
-a,
+
+   
+a, h2, .sello, 
 .subtitle {
   text-decoration: none;
-  color: black;
+  color: rgb(255, 255, 255);
 }
 a li,
 .btn, .colorify {
@@ -64,7 +66,7 @@ a li,
 section{
     padding: 1vmin;   
     margin-top: 3vmin;
-     max-width: 100vmin;
+     max-width: 80vmin;
 }
 
 
