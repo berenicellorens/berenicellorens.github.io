@@ -2,6 +2,6 @@ import { soundcloud, youtube } from '/scripts/data.js';
 import { loadCSV } from '/scripts/loadcsv.js'
 import { footerLinks } from '/scripts/footer.js';
 
-loadCSV('dj.csv');
+loadCSV('live.csv');
 
 footerLinks([soundcloud, youtube], 'btn');
