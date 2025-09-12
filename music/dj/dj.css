@@ -1,11 +1,23 @@
+
+
 body {
-  background: black;
+  background: rgb(0, 0, 0);
+  line-height: 1.7em;
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  align-items: center;
+  justify-content: right;
+  margin: auto ;
+  text-align: justify; /* Cambiado a 'right' */
+
 }
 
 h2 {
   color:  #FF9800;
-
+  margin-top: 5em;
 }
+
 
 
 h3 {
