@@ -1,12 +1,17 @@
 /*  Adjust background image and positioning */
 
 body {
-  background-image: url("/img/berenie\ llorens\ x\ orange\ ear.jpg");
+  background-image: url("/img/rana\ osucra.jpeg");
   background-repeat: no-repeat;
-  background-position:center;
-  background-size:cover;
+  background-position: center;
+  background-size: inherit;
 }
 
+
+section article {
+
+    max-width: 130vmin;
+}
 /* Para pantallas más pequeñas */
 @media (max-width: 768px) {
     body {
