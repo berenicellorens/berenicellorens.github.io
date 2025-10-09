@@ -8,10 +8,6 @@ body {
 }
 
 
-section article {
-
-    max-width: 130vmin;
-}
 /* Para pantallas más pequeñas */
 @media (max-width: 768px) {
     body {
