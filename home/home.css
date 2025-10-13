@@ -1,10 +1,11 @@
 /*  Adjust background image and positioning */
 
 body {
-  background-image: url("/img/rana\ osucra.jpeg");
+  background-image: url("/img/Berenice\ por\ Mery\ 2.jpeg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: inherit;
+  image-rendering: optimizeQuality;
 }
 
 
