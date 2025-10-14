@@ -1,12 +1,23 @@
 /*  Adjust background image and positioning */
+header {
+  position: fixed;
+  top: 0;
+  z-index: 1000; /* para que quede encima del contenido */
+  display: flex;
+  flex-direction:column;
+  max-width: 140vmin;
+}
+
 
 body {
-  background-image: url("/img/Berenice\ x\ Mery\ 1.jpeg");
+  background-image: url("/img/Bere_Retoc__51.jpg");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: inherit;
-  image-rendering: optimizeQuality;
+  background-size: cover;
+
 }
+
+
 
 
 /* Para pantallas más pequeñas */
@@ -55,6 +66,7 @@ a, h2, .sello,
   text-decoration: none;
   color: rgb(255, 255, 255);
 }
+
 a li,
 .btn, .colorify {
   color: rgb(186, 255, 10);
@@ -65,72 +77,11 @@ a li,
   margin: 0vmin;
 }
 
-section{
-    padding: 1vmin;   
-    margin-top: 3vmin;
-    max-width: 90vmin;
-}
 
 
-  /* Para pantallas muy grandes */
-  @media (min-width: 1000px) {
-#menu-eventos{
-     display: flex;
-     flex-direction: row;
-     max-width: 100vmin;
-}
 
-article {
-    max-width: 300px;
-    padding: 4vmin;
-    padding: 0.9vmin;
 
-}
 
-nav {
-    
-    font-size: 0.7em;
-    line-height: 1.2em;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    max-width: 200vmin;
-    margin: 2em;
-    margin-bottom: 5em;
-    left: 10px;
-   
-}
-
-          
-          
-
-   
-
-/* Para pantallas más pequeñas */
-@media (max-width: 768px) {
-#menu-eventos{
-     display: flex;
-     flex-direction: column;
-       
-    }
-    nav {
-    
-        font-size: 0.7em;
-        line-height: 1.2em;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        max-width: 200vmin;
-         margin: 0.5em;
-         padding: 1em;  
-              
-              }
-
-}
 
 
 
