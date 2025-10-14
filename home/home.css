@@ -13,12 +13,13 @@ body {
   background-image: url("/img/Bere_Retoc__51.jpg");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
-  box-sizing: content-box;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+    max-width: 100%;
+    margin: auto;
 
 }
-
-
 
 
 /* Para pantallas más pequeñas */
@@ -27,13 +28,14 @@ body {
       background-size: cover; /* Cambia a 'contain' para asegurar que toda la imagen se vea */
       background-position: top center; /* Puedes ajustar la posición en pantallas móviles */
     }
+    
   }
   
-  /* Para pantallas muy grandes */
+  /* Para pantallas muy grandes
   @media (min-width: 1200px) {
     body {
       background-size: cover; /* Mantiene el 'cover' para pantallas grandes */
-    }
+    } */
 
 }
 
@@ -42,7 +44,8 @@ body {
 
 #intro {
     padding: 1em;  
-    max-width: 70%;
+    max-width: 100%;
+  
   }
 
 
@@ -64,9 +67,10 @@ body {
    
 a, h2, .sello, 
 .subtitle {
-  text-decoration: none;
   color: rgb(255, 255, 255);
 }
+
+
 
 a li,
 .btn, .colorify {
@@ -78,8 +82,14 @@ a li,
   margin: 0vmin;
 }
 
-
-
+article {
+    max-width: 600px;
+    margin-top: 40px;
+    margin-bottom: 5px;
+    margin-left: 50px;
+    padding-left:40px;
+   
+}
 
 
 
