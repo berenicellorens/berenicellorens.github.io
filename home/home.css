@@ -1,16 +1,13 @@
 /*  Adjust background image and positioning */
 header {
-  position: fixed;
-  top: 0;
   z-index: 1000; /* para que quede encima del contenido */
   display: flex;
-  flex-direction:column;
-  max-width: 140vmin;
+  flex-direction:column; 
 }
 
 
 body {
-  background-image: url("/img/Bere_Retoc__51.jpg");
+  background-image: url("/img/berenie\ llorens\ x\ orange\ ear.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-color: black;
