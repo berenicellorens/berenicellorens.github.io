@@ -1,17 +1,16 @@
 #lista_de_eventos {
   
-   font-size: 0.9em;
-   font-weight: bold;
-   color: rgb(186, 255, 10);
+   font-size: 1em;
+   color: rgb(255, 255, 255);
    line-height:1.1em;
-   margin-bottom: 1em;
    text-align: right;
    list-style-position: inside;
-   display: block;
-   margin: 2em;
-   margin-bottom: 7em;
-   padding: 1vmin;
-   max-width: 80%;
+  margin-left: auto;    /* empuja el bloque hacia la derecha */
+  margin-right: 0em;
+  max-width: 40%;
+   background: rgba(0, 0, 0, 0.4); /* opcional: fondo translúcido para legibilidad */
+  padding: 0.5em; /* opcional */
+ 
   
 }
 

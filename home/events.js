@@ -1,7 +1,7 @@
 // define el boton de more/less en home
 const more = document.getElementById('more-button');
 
-more.innerHTML = 'More';
+more.innerHTML = 'LAST';
 
 more.className = 'more-button';
 
