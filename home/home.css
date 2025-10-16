@@ -2,75 +2,65 @@
 header {
   z-index: 1000; /* para que quede encima del contenido */
   display: flex;
-  flex-direction:column; 
+  flex-direction: column;
 }
 
-
 body {
-  background-image: url("/img/Bere_Retoc__51.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
   background-color: black;
   display: flex;
   flex-direction: column;
-    max-width: 100%;
-    margin: auto;
-
-}
-
-
-/* Para pantallas más pequeñas */
-@media (max-width: 768px) {
-    body {
-      background-size: cover; /* Cambia a 'contain' para asegurar que toda la imagen se vea */
-      background-position: top center; /* Puedes ajustar la posición en pantallas móviles */
-    }
-    
-  }
-  
-  Para pantallas muy grandes
-  @media (min-width: 1200px) {
-    body {
-      background-size: cover; /* Mantiene el 'cover' para pantallas grandes */
-    }
-
+  max-width: 100%;
+  margin: auto;
 }
 
 /* Adjust title coloring */
 
+.to_overwrite_global_main_style {
+  min-width: 100%;
+}
 
-#intro {
-    padding: 1em;  
-    max-width: 100%;
-  
-  }
-
+#background_image {
+  position: fixed;
+  top: 0;
+  object-position: 0% 30%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  filter: brightness(0.3);
+}
 
 .mispalabras {
-    font-family: 'Courier New', monospace;
-    font-size: 0.9em;
-    line-height: 1em;
-    margin: 30px 0;
-    padding: 9px; 
-    text-align: left, justify;
-    margin-right: 4em;
-    margin-left: 4em;
-    margin-top: 0.1em;
-    margin-bottom: 0.1em;
-   
-   
-   }
+  font-family: 'Courier New', monospace;
+  font-size: 0.9em;
+  line-height: 1em;
+  margin: 30px 0;
+  padding: 9px;
+  text-align: left, justify;
+  margin-right: 4em;
+  margin-left: 4em;
+  margin-top: 0.1em;
+  margin-bottom: 0.1em;
+}
 
-   
-a, h2, .sello, 
+a,
+h2,
+small,
+.sello,
 .subtitle {
   color: rgb(255, 255, 255);
 }
 
-
+small {
+  position: absolute;
+  bottom: 1.5vmin;
+  right: 1.75vmin;
+}
 
 a li,
-.btn, .colorify {
+.btn,
+.colorify {
   color: rgb(186, 255, 10);
   background: rgb(0, 0, 0);
   font-weight: bold;
@@ -80,24 +70,11 @@ a li,
 }
 
 article {
-    max-width: 600px;
-    margin-top: 40px;
-    margin-bottom: 5px;
-    margin-left: 50px;
-    padding-left:40px;
-   
+  margin-top: 80px;
 }
-
 
 footer {
+  color: rgb(186, 255, 10);
 
-color: rgb(186, 255, 10);
-position: fixed;
-bottom: 0%;
+  bottom: 0%;
 }
-
-
-
-
-
-  

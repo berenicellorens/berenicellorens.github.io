@@ -1,8 +1,7 @@
 header {
-    display: flex;
-    flex-direction: column; 
-    max-width: 140vmin;
-  
+  display: flex;
+  flex-direction: column;
+  max-width: 140vmin;
 }
 
 body {
@@ -13,43 +12,43 @@ body {
   max-width: 100%;
   align-items: center;
   justify-content: right;
-  margin: auto ;
+  margin: auto;
   text-align: justify; /* Cambiado a 'right' */
-
 }
-
-
 
 #intro {
-    width:fit-content;  
-    justify-content: center;
-    max-width: 80%;
-  }
-
-
-  h2 {
-    color: rgb(186, 255, 10);    
+  width: fit-content;
+  justify-content: center;
+  max-width: 80%;
 }
 
+h2 {
+  color: rgb(186, 255, 10);
+}
 
 h3 {
-color: rgb(186, 255, 10);
+  color: rgb(186, 255, 10);
+}
 
+.test {
+  margin: 2em;
+  justify-content: center;
+  display: flex;
+  gap: 2em;
+  flex-wrap: wrap;
 }
 
 .mispalabras {
-    font-family: 'Courier New', monospace;
-    backdrop-filter: blur(10px); /* Desenfoque */
-    line-height: 1em;
-    text-align: justify;
-    color: aliceblue;
-    
-   }
+  font-family: 'Courier New', monospace;
+  backdrop-filter: blur(10px); /* Desenfoque */
+  line-height: 1em;
+  text-align: justify;
+  color: aliceblue;
+}
 
-   .sello {
-    color: rgb(255, 255, 255);
-    font-weight: bold;
-
+.sello {
+  color: rgb(255, 255, 255);
+  font-weight: bold;
 }
 
 /* footer img {
@@ -81,7 +80,7 @@ color: rgb(186, 255, 10);
     margin: 2em;
 } */
 
-  /* ul {
+/* ul {
     position: top;
     top: 100%;
     width: 200%;
@@ -90,30 +89,22 @@ color: rgb(186, 255, 10);
     overflow: hidden;
   }  */
 
-  a   {
-    background-color: #ffffff;
-    text-align: center;
-    padding: vmin vmin;
-    margin: vmin;
-}
-  
-  .back, li, .btn, .colorify {
-    font-family: 'Courier New', monospace;
-    font-size: 1.1em;
-    color: rgb(186, 255, 10); 
-    font-weight: bold;
-    text-align: center;
-    background-color: #000000;
-    padding: 0%
+a {
+  background-color: #ffffff;
+  text-align: center;
+  padding: vmin vmin;
+  margin: vmin;
 }
 
-
-article { 
-
-    padding: 1em;
-    margin: 1em;
-    
+.back,
+li,
+.btn,
+.colorify {
+  font-family: 'Courier New', monospace;
+  font-size: 1.1em;
+  color: rgb(186, 255, 10);
+  font-weight: bold;
+  text-align: center;
+  background-color: #000000;
+  padding: 0%;
 }
-
-
-    
