@@ -92,6 +92,8 @@ article {
 footer {
 
 color: rgb(186, 255, 10);
+position: fixed;
+bottom: 0%;
 }
 
 
