@@ -1,18 +1,14 @@
 // define el boton de more/less en home
-const more = document.getElementById('more-button');
+const more = document.getElementById('more-button')
 
-more.innerHTML = 'LAST';
+more.className = 'more-button'
 
-more.className = 'more-button';
-
-more.onclick = function() {
-
-  const items = document.getElementsByClassName('hidden');
+more.onclick = function () {
+  const items = document.getElementsByClassName('hidden')
 
   Array.from(items).map((item) => {
-    item.style.display = item.style.display === 'block' ? 'none' : 'block';
-  });
+    item.style.display = item.style.display === 'block' ? 'none' : 'block'
+  })
 
-  more.innerHTML = more.innerHTML === 'More' ? 'Less' : 'More';
-
+  more.innerHTML = more.innerHTML === 'More' ? 'Less' : 'More'
 }
