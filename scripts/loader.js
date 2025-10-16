@@ -20,7 +20,7 @@ export async function loader(response) {
         wrapper.insertAdjacentHTML('beforeend', iframe)
         art.appendChild(wrapper)
         art.setAttribute('max-width', iframeMaxWidth + 'px')
-        document.querySelector('.test').appendChild(art)
+        document.querySelector('#flex_container').appendChild(art)
       }
     }
   })
