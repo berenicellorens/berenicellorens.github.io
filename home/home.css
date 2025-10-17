@@ -22,13 +22,13 @@ body {
 #background_image {
   position: fixed;
   top: 0;
-  object-position: 0% 30%;
+  object-position: 0% 35%;
   left: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
   z-index: -1;
-  filter: brightness(0.3);
+  filter: brightness(0.5);
 }
 
 .mispalabras {
@@ -50,6 +50,11 @@ small,
 .sello,
 .subtitle {
   color: rgb(255, 255, 255);
+}
+
+
+.sello{
+opacity: 30%;
 }
 
 /* small {
