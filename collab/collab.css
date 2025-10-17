@@ -81,10 +81,11 @@ img {
   line-height: 18px;
 }
 
-/* a {
-  color:blue;
-  text-decoration: underline;
-} */
+a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+
+}
 
 /* nav {
     font-size:1.3em;
