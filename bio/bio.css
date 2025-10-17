@@ -9,31 +9,22 @@ body {
     
     background-color: black;
     line-height: 1.7em;
-    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    max-width: 100%;
-    margin: auto;
     text-align: justify;
 
     
     }
 
-
- #intro {
-    width:fit-content;  
-  }
-
-
+ 
 .bio {
   font-family: 'Courier New', monospace;
   font-size: 1em;
   line-height: normal;
   background-color: #000000;
   color: #fff;
-  width: fit-content;
-  margin: auto; /* para móvil */
+
 }
 
 .press-note {
@@ -67,14 +58,6 @@ h2 {
   color: aliceblue;
 }
 
-/* button {
-    color: rgb(186, 255, 10);
-    background: rgb(0, 0, 0);
-    text-align: center;
-    padding:auto;
-    font-size: 1em;
-    margin: 1vmin;
-  } */
 
  
   este es el 
@@ -107,7 +90,7 @@ h2 {
     margin: vmin;
 }
 
-  .back, li, .btn, .colorify {
+ li, .btn, .colorify {
     font-size: 1.1em;
     font-family: 'Courier New', monospace;
     color: rgb(186, 255, 10);
@@ -115,7 +98,7 @@ h2 {
     font-weight: bold;
     text-align: center;
     padding: 0%;
-    
+  
    
 }
 

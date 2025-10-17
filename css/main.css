@@ -10,9 +10,8 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  max-width: 130vmin;
-  margin: auto;
-  text-align: justify;
+  max-width: 100%;
+  
   height: 100vh;
 }
 
