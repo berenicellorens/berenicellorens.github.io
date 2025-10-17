@@ -52,11 +52,11 @@ small,
   color: rgb(255, 255, 255);
 }
 
-small {
+/* small {
   position: absolute;
-  bottom: 1.5vmin;
+  bottom: 4vmin;
   right: 1.75vmin;
-}
+} */
 
 a li,
 .btn,
@@ -75,6 +75,5 @@ article {
 
 footer {
   color: rgb(186, 255, 10);
-
   bottom: 0%;
 }
