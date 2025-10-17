@@ -27,7 +27,7 @@ body {
 
 
 #intro {
-    width:fit-content; 
+     max-width: 80%;
   }
 
   h2 {
@@ -37,6 +37,7 @@ body {
 h1{
 
     color: rgb(0, 0, 0); 
+    text-align: left;
 }
 
 .sello {
@@ -50,7 +51,8 @@ h1{
     background: rgba(255, 255, 255, 0.2); /* Blanco semitransparente */
     backdrop-filter: blur(10px); /* Desenfoque */
     line-height: 1em;
-    text-align: justify;
+    padding: 3em;
+   text-align: justify;
    }
 
 
@@ -62,7 +64,7 @@ article {
     text-align: right; /* Cambiado a 'right' */
     margin-right: 1em;
     margin-left: 1em;
-    max-width: 100vmin;
+    max-width: 90vmin;
     min-width: 70vmin;
     justify-content: left;
 }
@@ -126,11 +128,7 @@ ul {
   } */
 
 
-  a   {
-    background-color: #ffffff;
-    text-align: center;
-    
-}
+  
 
 .back, li, .btn, .colorify {
     font-family: 'Courier New', monospace;
