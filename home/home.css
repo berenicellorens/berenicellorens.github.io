@@ -52,16 +52,16 @@ small,
   color: rgb(255, 255, 255);
 }
 
-
 .sello{
 opacity: 30%;
 }
 
-/* small {
+small {
+  color: rgb(186, 255, 10);
   position: absolute;
-  bottom: 4vmin;
+  bottom: 2vmin;
   right: 1.75vmin;
-} */
+}
 
 a li,
 .btn,
@@ -78,7 +78,4 @@ article {
   margin-top: 130px;
 }
 
-footer {
-  color: rgb(186, 255, 10);
-  bottom: 0%;
-}
+
