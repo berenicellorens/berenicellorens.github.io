@@ -11,12 +11,14 @@ body {
   flex-direction: column;
   max-width: 100%;
   margin: auto;
+  
 }
 
 /* Adjust title coloring */
 
 .to_overwrite_global_main_style {
   min-width: 100%;
+
 }
 
 #background_image {
@@ -46,7 +48,6 @@ body {
 
 a,
 h2,
-small,
 .sello,
 .subtitle {
   color: rgb(255, 255, 255);
@@ -59,7 +60,7 @@ opacity: 30%;
 small {
   color: rgb(186, 255, 10);
   position: absolute;
-  bottom: 2vmin;
+  bottom: 4vmin;
   right: 1.75vmin;
 }
 
@@ -78,6 +79,6 @@ article {
   margin-top: 130px;
 }
 
-pancarta{
-  font-weight: bold;
+footer{
+  bottom: 0%;
 }

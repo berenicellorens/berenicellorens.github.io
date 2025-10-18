@@ -10,5 +10,5 @@ more.onclick = function () {
     item.style.display = item.style.display === 'block' ? 'none' : 'block'
   })
 
-  more.innerHTML = more.innerHTML === 'Less' ? 'More' : 'Less'
+  more.innerHTML = more.innerHTML === 'LESS' ? 'MORE' : 'LESS'
 }
