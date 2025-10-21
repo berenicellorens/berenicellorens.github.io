@@ -267,7 +267,8 @@ iframe {
 }
 
 footer {
-  padding: 1.5vmin;
+  padding-top: 40px;
   font: 'Courier New', monospace;
   bottom: 0%;
+  opacity: 50%;
 }
