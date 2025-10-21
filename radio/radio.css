@@ -45,6 +45,7 @@ h3 {
   line-height: 1em;
   text-align: justify;
   color: aliceblue;
+  min-width: 80%;
 }
 
 .sello {

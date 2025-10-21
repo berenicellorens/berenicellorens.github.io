@@ -53,6 +53,7 @@ h1{
     line-height: 1em;
     padding: 3em;
    text-align: justify;
+    min-width: 70%;
    }
 
 
