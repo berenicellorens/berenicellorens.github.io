@@ -14,12 +14,16 @@ body {
   
 }
 
+
+main{
+  min-width: 100%;
+}
 /* Adjust title coloring */
 
-.to_overwrite_global_main_style {
+/* .to_overwrite_global_main_style {
   min-width: 100%;
 
-}
+} */
 
 #background_image {
   position: fixed;
@@ -76,9 +80,6 @@ a li,
 }
 
 article {
-  margin-top: 130px;
+  margin-top: 100px;
 }
 
-footer{
-  bottom: 0%;
-}
