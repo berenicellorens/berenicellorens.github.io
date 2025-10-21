@@ -11,8 +11,11 @@
   margin-bottom: 0.50em;
 }
 
-.pancarta {
+.pancarta, .more-button{
   font-weight: bold;
+  width: 100%;
+  text-align: center;
+  
 }
 
 li.lista_de_eventos-item:hover {

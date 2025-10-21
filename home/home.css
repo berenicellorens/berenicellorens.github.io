@@ -10,6 +10,7 @@ body {
   display: flex;
   flex-direction: column;
   max-width: 100%;
+  min-height: 100%;
   margin: auto;
   
 }
@@ -17,6 +18,7 @@ body {
 
 main{
   min-width: 100%;
+  min-height: 100%;
 }
 /* Adjust title coloring */
 
@@ -28,7 +30,7 @@ main{
 #background_image {
   position: fixed;
   top: 0;
-  object-position: 0% 35%;
+  object-position: 0% 30%;
   left: 0;
   width: 100%;
   height: 100%;
@@ -37,18 +39,6 @@ main{
   filter: brightness(0.5);
 }
 
-.mispalabras {
-  font-family: 'Courier New', monospace;
-  font-size: 0.9em;
-  line-height: 1em;
-  margin: 30px 0;
-  padding: 9px;
-  text-align: left, justify;
-  margin-right: 4em;
-  margin-left: 4em;
-  margin-top: 0.1em;
-  margin-bottom: 0.1em;
-}
 
 a,
 h2,
@@ -80,6 +70,6 @@ a li,
 }
 
 article {
-  margin-top: 100px;
+  margin-top: 90px;
 }
 
