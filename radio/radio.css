@@ -92,7 +92,7 @@ h3 {
   }  */
 
 a {
-  background-color: #ffffff;
+  color:rgb(255, 255, 255);
   text-align: center;
   padding: vmin vmin;
   margin: vmin;
@@ -108,5 +108,5 @@ li,
   font-weight: bold;
   text-align: center;
   background-color: #000000;
-  padding: 0%;
+  
 }
