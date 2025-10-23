@@ -2,17 +2,13 @@ body {
   font-family: 'Courier New', monospace;
   background-image: url('/img/Intro\ cuadrada.jpg');
   background-repeat: no-repeat;
-  background-position: top;
-  background-size: cover;
-  max-height: 100vh;
   overflow: hidden;
 }
 /* Para pantallas más pequeñas */
 @media (max-width: 768px) {
   body {
-    background-size: cover; /* Cambia a 'contain' para asegurar que toda la imagen se vea */
-    background-position: top center; /* Puedes ajustar la posición en pantallas móviles */
-    background-repeat: repeat;
+    background-size: cover; 
+
   }
 }
 
@@ -20,7 +16,7 @@ body {
 @media (min-width: 1200px) {
   body {
     background-size: cover; /* Mantiene el 'cover' para pantallas grandes */
-    background-repeat: no repeat;
+    background-repeat: no-repeat;
   }
 }
 
@@ -50,12 +46,12 @@ button {
 }
 
 button:hover {
-  background-image: url('/img/flyer3.jpg');
+  background-image: url('/img/homehome.jpg');
   background-position: center;
 }
 
 #maincontent {
   display: grid;
   grid-template-rows: repeat(1, 20fr); /* 6 filas iguales */
-  gap: 10px; /* Espacio entre las filas */
+  gap: 5px; /* Espacio entre las filas */
 }
