@@ -1,26 +1,41 @@
 header {
-    display: flex;
-    flex-direction: column;
-    max-width: 140vmin;
- }
+  z-index: 1000; /* para que quede encima del contenido */
+  display: flex;
+  flex-direction: column;
+}
+
+ 
 
 body {
 
-    background-image: url("/img/bereniellorensxorangeeartras.jpg");
-    background-repeat: no-repeat;
-    background-position: top ;
-    background-size:contain;
     background-color: rgb(255, 248, 248);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     max-width: 100%;
+    min-height: 100%;
     margin: auto;
     text-align: justify;
     
     }
 
+    main{
+  min-width: 100%;
+  min-height: 100%;
+}
+
+#background_image {
+ 
+  position: fixed;
+  top: 0%;
+  object-position: 0% 30%;
+  object-fit: cover;
+  z-index: -1;
+  filter: brightness(0,7);
+  max-width: 100%;  
+  display: flex;
+}
 
 
 /* Ajuste de la imagen de fondo y el posicionamiento */
@@ -31,18 +46,19 @@ body {
   }
 
   h2 {
-    color: rgb(0, 0, 0);
+    color: rgb(209, 207, 207);
 }
 
 h1{
 
     color: rgb(0, 0, 0); 
     text-align: left;
+    background: rgba(255, 255, 255, 0.2); /* Blanco semitransparente */
 }
 
 .sello {
     
-    color: rgb(0, 0, 0);
+    color: rgb(173, 169, 169);
 
 }
 
@@ -52,8 +68,9 @@ h1{
     backdrop-filter: blur(10px); /* Desenfoque */
     line-height: 1em;
     padding: 3em;
-   text-align: justify;
+    text-align: justify;
     min-width: 70%;
+    margin: 1%;
    }
 
 
@@ -83,13 +100,14 @@ article {
     font-family: 'calibri', sans-serif;
     background: rgba(255, 255, 255, 0.2); /* Blanco semitransparente */
     backdrop-filter: blur(10px); /* Desenfoque */
-    font-size: 0.8em;
+    font-size: 1em;
     color: rgb(0, 0, 0);
     text-align: justify;
     line-height: 18px;
     
   }
 
+ 
   img {
     max-width: 50%;
     margin-top: 1em;
@@ -102,7 +120,6 @@ article {
 .image {
     flex-basis: 30%;
     flex-shrink: 0;
-     size: smaller ;
   }
 
 
