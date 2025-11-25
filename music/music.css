@@ -8,7 +8,7 @@ header {
 
 body {
 
-    background-color: rgb(255, 248, 248);
+    background-color: rgb(217, 217, 215);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -32,7 +32,9 @@ body {
   object-position: 0% 30%;
   object-fit: cover;
   z-index: -1;
-  filter: brightness(0,7);
+  filter: brightness(0.5);
+  filter: opacity(0.5);
+  opacity: 4;
   max-width: 100%;  
   display: flex;
 }
@@ -86,6 +88,9 @@ article {
   justify-content: left;
 }
 
+.p{
+    
+  }
 
 
 .b{
@@ -104,7 +109,7 @@ article {
     color: rgb(0, 0, 0);
     text-align: justify;
     line-height: 18px;
-    
+    padding: 1em;
   }
 
  
@@ -122,30 +127,6 @@ article {
     flex-shrink: 0;
   }
 
-
-/* nav {
-    font-size: 1em;
-    line-height: 1.4em;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    max-width: 200vmin;
-    margin: 2em;
-}
-
-ul {
-    position: top;
-    top: 100%;
-    width: 200%;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-  } */
-
-
-  
 
 .back, li, .btn, .colorify {
     font-family: 'Courier New', monospace;
