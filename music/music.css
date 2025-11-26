@@ -48,7 +48,7 @@ body {
   }
 
   h2 {
-    color: rgb(209, 207, 207);
+    color: rgb(0, 0, 0);
 }
 
 h1{
@@ -60,19 +60,19 @@ h1{
 
 .sello {
     
-    color: rgb(173, 169, 169);
+    color: rgb(209, 200, 200);
 
 }
 
 .mispalabras {
     font-family: 'Courier New', monospace;
-    background: rgba(255, 255, 255, 0.2); /* Blanco semitransparente */
-    backdrop-filter: blur(10px); /* Desenfoque */
+    
     line-height: 1em;
     padding: 3em;
     text-align: justify;
     min-width: 70%;
     margin: 1%;
+    
    }
 
 
