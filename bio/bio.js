@@ -5,21 +5,18 @@ import { loadFile } from '/scripts/langloader.js';
 
 
 async function loader(response) {
-  const section = document.querySelector('section');
-  const article = document.createElement('article')
-  if (section.lastChild) section.removeChild(section.lastChild);
-  article.className = 'bio';
+  const bioText = document.querySelector('.bio-text');  // <-- aquí se escribe
+  bioText.innerHTML = "";
+
   const text = response.split('\n');
-  // const header = document.createElement('h1');
-  // header.innerHTML = text[0];
-  // article.appendChild(header);
-  text.slice(1).forEach( line => {
+  text.slice(1).forEach(line => {
     const p = document.createElement('p');
     p.innerHTML = line;
-    article.appendChild(p);
+    bioText.appendChild(p);
   });
-  section.appendChild(article);
 }
+
+
 
 loadFile('bio', loader);
 
