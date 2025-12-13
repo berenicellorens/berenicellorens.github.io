@@ -14,10 +14,7 @@ body {
   background-attachment: fixed;
   background-position: top;
   background-size: contain;
-  /* margin: 1em;
-  margin-top: 3em;
-  margin-left: 2em;
-  margin-right: 2em; */
+
   line-height: 1.7em;
   display: flex;
   flex-direction: column;
