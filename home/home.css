@@ -15,6 +15,10 @@ body {
   
 }
 
+section{
+  align-items: center;
+}
+
 .mispalabras{
   color: rgb(153, 235, 60);
   max-width: 60%;

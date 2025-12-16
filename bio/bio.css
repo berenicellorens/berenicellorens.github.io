@@ -4,6 +4,10 @@ header {
   max-width: 100%;
 }
 
+section{
+   align-items: center;
+}
+
 body {
   background-color: rgb(255, 255, 255);
   line-height: 1.7em;

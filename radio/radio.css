@@ -16,6 +16,10 @@ body {
   text-align: justify; /* Cambiado a 'right' */
 }
 
+section{
+   align-items: center;
+}
+
 #intro {
   width: fit-content;
   justify-content: center;

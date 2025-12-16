@@ -16,6 +16,10 @@ body {
   color: white;
 }
 
+section{
+   align-items: center;
+}
+
 #intro {
   max-width: 80%;
 }
