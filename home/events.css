@@ -32,3 +32,30 @@ div.hidden {
 h3 {
   text-align: center;
 }
+
+article {
+  margin-top: 90px;
+  max-width: 500px;
+}
+
+/* --- MOBILE / CELULARES --- */
+@media (max-width: 868px) {
+
+  article{
+     margin-top: 90px;
+     max-width: 300px;
+     padding-bottom: 10em;
+  
+  }
+
+  #lista_de_eventos {
+  font-size: 1em;
+  color: rgb(255, 255, 255);
+  line-height: 0.9em;
+  text-align: center;
+  list-style-position: inside;
+  padding: 0.75em; /* opcional */
+}
+
+ 
+}
