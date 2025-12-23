@@ -9,7 +9,9 @@
 
 #lista_de_eventos > li:not(:last-of-type) {
   margin-bottom: 0.50em;
+
 }
+
 
 .pancarta, .more-button{
   font-weight: bold;

@@ -81,5 +81,16 @@ a li,
 
 article {
   margin-top: 90px;
+  max-width: 80%;
 }
 
+/* --- MOBILE / CELULARES --- */
+@media (max-width: 868px) {
+
+  article{
+     margin-top: 90px;
+    max-width: 330px;
+  
+  }
+ 
+}
