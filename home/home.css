@@ -7,11 +7,15 @@ header {
 
 body {
   background-color: black;
-  display: flex;
-  flex-direction: column;
+  /* display: flex; */
   max-width: 100%;
+  flex-direction: column;
   min-height: 100%;
   margin: auto;
+  margin: auto;
+    text-align: justify;
+  
+    overflow-x: hidden;
   
 }
 
@@ -95,4 +99,42 @@ a li,
   z-index: -1;
   filter: brightness(0.8);
 }
+}
+
+/* =========================
+   MUSIC GALLERY — FIX
+   ========================= */
+
+/* anular las reglas globales de section */
+section.music-gallery {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;          /* centrado editorial */
+  padding: 0 auto;
+}
+
+/* imágenes */
+section.music-gallery img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  box-sizing: border-box;
+}
+
+
+
+
+/* ❗ IMPORTANTE: neutralizar la regla global */
+section.music-gallery img {
+  width: 100%;
+  
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  section.music-gallery img {
+    max-width: 100%;
+    margin: auto;
+  }
 }
