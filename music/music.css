@@ -154,6 +154,9 @@ article {
     color: rgb(186, 255, 10);
     background-color: #000000;  
     padding: 0%;
+
 }
-
-
+a {
+    color: black;
+    margin: 2vmin;
+}
