@@ -29,6 +29,7 @@ section{
   font-weight: lighter;
   max-width: 60%;
   min-width: 70%;
+  padding-top: 3em;
   text-align: justify;
 }
 
