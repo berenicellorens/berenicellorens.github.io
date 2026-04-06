@@ -1,10 +1,20 @@
-
 .container p {
   text-align: center;
 }
 
+
+.exploration_images_container {
+    align-items: center;
+  flex-wrap: wrap;
+ margin: 0 auto;
+  max-width: 80%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+
 .exploration-container {
-  flex: 1 1 200px;
+  /* flex: 1 1 200px; */
   max-width: 300px;
   display: flex;
   flex-direction: column;
@@ -13,20 +23,15 @@
    gap: 30px;
    position: relative;
   transition: transform 0.35s ease, z-index 0.2s ease;
-}
+   outline: 1px solid red;
 
-
-.exploration_images_container {
-  flex-wrap: wrap;
-  justify-content: center;
-  margin: 0 auto;
-  max-width: 100%;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 }
 
 
 
+
+
+estos dos siguientes son la imagen.
 .exploration-container a {
   color: rgb(255, 0, 0);
   font-weight: bold;
@@ -37,7 +42,6 @@
   margin: auto;
 }
 
-
 .exploration-container img {
    /* width:100vmin;  */
   max-height: 100%;
@@ -47,7 +51,7 @@
   width: 100%;
     overflow: visible;
     transition: filter 0.3s ease;
-
+ 
 }
 
 .exploration-container:hover {

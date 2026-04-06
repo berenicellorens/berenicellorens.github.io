@@ -1,9 +1,11 @@
 import { loadCSV } from '/scripts/loadcsv.js'
 
 async function loader(response) {
-  const section = document.querySelector('main')
+  
+  const section = document.querySelector('#rayaduras-container');
   const article = document.createElement('article')
-  if (section.lastChild) section.removeChild(section.lastChild)
+  // if (section.lastChild) section.removeChild(section.lastChild)
+  
   article.className = 'exploration_images_container'
 
   const text = response.split('\n')
@@ -26,6 +28,7 @@ async function loader(response) {
 
     // título para alt
     const displayTitle = title !== '' ? title : name.replace(/\.(jpg|jpeg|png|gif)$/i, '')
+    
     image.setAttribute('alt', displayTitle)
 
     // link
@@ -37,10 +40,12 @@ async function loader(response) {
     // descripción debajo
     const descDiv = document.createElement('div')
     descDiv.className = 'desc'
+
     let descText = displayTitle
     if (year) descText += ` | ${year}`
     if (media) descText += ` | ${media}`
     if (description) descText += ` | ${description}`
+    
     descDiv.innerText = descText
 
     // agregar al container
