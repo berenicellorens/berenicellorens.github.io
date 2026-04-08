@@ -1,0 +1,73 @@
+.container p {
+  text-align: center;
+}
+
+
+.exploration_images_container {
+    align-items: center;
+  flex-wrap: wrap;
+ margin: 0 auto;
+  max-width: 80%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+
+.exploration-container {
+  /* flex: 1 1 200px; */
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+   margin: 1em;
+   gap: 30px;
+   position: relative;
+  transition: transform 0.35s ease, z-index 0.2s ease;
+   outline: 1px solid red;
+
+}
+
+
+
+
+
+estos dos siguientes son la imagen.
+.exploration-container a {
+  color: rgb(255, 0, 0);
+  font-weight: bold;
+  display: flex; /* grid puede ser reemplazado por flex para columnas */
+  flex-direction: column;
+  align-items: center;
+  margin-block: 2em;
+  margin: auto;
+}
+
+.exploration-container img {
+   /* width:100vmin;  */
+  max-height: 100%;
+  height: 200px;      /* altura uniforme */
+  object-fit: contain;  /* recorta si es necesario */
+  display: block;
+  width: 100%;
+    overflow: visible;
+    transition: filter 0.3s ease;
+ 
+}
+
+.exploration-container:hover {
+  transform: scale(1.6);
+  z-index: 20;
+   filter: contrast(1.1);
+ 
+}
+
+
+.desc {
+  padding: 8px 0;
+  text-align: center;
+  font-size: 0.9em;
+  font-weight: bold;
+  color: #ff0000;
+  background-color: #ffffff; /* opcional */
+  line-height: 1.3em;
+}
