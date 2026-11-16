@@ -1,14 +1,92 @@
 /*  Adjust background image and positioning */
 
-body {
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
-    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  background-color: lightgrey;
-  background-image: url('/img/MarmotasDreams\ byUll.jpg');
-  background-blend-mode: multiply;
-  background-repeat: repeat-x;
-  background-size: 50%;
+header {
+  z-index: 1000; /* para que quede encima del contenido */
+  display: flex;
+  flex-direction: column;
 }
+ .sub-nav {
+  font-weight: bold;
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding-top: 2em;
+}
+
+body {
+
+    background-color: rgb(217, 217, 215);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    min-height: 100%;
+    margin: auto;
+    text-align: justify;
+    
+    }
+
+       main{
+  min-width: 100%;
+  min-height: 100%;
+}
+
+section{
+   align-items: center;
+}
+
+ button#language {
+align-items: center;
+}
+
+
+#background_image {
+ 
+ background-color: rgb(217, 217, 215);
+  top: 0%;
+  object-position: 0% 30%;
+  object-fit: cover;
+  z-index: -1;
+  filter: brightness(0.5);
+  filter: opacity(1);
+  opacity: 4;
+  max-width: 100%;  
+  display: flex;
+}
+
+#intro {
+     max-width: 80%;
+  }
+
+  h2 {
+    color: rgb(0, 0, 0);
+}
+
+h1{
+
+    color: rgb(0, 0, 0); 
+    text-align: left;
+    background: rgba(255, 255, 255, 0.2); /* Blanco semitransparente */
+}
+
+.sello {
+    
+    color: rgb(0, 0, 0);
+    padding-bottom: 3em;
+
+}
+
+
+   .sello {
+    
+    color: rgb(0, 0, 0);
+    padding-bottom: 3em;
+
+}
+
+
 
 /* Adjust title coloring */
 
@@ -19,4 +97,32 @@ body {
   display: flex;
   gap: 2em;
   flex-wrap: wrap;
+}
+
+
+
+  img {
+    max-width: 50%;
+    display: flex;
+}
+
+.image {
+    flex-basis: 80%;
+    flex-shrink: 0;
+  }
+
+
+.back, li, .btn, .colorify {
+    font-family: 'Courier New', monospace;
+    font-size: 1.1em;
+    font-weight: bold;
+    text-align: center;
+    color: rgb(186, 255, 10);
+    background-color: #000000;  
+    padding: 0%;
+
+}
+a {
+    color: black;
+    margin: 2vmin;
 }
