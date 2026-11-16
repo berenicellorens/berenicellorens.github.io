@@ -9,28 +9,30 @@ import { mobile } from './mobile.js'
 // Velocidad de las palabras
 const scrolldelay = 4
 const scrollspeed = [5, 12]
-const scrollwidth = [100, 300]
+const scrollwidth = [150, 350]
 const beremarquee = [
   'experimental',
-  'monte',
+  'MONTE',
   'ser',
   'ecosystem',
   'territories',
   'ver',
-  'territorio',
+  'TERRITORIO',
   'observar',
   'adaptación',
   'words',
+  'memory',
   'sounds',
   'do you listen?',
   'integrate',
-  'reinterpret',
+  'UN GRITO', 
   'artificial',
   'play',
+  'escuchar con el CUERPO',
   'time',
+   'UNA PALABRA, UN PENSAMIENTO',
   'broken paths',
   'noises',
-  'territory',
   'pulse',
   'broken',
   'dice',
